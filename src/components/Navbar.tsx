@@ -9,7 +9,6 @@ import {
   Offcanvas,
   NavDropdown,
   Row,
-  Dropdown,
 } from "react-bootstrap";
 
 import { useEffect, useState } from "react";
@@ -39,7 +38,7 @@ const index = () => {
     <>
       <Navbar
         expand="lg"
-        className={`w-100 ${nav ? "aninav" : "aninav1"} sticky-top`}
+        className={`w-100 sticky-top`}
         style={{
           // background: "rgba(255, 255, 255, 0.8)",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
@@ -60,37 +59,19 @@ const index = () => {
             onClick={handleShow}
           />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="d-none d-lg-flex justify-content-between w-100 align-items-center">
+            <Nav className="d-flex justify-content-between w-100 align-items-center">
               <Nav className="mx-auto">
-                <>
-                  <div className="dropup-center dropup">
-                    <button
-                      className="btn btn-secondary dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Centered dropup
-                    </button>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Action
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Action two
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Action three
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </>
+                <NavDropdown title="Giới thiệu" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">
+                    Tổng quan
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Mục tiêu
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Thành viên
+                  </NavDropdown.Item>
+                </NavDropdown>
 
                 <Nav.Link className="ms-3" href="#link">
                   Hoạt động
@@ -111,14 +92,33 @@ const index = () => {
         </Container>
       </Navbar>
 
-      <Offcanvas placement="end" show={show} onHide={handleClose}>
+      {/* <Offcanvas placement="end" show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body className="fw-bold text-center">
-          <></>
+          <Navbar expand="lg">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+                <Nav.Link href="/">Home</Nav.Link>
+
+                <NavDropdown title="Giới thiệu" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">
+                    Tổng quan
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Mục tiêu
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Thành viên
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
         </Offcanvas.Body>
-      </Offcanvas>
+      </Offcanvas> */}
     </>
   );
 };
