@@ -48,7 +48,7 @@ const index = () => {
         <Container>
           <Navbar.Brand href="#home">
             <img
-              src="\images\logo\logo-500x500.png"
+              src="\images\logo\logoSPIT.png"
               width="50"
               height="50"
               className="d-inline-block align-top"
