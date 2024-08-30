@@ -45,7 +45,7 @@ const index = () => {
         }}
       >
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img
               src="\images\logo\logoSPIT.png"
               width="50"
@@ -82,8 +82,8 @@ const index = () => {
                 <Nav.Link className="ms-3" href="#link">
                   Thông báo
                 </Nav.Link>
-                <Nav.Link className="ms-3" href="#link">
-                  Hoạt động
+                <Nav.Link className="ms-3" href="/tuyen-thanh-vien#sec-reg-form">
+                  Tuyển Thành Viên
                 </Nav.Link>
               </Nav>
               <Button className="button-34">Tham gia ngay</Button>
