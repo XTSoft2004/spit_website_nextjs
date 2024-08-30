@@ -38,7 +38,7 @@ const index = () => {
     <>
       <Navbar
         expand="lg"
-        className={`w-100 sticky-top`}
+        className={`w-100 ${nav ? "aninav" : "aninav1"} sticky-top`}
         style={{
           // background: "rgba(255, 255, 255, 0.8)",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
@@ -59,7 +59,7 @@ const index = () => {
             onClick={handleShow}
           />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="d-flex justify-content-between w-100 align-items-center">
+            <Nav className="d-none d-lg-flex justify-content-between w-100 align-items-center">
               <Nav className="mx-auto">
                 <NavDropdown title="Giới thiệu" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">
@@ -92,7 +92,7 @@ const index = () => {
         </Container>
       </Navbar>
 
-      {/* <Offcanvas placement="end" show={show} onHide={handleClose}>
+      <Offcanvas placement="end" show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </Offcanvas.Header>
@@ -118,7 +118,7 @@ const index = () => {
             </Navbar.Collapse>
           </Navbar>
         </Offcanvas.Body>
-      </Offcanvas> */}
+      </Offcanvas>
     </>
   );
 };

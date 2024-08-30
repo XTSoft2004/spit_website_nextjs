@@ -1,0 +1,71 @@
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 93vh !important;
+    /* Đảm bảo toàn bộ carousel bao phủ màn hình */
+}
+
+.carousel-item img {
+    opacity: 75%;
+    object-fit: cover;
+    /* Đảm bảo hình ảnh bao phủ đầy đủ không gian */
+}
+
+.text-center-image {
+    font-size: 100px;
+    margin-bottom: 200px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 9999999999;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+
+.truncate-line-1 {
+    display: -webkit-box !important;
+    ;
+    -webkit-line-clamp: 1;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.truncate-line-2 {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.truncate-line-3 {
+    display: -webkit-box !important;
+    ;
+    -webkit-line-clamp: 3;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.truncate-line-4 {
+    display: -webkit-box !important;
+    ;
+    -webkit-line-clamp: 4;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.imagePost-radius {
+    border-radius: 15px 50px;
+}
