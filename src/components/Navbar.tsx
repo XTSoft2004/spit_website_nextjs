@@ -38,14 +38,17 @@ const index = () => {
     <>
       <Navbar
         expand="lg"
+        // className={`w-100 ${nav ? "aninav" : "aninav1"} sticky-top`}
         className={`w-100 sticky-top`}
         style={{
-          // background: "rgba(255, 255, 255, 0.8)",
+          // color: "#fff",
+          background: "rgba(255, 255, 255, 1)",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+          position: "fixed",
         }}
       >
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/" className="d-flex justify-content-center">
             <img
               src="\images\logo\logoSPIT.png"
               width="50"
@@ -53,14 +56,18 @@ const index = () => {
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
+            <Navbar.Brand className="ms-2 mt-1 fw-bold">
+              CLB Hỗ trợ Lập trình
+            </Navbar.Brand>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             onClick={handleShow}
           />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="d-flex justify-content-between w-100 align-items-center">
+            <Nav className="d-none d-lg-flex justify-content-between w-100 align-items-center">
               <Nav className="mx-auto">
+                {/* DropDown thông tin giới thiệu */}
                 <NavDropdown title="Giới thiệu" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">
                     Tổng quan
@@ -76,14 +83,11 @@ const index = () => {
                 <Nav.Link className="ms-3" href="#link">
                   Hoạt động
                 </Nav.Link>
-                <Nav.Link className="ms-3" href="#link">
-                  Tin tức
+                <Nav.Link className="ms-3" href="/tin-tuc">
+                  Tin tức - Thông báo
                 </Nav.Link>
-                <Nav.Link className="ms-3" href="#link">
-                  Thông báo
-                </Nav.Link>
-                <Nav.Link className="ms-3" href="#link">
-                  Hoạt động
+                <Nav.Link className="ms-3" href="/tuyen-thanh-vien">
+                  Tuyển thành viên
                 </Nav.Link>
               </Nav>
               <Button className="button-34">Tham gia ngay</Button>
@@ -92,7 +96,7 @@ const index = () => {
         </Container>
       </Navbar>
 
-      {/* <Offcanvas placement="end" show={show} onHide={handleClose}>
+      <Offcanvas placement="end" show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </Offcanvas.Header>
@@ -118,7 +122,7 @@ const index = () => {
             </Navbar.Collapse>
           </Navbar>
         </Offcanvas.Body>
-      </Offcanvas> */}
+      </Offcanvas>
     </>
   );
 };

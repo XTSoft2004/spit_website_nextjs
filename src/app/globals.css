@@ -6,6 +6,9 @@
 
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
@@ -51,4 +54,55 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+
+.truncate-line-1 {
+    display: -webkit-box !important;
+    ;
+    -webkit-line-clamp: 1;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.truncate-line-2 {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.truncate-line-3 {
+    display: -webkit-box !important;
+    ;
+    -webkit-line-clamp: 3;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.truncate-line-4 {
+    display: -webkit-box !important;
+    ;
+    -webkit-line-clamp: 4;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.imagePost-radius {
+    border-radius: 15px 50px;
+}
+
+
+.news-item {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.news-item:hover {
+    color: #103994;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Tạo hiệu ứng đổ bóng */
 }

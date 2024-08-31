@@ -1,7 +1,14 @@
 // src/app/page.js
 "use client";
 
-import { Container, Carousel, Row, Col, Accordion, Card } from "react-bootstrap";
+import {
+  Container,
+  Carousel,
+  Row,
+  Col,
+  Accordion,
+  Card,
+} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
 import { useState } from "react";
@@ -56,16 +63,54 @@ export default function Home() {
   return (
     <>
       <div id="sec-1" className="w-100">
-        <h1 className="text-center" style={{ fontSize: '40px', font: 'montserrat'}}>SPIT</h1>
+        <h1
+          className="text-center"
+          style={{ fontSize: "40px", font: "montserrat" }}
+        >
+          SPIT
+        </h1>
         <Carousel>
           <Carousel.Item>
-            <img className="d-block" style={{ width: '100%', height: '600px', objectFit: 'cover', boxShadow: 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px' }} src="\images\backgroudSeminar.jpg" alt="seminar" />
+            <img
+              className="d-block"
+              style={{
+                width: "100%",
+                height: "600px",
+                objectFit: "cover",
+                boxShadow:
+                  "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
+              }}
+              src="\images\backgroud\seminar.jpg"
+              alt="seminar"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block" style={{ width: '100%', height: '600px', objectFit: 'cover', boxShadow: 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px' }} src="\images\backgroud_member.png" alt="member" />
+            <img
+              className="d-block"
+              style={{
+                width: "100%",
+                height: "600px",
+                objectFit: "cover",
+                boxShadow:
+                  "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
+              }}
+              src="\images\backgroud\member.png"
+              alt="member"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block" style={{ width: '100%', height: '600px', objectFit: 'cover', boxShadow: 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px' }} src="\images\tuyenthanhvien.png" alt="tuyen thanh vien" />
+            <img
+              className="d-block"
+              style={{
+                width: "100%",
+                height: "600px",
+                objectFit: "cover",
+                boxShadow:
+                  "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
+              }}
+              src="\images\backgroud\tuyenthanhvien.png"
+              alt="tuyen thanh vien"
+            />
           </Carousel.Item>
         </Carousel>
       </div>
@@ -74,31 +119,65 @@ export default function Home() {
         <Container>
           <Row className="mb-3 mt-3">
             <div className="list-logo justify-content-center d-flex flex-wrap">
-              <img className="me-2" src="\images\logo\logoHUSC.png" style={{ width: '50px', height: '50px' }} alt="logoHUSC" />
-              <img className="me-2 ms-1" src="\images\logo\logoHoiSV.png" style={{ width: '50px', height: '50px' }} alt="logoHoiSV" />
-              <img className="me-1 ms-2" src="\images\logo\logoKhoaCNTT.png" style={{ width: '50px', height: '50px' }} alt="logoKhoaCNTT" />
-              <img className="ms-2" src="\images\logo\logoSPIT.png" style={{ width: '50px', height: '50px' }} alt="logoSPIT" />
+              <img
+                className="me-2"
+                src="\images\logo\logoHUSC.png"
+                style={{ width: "50px", height: "50px" }}
+                alt="logoHUSC"
+              />
+              <img
+                className="me-2 ms-1"
+                src="\images\logo\logoHoiSV.png"
+                style={{ width: "50px", height: "50px" }}
+                alt="logoHoiSV"
+              />
+              <img
+                className="me-1 ms-2"
+                src="\images\logo\logoKhoaCNTT.png"
+                style={{ width: "50px", height: "50px" }}
+                alt="logoKhoaCNTT"
+              />
+              <img
+                className="ms-2"
+                src="\images\logo\logoSPIT.png"
+                style={{ width: "50px", height: "50px" }}
+                alt="logoSPIT"
+              />
             </div>
           </Row>
           <Row className="mt-4">
             <Col xs={12} md={6}>
               <div className="content w-75">
-                <h2 className="mb-4 text-center" style={{ color: '#03045E', fontSize: '24px' }}><b>GIỚI THIỆU</b></h2>
-                <p className="mb-4"><b>CLB Hỗ trợ Lập trình</b> (Support
-                  Programming Information Technology, tên
-                  viết tắt là SPIT) Trường Đại học Khoa học
-                  Huế, được thành lập vào ngày 19/08/2023. </p>
-                <p className="mb-4">CLB được thành lập với mục đích hỗ trợ
-                  sinh viên học lập trình, tạo môi trường giao
-                  lưu trao đổi kinh nghiệm học tập, nghiên
-                  cứu, tiếp cận các chủ đề công nghệ mới.</p>
-                <p className="mb-4"><b>Slogan của CLB:</b> “SPIT here to fix”</p>
+                <h2
+                  className="mb-4 text-center"
+                  style={{ color: "#03045E", fontSize: "24px" }}
+                >
+                  <b>GIỚI THIỆU</b>
+                </h2>
+                <p className="mb-4">
+                  <b>CLB Hỗ trợ Lập trình</b> (Support Programming Information
+                  Technology, tên viết tắt là SPIT) Trường Đại học Khoa học Huế,
+                  được thành lập vào ngày 19/08/2023.{" "}
+                </p>
+                <p className="mb-4">
+                  CLB được thành lập với mục đích hỗ trợ sinh viên học lập
+                  trình, tạo môi trường giao lưu trao đổi kinh nghiệm học tập,
+                  nghiên cứu, tiếp cận các chủ đề công nghệ mới.
+                </p>
+                <p className="mb-4">
+                  <b>Slogan của CLB:</b> “SPIT here to fix”
+                </p>
                 <Button className="mt-4 button-34">Tìm hiểu thêm</Button>
               </div>
             </Col>
             <Col xs={12} md={6}>
               <div className="pic">
-                <img className="d-block" style={{ width: '100%', height: '400px', objectFit: 'cover' }} src="\images\sec2.jpg" alt="sec2" />
+                <img
+                  className="d-block"
+                  style={{ width: "100%", height: "400px", objectFit: "cover" }}
+                  src="\images\backgroud\sec2.jpg"
+                  alt="sec2"
+                />
               </div>
             </Col>
           </Row>
@@ -117,7 +196,15 @@ export default function Home() {
               <div className="flip-card mt-4">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
-                    <img src="\images\sec2.png" alt="sec2" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img
+                      src="\images\sec2.png"
+                      alt="sec2"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
                   </div>
                   <div className="flip-card-back">
                     <h1>Some Text</h1>
@@ -130,7 +217,15 @@ export default function Home() {
               <div className="flip-card mt-4">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
-                    <img src="\images\sec2.png" alt="sec2" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img
+                      src="\images\sec2.png"
+                      alt="sec2"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
                   </div>
                   <div className="flip-card-back">
                     <h1>Some Text</h1>
@@ -143,7 +238,15 @@ export default function Home() {
               <div className="flip-card mt-4">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
-                    <img src="\images\sec2.png" alt="sec2" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img
+                      src="\images\sec2.png"
+                      alt="sec2"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
                   </div>
                   <div className="flip-card-back">
                     <h1>Some Text</h1>
@@ -162,12 +265,25 @@ export default function Home() {
       </div>
       <div id="sec-6" className="faq">
         <Container>
-          <h1 className="mt-4 mb-4 text-center" style={{ fontWeight: 'bold', fontSize: '24px', color: '#03045E' }}>Các câu hỏi thường gặp</h1>
+          <h1
+            className="mt-4 mb-4 text-center"
+            style={{ fontWeight: "bold", fontSize: "24px", color: "#03045E" }}
+          >
+            Các câu hỏi thường gặp
+          </h1>
           <Accordion className="w-75 mx-auto">
             {faqs.map((faq, index) => (
-              <Accordion.Item key={index} eventKey={index.toString()} style={{ borderRadius: '10px' }}>
-                <Accordion.Header style={{ fontWeight: 'bold' }}>{faq.question}</Accordion.Header>
-                <Accordion.Body dangerouslySetInnerHTML={{ __html: faq.answer }}></Accordion.Body>
+              <Accordion.Item
+                key={index}
+                eventKey={index.toString()}
+                style={{ borderRadius: "10px" }}
+              >
+                <Accordion.Header style={{ fontWeight: "bold" }}>
+                  {faq.question}
+                </Accordion.Header>
+                <Accordion.Body
+                  dangerouslySetInnerHTML={{ __html: faq.answer }}
+                ></Accordion.Body>
               </Accordion.Item>
             ))}
           </Accordion>

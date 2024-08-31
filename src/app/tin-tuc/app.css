@@ -1,0 +1,48 @@
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 100vh !important;
+    /* Đảm bảo toàn bộ carousel bao phủ màn hình */
+}
+
+.carousel-item img {
+    opacity: 75%;
+    object-fit: cover;
+    /* Đảm bảo hình ảnh bao phủ đầy đủ không gian */
+}
+
+.text-center-image {
+    font-size: 100px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    top: 50%;
+    font-weight: bold;
+    /* left: 50%; */
+}
+
+.name-posts {
+    width: 25%;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .text-center-image {
+        font-size: 30px;
+        top: 60%;
+    }
+
+    .name-posts {
+        width: 100%;
+    }
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
