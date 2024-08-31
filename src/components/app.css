@@ -64,3 +64,9 @@
     }
 }
 
+@media (min-width: 768px) {
+    .btn-about {
+        margin-right: 0 !important;
+        margin-left: auto !important;
+    }
+}

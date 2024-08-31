@@ -8,8 +8,8 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 // Import Bootstrap icon
 import "bootstrap-icons/font/bootstrap-icons.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Montserrat } from "next/font/google";
+const inter = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "SPIT",
