@@ -9,47 +9,47 @@ import { useState } from "react";
 export default function Home() {
   const [faqs, setFaqs] = useState([
     {
-      question: "Vì sao clb được thành lập?",
+      question: "Hình thức tuyển thành viên CLB?",
       answer:
-        "<p>CLB Hỗ trợ Lập trình ra đời với mục đích tạo sân chơi học thuật, nghiên cứu, đam mê lập trình. Hỗ trợ hoạt động học tập của các bạn sinh viên, phát huy khả năng nhằm nâng cao chất lượng học tập, tạo môi trường trao đổi học tập và rèn luyện các kỹ năng ứng dụng trong ngành học.</p>",
+        `<p>Quá trình tuyển thành viên CLB Hỗ trợ Lập trình sẽ có 2 vòng: vòng điền form và vòng phỏng vấn. Thông tin chi tiết về từng vòng sẽ được đăng tải trên fanpage của CLB, bạn vui lòng theo dõi để nhận được những thông tin cần thiết nhé.</p>`,
     },
     {
       question: "Nhận quyền lợi gì khi tham gia clb?",
-      answer: `<p>CLB Hỗ trợ Lập trình là nơi giúp bạn phát triển những điều trên và còn hơn thế nữa 😁, Khi trở thành thành viên của CLB bạn sẽ nhận được 5Đ:</p>
+      answer: `<p>Khi tham gia CLB bạn sẽ được:</p>
               <ul>
-                <li>🔥 Được tham gia các hoạt động chung của CLB (ngoại khóa, trainning, các buổi seminar của khoa CNTT)</li>
-                <li>🔥 Được hỗ trợ trong khâu chuyên môn, học thuật bởi quý thầy cô dày dặn kinh nghiệm của khoa Công nghệ thông tin</li>
-                <li>🔥 Được hỗ trợ kinh phí theo tiết hỗ trợ thực hành tại phòng máy (Nói rõ khi phỏng vấn)</li>
-                <li>🔥 Được giao lưu gặp gỡ các anh chị có thành tích học tập khủng và đạt được các giải thưởng lập trình từ cấp trường cho đến cấp quốc gia và hơn thế nữa </li>
-                <li>🔥 Được đề nghị khen thưởng khi có thành tích xuất sắc.</li>
+                <li> - Tham gia các cuộc thi lập trình của CLB, của khoa và nhiều cuộc thi lớn khác.</li>
+                <li> - Gặp gỡ và giao lưu với những thành viên có bề dày thành tích khủng.</li>
+                <li> - Được đề nghị khen thưởng khi có thành tích xuất sắc.</li>
+                <li> - Đặc biệt, thông qua hoạt động trợ giảng cho hai học phần Nhập môn lập trình, Kỹ thuật lập trình, bạn sẽ được nhận kinh phí hỗ trợ tương ứng với từng tiết học.</li>
               </ul>`,
     },
     {
-      question: "Hình thức tuyển thành viên?",
+      question: "Học trường khác có thể tham gia CLB không?",
       answer:
-        "<p>Khi tuyển thành viên thí sinh sẽ qua 2 vòng, vòng đầu là làm bài test và vòng thứ 2 là phỏng vấn</p>",
+        `<p>Rất tiếc, hiện tại CLB Hỗ trợ Lập trình chỉ tuyển các bạn sinh viên trong Trường Đại học Khoa học, Đại học Huế :(.</p>`,
     },
     {
-      question: "Học ngành khác có thể vào clb không?",
-      answer: "<p>Được, nhưng mà phải đáng ứng đúng với yêu cầu của clb </p>",
+      question: " Nếu chưa có kiến thức về lập trình có thể tham gia CLB không?",
+      answer: `<p>Vì CLB hoạt động chính trên cơ sở các thành viên của CLB sẽ hỗ trợ các bạn sinh viên trong 2 học phần Nhập môn lập trình và Kỹ thuật lập trình, nên bạn sẽ cần có một nền tảng kiến thức nhất định về lập trình để có thể tham gia CLB nhé. </p>`,
     },
     {
-      question: "Vào câu lạc bộ có được tranning, hay dạy thêm gì không?",
-      answer: "<p>Khi vào clb sẽ được tranning và tham gia các kì thi</p>",
+      question: "Thời gian sinh hoạt của CLB là khi nào?",
+      answer: `<p>CLB sinh hoạt vào 16h00 thứ 6 hàng tuần (trong các học kỳ chính, trừ các ngày đặc biệt và các tuần thi kết thúc học phần) tại phòng E202.</p>`,
     },
     {
-      question: "Nếu chưa có kiến thức có thể tham gia clb không?",
+      question: " Làm thế nào để nhận được sự hỗ trợ về các bài tập lập trình khi không thể đến phòng tự học?",
       answer:
-        "<p>Yêu cầu bạn phải có kiến thức căn bản vững vàng, còn kiến thức nâng cao có thể học sau</p>",
+        `<p>Bạn có thể gửi câu hỏi qua fanpage của CLB để nhận được phản hồi từ đội ngũ thành viên nhé. </p>`,
     },
     {
-      question: "Tham gia clb học thuật có hoạt động gì khác không?",
+      question: "Làm thế nào để liên hệ với CLB?",
       answer:
-        "<p>Khi tham gia clb còn nhiều hoạt động khác ngoài việc hỗ trợ lập trình như: vui chơi, tranning , kì thi,..</p>",
-    },
-    {
-      question: "Có được tham gia nhiều clb không?",
-      answer: "<p>Điều đó tuỳ vào các bạn</p>",
+        `<p> Bạn có thể liên hệ với CLB qua các phương thức sau: </p>
+        <ul>
+            <li> - Fanpage: https://facebook.com/clbhtlt.ithusc</li>
+            <li> - Email: clbhtlt.ithusc@gmail.com</li>
+            <li> - Hotline: 070 229 1317 - 0934 766 830 - 0934 094 936</li>
+        </ul>`,
     },
   ]);
 
@@ -276,7 +276,7 @@ export default function Home() {
             {faqs.map((faq, index) => (
               <Accordion.Item key={index} eventKey={index.toString()}>
                 <Accordion.Header style={{ fontWeight: 'bold' }}>{faq.question}</Accordion.Header>
-                <Accordion.Body dangerouslySetInnerHTML={{ __html: faq.answer }}></Accordion.Body>
+                <Accordion.Body className="mx-1" dangerouslySetInnerHTML={{ __html: faq.answer }}></Accordion.Body>
               </Accordion.Item>
             ))}
           </Accordion>
