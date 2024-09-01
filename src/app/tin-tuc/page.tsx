@@ -5,83 +5,15 @@ import "./app.css";
 import News from "../../components/News";
 import InfoNews from "../../data/News/dataNews.json";
 import Link from "next/link";
+import ItemCarousel from "@/components/Carousel/ItemCarousel";
 const TinTucPage = () => {
+  const srcImage = ["/images/backgroud/seminar.jpg", "/images/backgroud/hopdinhki.png", "/images/backgroud/picnic-2024.jpg", "/images/backgroud/member.png", "/images/backgroud/tuyenthanhvien.png"];
   return (
     <div>
       {/* Setup Carousel */}
-      <div className="carousel-container">
-        <Carousel controls={true} indicators={true} className="h-100">
-          <Carousel.Item className="h-100">
-            <div className="overlay"></div>
-            <img
-              className="d-block w-100 h-100"
-              style={{
-                // objectFit: "cover",
-                boxShadow:
-                  "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
-              }}
-              src="/images/backgroud/seminar.jpg"
-              alt="tuyen thanh vien"
-            />
-          </Carousel.Item>
-          <Carousel.Item className="h-100">
-            <div className="overlay"></div>
-            <img
-              className="d-block w-100 h-100"
-              style={{
-                // objectFit: "cover",
-                boxShadow:
-                  "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
-              }}
-              src="/images/backgroud/hopdinhki.png"
-              alt="tuyen thanh vien"
-            />
-          </Carousel.Item>
-          <Carousel.Item className="h-100">
-            <div className="overlay"></div>
-            <img
-              className="d-block w-100 h-100"
-              style={{
-                // objectFit: "cover",
-                boxShadow:
-                  "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
-              }}
-              src="/images/backgroud/picnic-2024.jpg"
-              alt="tuyen thanh vien"
-            />
-          </Carousel.Item>
-          <Carousel.Item className="h-100">
-            <div className="overlay"></div>
-            <img
-              className="d-block w-100 h-100"
-              style={{
-                // objectFit: "cover",
-                boxShadow:
-                  "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
-              }}
-              src="/images/backgroud/tuyenthanhvien.png"
-              alt="tuyen thanh vien"
-            />
-          </Carousel.Item>
-          <Carousel.Item className="h-100">
-            <div className="overlay"></div>
-            <img
-              className="d-block w-100 h-100"
-              style={{
-                // objectFit: "cover",
-                boxShadow:
-                  "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
-              }}
-              src="/images/backgroud/member.png"
-              alt="tuyen thanh vien"
-            />
-          </Carousel.Item>
-        </Carousel>
 
-        <h1 className="carousel-caption z-1 text-center-image">
-          Tin tức và thông báo
-        </h1>
-      </div>
+      <ItemCarousel name="Tin tức và Thông báo" srcImage={srcImage}></ItemCarousel>
+
 
       {/* Card */}
       <Container

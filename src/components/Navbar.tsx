@@ -79,7 +79,7 @@ const index = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
 
-                <Nav.Link className="ms-3" href="#link">
+                <Nav.Link className="ms-3" href="/hoat-dong">
                   Hoạt động
                 </Nav.Link>
                 <Nav.Link className="ms-3" href="/tin-tuc">
