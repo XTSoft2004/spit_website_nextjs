@@ -4,9 +4,13 @@
 import { Container, Carousel, Row, Col, Accordion, Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "CLB Hỗ trợ Lập trình - SPIT";
+  }, []);
+
   const [faqs, setFaqs] = useState([
     {
       question: "Hình thức tuyển thành viên CLB?",
@@ -149,58 +153,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* <Row>
-            <Col xs={12} md={4}>
-              <div className="flip-card mt-4">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img src="\images\background\sec2.jpg" alt="sec2" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                  </div>
-                  <div className="flip-card-back" style={{color: '#03045E'}}>
-                    <h1>SEMINAR</h1>
-                    <div className="content-card">
-                      <p>Thông tin về các buổi seminar sẽ được cập nhật thường xuyên trên trang web của CLB.</p>
-                      <p>Các buổi seminar sẽ giới thiệu về các công nghệ mới, các dự án thực tế, và chia sẻ kinh nghiệm từ các chuyên gia trong ngành.</p>
-                      <p>Đây là cơ hội tuyệt vời để mở rộng kiến thức và kết nối với cộng đồng lập trình viên.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col xs={12} md={4}>
-              <div className="flip-card mt-4">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img src="\images\background\sec2.jpg" alt="sec2" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                  </div>
-                  <div className="flip-card-back" style={{color: '#03045E'}}>
-                    <h1>HỖ TRỢ</h1>
-                    <div className="content-card">
-                      <p>Hỗ trợ về mặt kỹ thuật cho các cuộc thi lập trình cấp khoa, cấp trường và hơn thế nữa.</p>
-                      <p>Hỗ trợ giảng viên và các bạn sinh viên trong các học phần Nhập môn lập trình và Kỹ thuật lập trình.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col xs={12} md={4}>
-              <div className="flip-card mt-4">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img src="\images\background\sec2.jpg" alt="sec2" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                  </div>
-                  <div className="flip-card-back" style={{color: '#03045E'}}>
-                    <h1>PHÒNG TỰ HỌC</h1>
-                    <div className="content-card">
-                      <p>Vào các buổi tự học, sẽ có các thành viên CLB trực tại phòng để hướng dẫn, giải đáp thắc mắc về các môn lập trình cho các bạn sinh viên ngoài giờ lên lớp.</p>
-                      <p>Thời gian: 14:00 - 17:30 thứ 3 và 14:00 - 16:00 thứ 6 hàng tuần.</p>
-                      <p>Địa điểm: Phòng E202 - Lab doanh nghiệp khoa CNTT.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-          </Row> */}
           <Button className="mt-4 button-34 mx-auto d-block">Tìm hiểu thêm</Button>
         </Container>
       </div>

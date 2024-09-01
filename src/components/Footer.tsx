@@ -53,7 +53,7 @@ const Footer = () => (
             <h4>CÁC LIÊN KẾT HỮU ÍCH</h4>
             <div className="mt-3">
               <div>
-                <a href="/">
+                <a href="/tuyen-thanh-vien">
                   <i className="bi bi-chevron-right"></i>
                   Tuyển thành viên CLB
                 </a>
@@ -65,7 +65,7 @@ const Footer = () => (
                 </a>
               </div>
               <div>
-                <a href="/">
+                <a href="/tai-lieu">
                   <i className="bi bi-chevron-right"></i>
                   Tài liệu học tập
                 </a>

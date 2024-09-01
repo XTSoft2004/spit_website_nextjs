@@ -86,7 +86,7 @@ const index = () => {
                   Tuyển Thành Viên
                 </Nav.Link>
               </Nav>
-              <Button className="button-34" href="/tuyen-thanh-vien#sec-reg-form">Tham gia ngay</Button>
+              <Button className="button-34" href="/tuyen-thanh-vien#reg-form">Tham gia ngay</Button>
             </Nav>
           </Navbar.Collapse>
         </Container>

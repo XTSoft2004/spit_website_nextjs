@@ -17,7 +17,7 @@
 
 .text-center-image-1 {
     font-size: 100px;
-    margin-bottom: 500px;
+    margin-bottom: 350px;
     font-weight: bold;
     text-transform: uppercase;
     z-index: 999;
@@ -25,19 +25,23 @@
 
 .text-center-image-2 {
     font-size: 100px;
-    margin-bottom: 400px;
+    margin-bottom: 250px;
     z-index: 999;
 }
 
 @media (max-width: 1550px) {
     .text-center-image-1 {
-        font-size: 50px;
-        margin-bottom: 130px;
+        font-size: 70px;
+        margin-bottom: 350px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 999;
     }
 
     .text-center-image-2 {
         font-size: 50px;
-        margin-bottom: 80px;
+        margin-bottom: 250px;
+        z-index: 999;
     }
 }
 
