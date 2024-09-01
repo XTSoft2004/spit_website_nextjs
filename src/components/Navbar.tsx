@@ -44,7 +44,6 @@ const index = () => {
           // color: "#fff",
           background: "rgba(255, 255, 255, 1)",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-          position: "fixed",
         }}
       >
         <Container>
@@ -90,7 +89,13 @@ const index = () => {
                   Tuyển thành viên
                 </Nav.Link>
               </Nav>
-              <Button className="button-34">Tham gia ngay</Button>
+              {/* <Button className="button-34">Tham gia ngay</Button> */}
+              <button className="button">
+                Tham gia ngay
+                <div className="hoverEffect">
+                  <div></div>
+                </div>
+              </button>
             </Nav>
           </Navbar.Collapse>
         </Container>
