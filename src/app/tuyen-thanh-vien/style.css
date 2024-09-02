@@ -132,3 +132,28 @@ button.facebook-button .svg-wrapper {
 button.facebook-button:hover svg {
     transform: rotate(90deg);
 }
+
+.title-banner {
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+@media (max-width: 1050px) {
+    .title-banner {
+        margin-top: 65px;
+        font-size: 20px;
+    }
+
+    .title-date {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .item-tuyenthanhvien {
+        display: flex;
+        flex-direction: row;
+    }
+}
