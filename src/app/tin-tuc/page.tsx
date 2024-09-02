@@ -88,7 +88,7 @@ const TinTucPage = () => {
       </Container>
 
       {/* Các bài viết */}
-      <div className="mt-5">
+      <div className="my-5">
         <Container>
           {/* Các hoạt động */}
           <div
