@@ -30,3 +30,10 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
+@media (max-width: 768px) {
+    .text-center-image {
+        font-size: 30px;
+        top: 60%;
+    }
+}

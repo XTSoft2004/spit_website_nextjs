@@ -55,7 +55,7 @@ const index = () => {
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
-            <Navbar.Brand className="ms-2 mt-1 fw-bold">
+            <Navbar.Brand className="d-none d-sm-block ms-2 mt-1 fw-bold">
               CLB Hỗ trợ Lập trình
             </Navbar.Brand>
           </Navbar.Brand>
@@ -66,15 +66,18 @@ const index = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="d-none d-lg-flex justify-content-between w-100 align-items-center">
               <Nav className="mx-auto">
+                <Nav.Link className="ms-3 me-2" href="/">
+                  <i className="bi bi-house-door-fill"></i>
+                </Nav.Link>
                 {/* DropDown thông tin giới thiệu */}
                 <NavDropdown title="Giới thiệu" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">
+                  <NavDropdown.Item href="/gioi-thieu/#tong-quang">
                     Tổng quan
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
+                  <NavDropdown.Item href="/gioi-thieu.#muc-tieu">
                     Mục tiêu
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
+                  <NavDropdown.Item href="/gioi-thieu/#thanh-vien">
                     Thành viên
                   </NavDropdown.Item>
                 </NavDropdown>

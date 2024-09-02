@@ -9,7 +9,7 @@ const CardRole = ({ namerole, description, number }: CardRoleProps) => {
   const cntText = description.length;
   return (
     <Card
-      className="mb-3"
+      className="mb-3 item-broad"
       style={{
         width: "18rem",
         height: "25rem",

@@ -27,9 +27,12 @@ const HoatDongPage = () => {
                                 <p className="name-section">Trợ giảng</p>
                                 <div className="gradian-div"></div>
                             </Row>
-                            <Row className="fs-4 mb-3">Các thành viên CLB sẽ tham gia hỗ trợ sinh viên trong các tiết học thực hành của học phần Nhập môn lập trình và Kỹ thuật lập trình, giúp cho các bạn sinh viên có thể tiếp cận với các bài tập lập trình một cách dễ dàng hơn.</Row>
+                            <div className="fs-4 mb-3">
+                                Các thành viên CLB sẽ tham gia hỗ trợ sinh viên trong các tiết học thực hành của học phần
+                                <span className="fw-bold"> Nhập môn lập trình và Kỹ thuật lập trình</span>
+                                , giúp cho các bạn sinh viên có thể tiếp cận với các bài tập lập trình một cách dễ dàng hơn.</div>
                         </Col>
-                        <Col xs={12} lg={6}>
+                        <Col xs={12} lg={5} className="item-image-right">
                             <Image
                                 className="mx-auto rounded"
                                 src='/images/pages/hoat-dong/tro-giang.jpg'
@@ -40,9 +43,9 @@ const HoatDongPage = () => {
                             >
                             </Image>
                             <p className="mt-2 text-center">
-                                Seminar “Knowledge, Skills and Applications”
+                                Trợ giảng môn nhập môn lập trình
                                 <br />
-                                tổ chức vào tháng 3 năm 2024
+                                cho các em K47 mới vào năm học
                             </p>
                         </Col>
                     </Row>
@@ -61,7 +64,7 @@ const HoatDongPage = () => {
             }}>
                 <Container className="pt-2 pb-2">
                     <Row>
-                        <Col xs={12} lg={5} className="d-flex align-items-center">
+                        <Col xs={12} lg={6} className="d-flex align-items-center">
                             <Carousel>
                                 <Carousel.Item>
                                     <Image
@@ -89,7 +92,7 @@ const HoatDongPage = () => {
 
 
                         </Col>
-                        <Col xs={12} lg={6} className="ms-2 mt-2">
+                        <Col xs={12} lg={5} className="mt-2 item-content-left">
                             <Row className="mb-3 fw-bold fs-1 w-100">
                                 <p className="name-section">Phòng tự học</p>
                                 <div className="gradian-div"></div>
@@ -123,9 +126,10 @@ const HoatDongPage = () => {
                                 <p className="name-section">Seminar</p>
                                 <div className="gradian-div"></div>
                             </Row>
-                            <Row className="fs-4 mb-3">CLB thường tổ chức các buổi seminar có diễn giả là quý thầy cô, các khách mời có nhiều kinh nghiệm trong ngành công nghệ thông tin. Qua đó giúp các thành viên tham gia được cùng thảo luận, từ đó thúc đẩy tinh thần học tập và nâng cao kỹ năng lập trình.</Row>
+                            <div className="fs-4 mb-3">
+                                CLB thường tổ chức các buổi seminar có diễn giả là quý thầy cô, các khách mời có nhiều kinh nghiệm trong ngành công nghệ thông tin. Qua đó giúp các thành viên tham gia được cùng thảo luận, từ đó thúc đẩy tinh thần học tập và nâng cao kỹ năng lập trình.</div>
                         </Col>
-                        <Col xs={12} lg={6}>
+                        <Col xs={12} lg={5} className="item-image-right">
                             <Image
                                 className="mx-auto rounded"
                                 src='/images/pages/hoat-dong/seminar.jpg'
@@ -156,7 +160,7 @@ const HoatDongPage = () => {
             }}>
                 <Container className="pt-2 pb-2">
                     <Row>
-                        <Col xs={12} lg={5} className="d-flex align-items-center">
+                        <Col xs={12} lg={6} className="d-flex align-items-center">
                             <Carousel>
                                 <Carousel.Item>
                                     <Image
@@ -196,13 +200,13 @@ const HoatDongPage = () => {
                                 </Carousel.Item>
                             </Carousel>
                         </Col>
-                        <Col xs={12} lg={6} className="ms-2">
+                        <Col xs={12} lg={5} className="item-content-left">
                             <Row className="mb-3 fw-bold fs-1 w-100">
                                 <p className="name-section">SPIT Contest</p>
                                 <div className="gradian-div"></div>
                             </Row>
                             <div className="fs-4 mb-3">
-                                SPIT Contest là chuỗi contest lập trình thi đấu do CLB tổ chức. Đội ngũ ra đề cho SPIT Contest là những thành viên thuộc Ban Chuyên môn của CLB đã đạt được nhiều giải thưởng tại các kỳ thi cấp khu vực, quốc gia và quốc tế. Đây là một sân chơi dành cho các bạn học sinh, sinh viên yêu thích thuật toán và coding.
+                                <span className="fw-bold">SPIT Contest</span> là chuỗi contest lập trình thi đấu do CLB tổ chức. Đội ngũ ra đề cho SPIT Contest là những thành viên thuộc Ban Chuyên môn của CLB đã đạt được nhiều giải thưởng tại các kỳ thi cấp khu vực, quốc gia và quốc tế. Đây là một sân chơi dành cho các bạn học sinh, sinh viên yêu thích thuật toán và coding.
                                 <br />
                                 <span className="fw-bold">- Hình thức thi:</span> online trên website coder.husc.edu.vn
                                 <br />
