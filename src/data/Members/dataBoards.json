@@ -1,0 +1,22 @@
+[
+    {
+        "id": "bcn",
+        "name": "Ban Chủ nhiệm",
+        "description": "Là những người tiên phong trong việc tổ chức các hoạt động, hỗ trợ và kết nối các thành viên nhằm đưa CLB Hỗ trợ Lập trình ngày một phát triển."
+    },
+    {
+        "id": "bcm",
+        "name": "Ban Chuyên môn",
+        "description": ""
+    },
+    {
+        "id": "btt",
+        "name": "Ban Truyền thông",
+        "description": "Là đội ngũ năng động và sáng tạo, chịu trách nhiệm lan tỏa hình ảnh của câu lạc bộ, xây dựng nội dung hấp dẫn, góp phần tạo nên một cộng đồng học tập sôi nổi và tích cực."
+    },
+    {
+        "id": "btv",
+        "name": "Thành viên",
+        "description": ""
+    }
+]

@@ -1,0 +1,640 @@
+[
+  {
+    "first_name": "Võ Văn",
+    "last_name": "Thành",
+    "birth_date": "09/08/2003",
+    "phone_number": "0934094936",
+    "email_address": "21t1020088@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K45F",
+    "position": [
+      {
+        "id": "bcn",
+        "name": "Chủ nhiệm",
+        "year": "2023"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Võ Văn Thành Meme.webp"
+  },
+  {
+    "first_name": "Lê Sỹ",
+    "last_name": "Toàn",
+    "birth_date": "09/08/2003",
+    "phone_number": "0934094936",
+    "email_address": "21t1020088@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K45F",
+    "position": [
+      {
+        "id": "bcn",
+        "name": "Phó chủ nhiệm",
+        "year": "2023"
+      },
+      {
+        "id": "bcm",
+        "name": "Trưởng ban",
+        "year": "2023"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Lê Sỹ Toàn.webp"
+  },
+  {
+    "first_name": "Ngô Văn",
+    "last_name": "Hải",
+    "birth_date": "09/09/2003",
+    "phone_number": "0934766830",
+    "email_address": "21t1020340@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K45F",
+    "position": [
+      {
+        "id": "bcn",
+        "name": "Phó chủ nhiệm",
+        "year": "2023"
+      },
+      {
+        "id": "bcm",
+        "name": "Phó ban",
+        "year": "2023"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Ngô Văn Hải.webp"
+  },
+  {
+    "first_name": "Hoàng Bảo",
+    "last_name": "Khánh",
+    "birth_date": "15/11/2004",
+    "phone_number": "0911544246",
+    "email_address": "22t1020637@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K46E",
+    "position": [
+      {
+        "id": "bcn",
+        "name": "Phó chủ nhiệm",
+        "year": "2023"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Hoàng Bảo Khánh.webp"
+  },
+  {
+    "first_name": "Hoàng Hạnh Diệu",
+    "last_name": "Anh",
+    "birth_date": "21/12/2003",
+    "phone_number": "0964349631",
+    "email_address": "21t1020228@husc.edu.vn",
+    "gender": "Nữ",
+    "class": "CNTT K45E",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Hoàng Hạnh Diệu Anh.webp"
+  },
+  {
+    "first_name": "Đoàn Ngọc Trân",
+    "last_name": "Châu",
+    "birth_date": "17/11/2005",
+    "phone_number": "0914738704",
+    "email_address": "23t1020058@husc.edu.vn",
+    "gender": "Nữ",
+    "class": "CNTT K47A",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2024"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Đoàn Ngọc Trân Châu.webp"
+  },
+  {
+    "first_name": "Lê Quang",
+    "last_name": "Đạt",
+    "birth_date": "01/11/2004",
+    "phone_number": "0931961280",
+    "email_address": "22t1020065@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K46A",
+    "position": [
+      {
+        "id": "bcm",
+        "name": "Thành viên",
+        "year": "2023"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2024"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Lê Quang Đạt.webp"
+  },
+  {
+    "first_name": "Nguyễn Quốc",
+    "last_name": "Đạt",
+    "birth_date": "11/01/2005",
+    "phone_number": "0981635875",
+    "email_address": "23t1080004@husc.edu.vn",
+    "gender": "Nam",
+    "class": "KTPM K47B",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2024"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Nguyễn Quốc Đạt.webp"
+  },
+  {
+    "first_name": "Lý Ngọc",
+    "last_name": "Đế",
+    "birth_date": "06/08/2002",
+    "phone_number": "0817021069",
+    "email_address": "22t1080053@husc.edu.vn",
+    "gender": "Nam",
+    "class": "KTPM K46A",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Lý Ngọc Đế.webp"
+  },
+  {
+    "first_name": "Trương",
+    "last_name": "Đoàn",
+    "birth_date": "20/12/2003",
+    "phone_number": "0337768233",
+    "email_address": "21t1020306@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K45H",
+    "position": [
+      {
+        "id": "bcm",
+        "name": "Thành viên",
+        "year": "2023"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Trương Đoàn.webp"
+  },
+  {
+    "first_name": "Phạm Hoàng",
+    "last_name": "Hải",
+    "birth_date": "18/11/2005",
+    "phone_number": "0362447914",
+    "email_address": "23t1020148@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K47J",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Phạm Hoàng Hải.webp"
+  },
+  {
+    "first_name": "Hoàng",
+    "last_name": "Hào",
+    "birth_date": "01/06/2003",
+    "phone_number": "0378885357",
+    "email_address": "21t1020347@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K45D",
+    "position": [
+      {
+        "id": "bcm",
+        "name": "Thành viên",
+        "year": "2023"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Hoàng Hào.webp"
+  },
+  {
+    "first_name": "Lê Nguyễn Gia",
+    "last_name": "Hân",
+    "birth_date": "06/01/2004",
+    "phone_number": "0886109304",
+    "email_address": "22t1020102@husc.edu.vn",
+    "gender": "Nữ",
+    "class": "CNTT K46E",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      },
+      {
+        "id": "btt",
+        "name": "Trưởng ban",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Lê Nguyễn Gia Hân.webp"
+  },
+  {
+    "first_name": "Nguyễn Ngọc Tố",
+    "last_name": "Linh",
+    "birth_date": "16/11/2005",
+    "phone_number": "0775571037",
+    "email_address": "23t1020300@husc.edu.vn",
+    "gender": "Nữ",
+    "class": "CNTT K47A",
+    "position": [
+      {
+        "id": "bcm",
+        "name": "Thành viên",
+        "year": "2024"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Nguyễn Ngọc Tố Linh.webp"
+  },
+  {
+    "first_name": "Trần Thị Khánh",
+    "last_name": "Linh",
+    "birth_date": "17/09/2005",
+    "phone_number": "0842014164",
+    "email_address": "23t1020302@husc.edu.vn",
+    "gender": "Nữ",
+    "class": "CNTT K47A",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2024"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Trần Thị Khánh Linh.webp"
+  },
+  {
+    "first_name": "Nguyễn Khánh",
+    "last_name": "Linh",
+    "birth_date": "12/02/2004",
+    "phone_number": "0382928102",
+    "email_address": "22t1020201@husc.edu.vn",
+    "gender": "Nữ",
+    "class": "CNTT K46E",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2024"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Nguyễn Khánh Linh.webp"
+  },
+  {
+    "first_name": "Lê Đức",
+    "last_name": "Long",
+    "birth_date": "20/09/2004",
+    "phone_number": "0358081370",
+    "email_address": "22t1020215@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K46K",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2024"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Lê Đức Long.webp"
+  },
+  {
+    "first_name": "Nguyễn Thị Hằng",
+    "last_name": "My",
+    "birth_date": "25/03/2004",
+    "phone_number": "0796504801",
+    "email_address": "23t1020339@husc.edu.vn",
+    "gender": "Nữ",
+    "class": "CNTT K47J",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2024"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Nguyễn Thị Hằng My.webp"
+  },
+  {
+    "first_name": "Nguyễn Đình Khánh",
+    "last_name": "Nguyên",
+    "birth_date": "14/11/2005",
+    "phone_number": "0332961625",
+    "email_address": "23t1080051@husc.edu.vn",
+    "gender": "Nam",
+    "class": "KTPM K47B",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2024"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Nguyễn Đình Khánh Nguyên.webp"
+  },
+  {
+    "first_name": "Lê Phi",
+    "last_name": "Phát",
+    "birth_date": "24/02/2003",
+    "phone_number": "0835959692",
+    "email_address": "21t1080027@husc.edu.vn",
+    "gender": "Nam",
+    "class": "KTPM K45",
+    "position": [
+      {
+        "id": "bcm",
+        "name": "Thành viên",
+        "year": "2023"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Lê Phi Phát.webp"
+  },
+  {
+    "first_name": "Nguyễn Thanh",
+    "last_name": "Phong",
+    "birth_date": "19/06/2004",
+    "phone_number": "0868170633",
+    "email_address": "22t1020316@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K46E",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Nguyễn Thanh Phong.webp"
+  },
+  {
+    "first_name": "Trương Đình",
+    "last_name": "Phúc",
+    "birth_date": "24/04/2005",
+    "phone_number": "0339592404",
+    "email_address": "23t1020395@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K47D",
+    "position": [
+      {
+        "id": "bcm",
+        "name": "Thành viên",
+        "year": "2024"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2024"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Trương Đình Phúc.webp"
+  },
+  {
+    "first_name": "Ngô Lê Nam",
+    "last_name": "Quyền",
+    "birth_date": "18/12/2005",
+    "phone_number": "0384805215",
+    "email_address": "23t1020436@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K47H",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2024"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Ngô Lê Nam Quyền.webp"
+  },
+  {
+    "first_name": "Bạch Thị Thiện",
+    "last_name": "Thanh",
+    "birth_date": "12/10/2004",
+    "phone_number": "0332316881",
+    "email_address": "22t1020745@husc.edu.vn",
+    "gender": "Nữ",
+    "class": "CNTT K46E",
+    "position": [
+      {
+        "id": "btt",
+        "name": "Thành viên ban truyền thông",
+        "year": "2024"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2024"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Bạch Thị Thiện Thanh.webp"
+  },
+  {
+    "first_name": "Nguyễn Hiếu",
+    "last_name": "Thiện",
+    "birth_date": "08/01/2005",
+    "phone_number": "0799713623",
+    "email_address": "23t1020509@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K47I",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2024"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Nguyễn Hiếu Thiện.webp"
+  },
+  {
+    "first_name": "Đào Quang",
+    "last_name": "Thuận",
+    "birth_date": "26/04/2004",
+    "phone_number": "0328615104",
+    "email_address": "22t1020755@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K46C",
+    "position": [
+      {
+        "id": "bcm",
+        "name": "Thành viên",
+        "year": "2023"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Đào Quang Thuận.webp"
+  },
+  {
+    "first_name": "Huỳnh Thị Thanh",
+    "last_name": "Thúy",
+    "birth_date": "12/08/2004",
+    "phone_number": "0365304935",
+    "email_address": "22t1020456@husc.edu.vn",
+    "gender": "Nữ",
+    "class": "CNTT K46E",
+    "position": [
+      {
+        "id": "bcm",
+        "name": "Thành viên",
+        "year": "2023"
+      },
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Huỳnh Thị Thanh Thúy.webp"
+  },
+  {
+    "first_name": "Trần Xuân",
+    "last_name": "Trường",
+    "birth_date": "22/12/2004",
+    "phone_number": "0967549478",
+    "email_address": "22t1020784@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K46B",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Trần Xuân Trường.webp"
+  },
+  {
+    "first_name": "Ngô Quang",
+    "last_name": "Trường",
+    "birth_date": "14/04/2005",
+    "phone_number": "0339140405",
+    "email_address": "23t1020573@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K47J",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Ngô Quang Trường.webp"
+  },
+  {
+    "first_name": "Trương Ngọc Nhật",
+    "last_name": "Tùng",
+    "birth_date": "15/05/2004",
+    "phone_number": "0339143447",
+    "email_address": "22t1020500@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K46N",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Trương Ngọc Nhật Tùng.webp"
+  },
+  {
+    "first_name": "Lê Quang",
+    "last_name": "Tuyến",
+    "birth_date": "06/08/2002",
+    "phone_number": "0971846498",
+    "email_address": "22t1020506@husc.edu.vn",
+    "gender": "Nam",
+    "class": "CNTT K46A",
+    "position": [
+      {
+        "id": "btv",
+        "name": "Thành viên",
+        "year": "2023"
+      }
+    ],
+    "generation": "2",
+    "image": "/images/members/Lê Quang Tuyến.webp"
+  }
+]

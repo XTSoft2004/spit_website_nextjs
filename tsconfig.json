@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/tin-tuc/[name]/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/tin-tuc/[name]/page.jsx", "src/app/gioi-thieu/[name]/page.jsx"],
   "exclude": ["node_modules"]
 }

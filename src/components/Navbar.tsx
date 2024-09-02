@@ -44,7 +44,6 @@ const index = () => {
           // color: "#fff",
           background: "rgba(255, 255, 255, 1)",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-          position: "fixed",
         }}
       >
         <Container>
@@ -56,7 +55,7 @@ const index = () => {
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
-            <Navbar.Brand className="ms-2 mt-1 fw-bold">
+            <Navbar.Brand className="d-none d-sm-block ms-2 mt-1 fw-bold">
               CLB Hỗ trợ Lập trình
             </Navbar.Brand>
           </Navbar.Brand>
@@ -67,20 +66,23 @@ const index = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="d-none d-lg-flex justify-content-between w-100 align-items-center">
               <Nav className="mx-auto">
+                <Nav.Link className="ms-3 me-2" href="/">
+                  <i className="bi bi-house-door-fill"></i>
+                </Nav.Link>
                 {/* DropDown thông tin giới thiệu */}
                 <NavDropdown title="Giới thiệu" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">
+                  <NavDropdown.Item href="/gioi-thieu/#tong-quang">
                     Tổng quan
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
+                  <NavDropdown.Item href="/gioi-thieu.#muc-tieu">
                     Mục tiêu
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
+                  <NavDropdown.Item href="/gioi-thieu/#thanh-vien">
                     Thành viên
                   </NavDropdown.Item>
                 </NavDropdown>
 
-                <Nav.Link className="ms-3" href="#link">
+                <Nav.Link className="ms-3" href="/hoat-dong">
                   Hoạt động
                 </Nav.Link>
                 <Nav.Link className="ms-3" href="/tin-tuc">
@@ -90,7 +92,13 @@ const index = () => {
                   Tuyển thành viên
                 </Nav.Link>
               </Nav>
-              <Button className="button-34">Tham gia ngay</Button>
+              {/* <Button className="button-34">Tham gia ngay</Button> */}
+              <button className="button">
+                Tham gia ngay
+                <div className="hoverEffect">
+                  <div></div>
+                </div>
+              </button>
             </Nav>
           </Navbar.Collapse>
         </Container>

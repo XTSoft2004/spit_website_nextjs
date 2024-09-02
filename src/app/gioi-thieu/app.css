@@ -1,0 +1,31 @@
+.name-posts {
+    width: 50%;
+    font-size: 20px;
+}
+
+.item-avatar {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    position: absolute;
+    top: calc(110%);
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    .name-posts {
+        width: 100%;
+    }
+
+    .item-avatar {
+        width: 120px;
+        height: 120px;
+        top: calc(95%);
+        left: 25%;
+    }
+
+    .item-card {
+        margin-left: 85px;
+    }
+}

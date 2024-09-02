@@ -1,0 +1,15 @@
+.card-item {
+    width: 200px;
+    height: 290px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-item:hover {
+    scale: 1.1;
+}
+
+@media (max-width: 768px) {
+    .item-broad {
+        margin: 0 auto;
+    }
+}
