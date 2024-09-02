@@ -149,11 +149,14 @@ button.facebook-button:hover svg {
     .title-date {
         font-size: 14px;
     }
+
+    .item-tuyenthanhvien {
+        margin-left: 40px;
+    }
 }
 
 @media (max-width: 450px) {
     .item-tuyenthanhvien {
-        display: flex;
-        flex-direction: row;
+        margin-left: 20px;
     }
 }

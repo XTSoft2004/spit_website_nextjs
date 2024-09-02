@@ -138,10 +138,10 @@ export default function TuyenThanhVien() {
                 </div> */}
               </div>
               <div
-                className="item-tuyenthanhvien position-absolute top-0 start-0 d-flex justify-content-start align-items-center"
+                className="position-absolute top-0 start-0 d-flex justify-content-start align-items-center"
                 style={{ width: "100%", height: "100%" }}
               >
-                <div className="w-50">
+                <div className="w-50 item-tuyenthanhvien">
                   <h1 className="text-white title-banner">Tuyển thành viên</h1>
                   <p
                     className="text-white mb-3 title-date"
@@ -406,7 +406,7 @@ export default function TuyenThanhVien() {
                     <Col xs={12} lg={4}>
                       <Form.Group className="mb-3">
                         <Form.Label>Giới tính:</Form.Label>
-                        <Row>
+                        <Row className="mt-2">
                           <Col>
                             <Form.Check
                               value="Nam"
