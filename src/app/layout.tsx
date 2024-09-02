@@ -12,8 +12,8 @@ import { Montserrat } from "next/font/google";
 const inter = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
-  title: "SPIT",
-  description: "Website CLB SPIT",
+  title: "CLB Hỗ trợ Lập trình - SPIT",
+  description: "Website do team bốn cục tạ làm ra",
 };
 
 export default function RootLayout({

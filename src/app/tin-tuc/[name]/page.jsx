@@ -39,7 +39,7 @@ const TinTucPage = ({ params }) => {
 
   return (
     <>
-      <Container className="mt-5">
+      <Container className="my-5">
         <Row>
           <Col xs={12} md={8}>
             {post ? (

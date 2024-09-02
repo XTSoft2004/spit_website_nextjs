@@ -64,7 +64,7 @@ export default function Home() {
               <FlipCard key={index} title={flipCard.title} srcImage={flipCard.srcImage}></FlipCard>
             ))}
           </div>
-          <a href="/hoat-dong">
+          <a href="/hoat-dong/#sec-1">
             <Button className="mt-4 button-34 mx-auto d-block">Tìm hiểu thêm</Button>
           </a>
         </Container>
@@ -80,10 +80,7 @@ export default function Home() {
                   <Card.Title style={{ fontSize: '20px', fontWeight: 'bold' }}>CLB Hỗ trợ Lập trình - “SPIT here to fix”</Card.Title>
                   <Card.Text className="desText">Ngày 23 tháng 8 năm 2024 - Nguyễn Văn A</Card.Text>
                   <Card.Text>
-                    💫CLB Hỗ trợ Lập trình (Support Programming Information Technology - SPIT) được thành lập vào ngày
-                    19/08/2023,
-                    dưới sự chỉ đạo của Hội Sinh viên trường và ban cố vấn thuộc Khoa Công nghệ thông tin, Trường Đại học Khoa
-                    học, Đại học Huế.
+                    🌟 CLB Hỗ trợ Lập trình - SPIT (Support Programming Information Technology) là một cộng đồng học thuật sôi nổi và nhiệt huyết tại Trường Đại học Khoa học, Đại học Huế, được thành lập vào ngày 19/08/2023. CLB là nơi dành cho những sinh viên yêu thích công nghệ và lập trình, mong muốn khám phá sâu hơn về thế giới coding, phát triển tư duy lập trình, kỹ năng giải quyết vấn đề, và trau dồi các kỹ năng mềm như làm việc nhóm, quản lý thời gian, và giao tiếp. Khi tham gia CLB, bạn sẽ có cơ hội tham gia các cuộc thi lập trình, các buổi seminar, training, và contest do CLB tổ chức 🌟
                   </Card.Text>
                   <a href="/gioi-thieu-clb-ho-tro-lap-trinh">
                     <Button variant="primary" className="mt-4">Xem chi tiết</Button>

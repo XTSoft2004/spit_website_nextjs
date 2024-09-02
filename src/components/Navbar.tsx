@@ -93,12 +93,14 @@ const index = () => {
                 </Nav.Link>
               </Nav>
               {/* <Button className="button-34">Tham gia ngay</Button> */}
-              <button className="button">
-                Tham gia ngay
-                <div className="hoverEffect">
-                  <div></div>
-                </div>
-              </button>
+              <a href='/tuyen-thanh-vien#reg-form'>
+                <button className="button">
+                  Tham gia ngay
+                  <div className="hoverEffect">
+                    <div></div>
+                  </div>
+                </button>
+              </a>
             </Nav>
           </Navbar.Collapse>
         </Container>

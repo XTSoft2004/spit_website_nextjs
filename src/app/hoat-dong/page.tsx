@@ -11,7 +11,7 @@ const HoatDongPage = () => {
             <ItemCarousel name="Hoạt động" srcImage={srcImage}></ItemCarousel>
 
 
-            <div id="sec1" style={{
+            <div id="sec-1" style={{
                 color: '#fff',
                 backgroundImage: 'url("/images/pages/hoat-dong/1.png")',
                 backgroundPosition: 'center',
@@ -53,7 +53,7 @@ const HoatDongPage = () => {
             </div>
 
 
-            <div id="sec2" style={{
+            <div id="sec-2" style={{
                 color: '#103994',
                 backgroundImage: 'url("/images/pages/hoat-dong/2.png")',
                 backgroundPosition: 'center',
@@ -110,7 +110,7 @@ const HoatDongPage = () => {
                 </Container>
             </div>
 
-            <div id="sec3" style={{
+            <div id="sec-3" style={{
                 color: '#fff',
                 backgroundImage: 'url("/images/pages/hoat-dong/1.png")',
                 backgroundPosition: 'center',
