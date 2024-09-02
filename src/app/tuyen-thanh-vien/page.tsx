@@ -97,7 +97,7 @@ export default function TuyenThanhVien() {
 
   const dateStart = new Date("2024-09-01").getTime();
   const dateNow = new Date(Date.now()).getTime();
-  const dateEnd = new Date("2024-09-06").getTime();
+  const dateEnd = new Date("2024-09-09").getTime();
 
   const handleReg = async () => {
     if (dateNow >= dateStart && dateNow <= dateEnd)
@@ -117,7 +117,7 @@ export default function TuyenThanhVien() {
           >
             <img
               className="w-100 h-100 object-cover"
-              src="/images/background/recruitment_intro2.png"
+              src="/images/background/backgroundTuyenThanhVienOpenReg.png"
               alt="background"
               style={{ position: "absolute", top: 0, left: 0, zIndex: -1 }}
             />
@@ -129,13 +129,13 @@ export default function TuyenThanhVien() {
                 className="position-absolute top-0 end-0 d-flex justify-content-end align-items-center"
                 style={{ width: "100%", height: "100%" }}
               >
-                {/* <div className="me-3">
+                <div className="me-3 item-logo-banner">
                   <img
-                    style={{ width: 250, height: 250 }}
+                    style={{ width: 300, height: 300 }}
                     src="/images/logo/logoSPIT.png"
                     alt="logo"
-                  />
-                </div> */}
+                  ></img>
+                </div>
               </div>
               <div
                 className="position-absolute top-0 start-0 d-flex justify-content-start align-items-center"
@@ -174,7 +174,7 @@ export default function TuyenThanhVien() {
                   <a
                     style={{
                       fontWeight: "bold",
-                      fontSize: "30px",
+                      fontSize: "40px",
                       borderTopLeftRadius: "25px",
                       borderBottomRightRadius: "25px",
                     }}
@@ -184,7 +184,7 @@ export default function TuyenThanhVien() {
                 </Col>
               </Row>
               <div
-                className="mb-3"
+                className="mt-3 mb-3"
                 style={{ width: "20%", borderBottom: "4px solid white" }}
               ></div>
               <Row>
@@ -503,7 +503,7 @@ export default function TuyenThanhVien() {
                         variant="primary"
                         onClick={handleNext}
                       >
-                        Tiếp
+                        Trang sau
                       </Button>
                     </Col>
                   </Row>
@@ -622,12 +622,13 @@ export default function TuyenThanhVien() {
                         variant="primary"
                         onClick={handleBack}
                       >
-                        Lui
+                        Trang trước
                       </Button>
                       <Button
                         className="me-3"
                         style={{ width: "150px" }}
                         variant="primary"
+                        onClick={() => alert("Đã gửi thông tin đăng kí")}
                       >
                         Gửi
                       </Button>
@@ -650,74 +651,67 @@ export default function TuyenThanhVien() {
           </div>
         </>
       ) : (
-        <div id="sec-1" className="position-relative">
+        <div id="sec-1" className="position-relative"
+          style={{ height: "calc(100vh - 75px)" }}>
+          <img
+            className="w-100 h-100 object-cover"
+            src="/images/background/backgroundTuyenThanhVienCloseReg.png"
+            alt="background"
+            style={{ position: "absolute", top: 0, left: 0, zIndex: -1, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.7)" }}
+          ></img>
           <div
-            className="d-flex flex-column justify-content-center align-items-center"
+            className="position-absolute top-0 end-0 d-flex justify-content-end align-items-center"
             style={{ width: "100%", height: "100%" }}
           >
-            <img
-              className="w-100 h-100"
-              src="/images/background/backgroundTuyenThanhVienCloseReg.jpg"
-              alt="background"
-            ></img>
-            <div
-              className="position-absolute top-0 end-0 d-flex justify-content-end align-items-center"
-              style={{ width: "100%", height: "100%" }}
-            >
-              <div className="me-3">
-                <img
-                  style={{ width: 250, height: 250 }}
-                  src="/images/logo/logoSPIT.png"
-                  alt="logo"
-                ></img>
-              </div>
+            <div className="me-3 item-logo-banner">
+              <img
+                style={{ width: 300, height: 300 }}
+                src="/images/logo/logoSPIT.png"
+                alt="logo"
+              ></img>
             </div>
-            <div
-              className="ms-5 position-absolute top-0 start-0 d-flex justify-content-start align-items-center"
-              style={{ width: "100%", height: "100%" }}
-            >
-              <div className="w-50">
-                <h1
-                  className="text-white mb-3"
-                  style={{
-                    fontWeight: "bold",
-                    fontSize: "40px",
-                    textTransform: "uppercase",
-                  }}
-                >
-                  CLB hiện chưa tuyển thành viên.
-                </h1>
-                <p className="text-white mb-3" style={{ fontSize: "18px" }}>
-                  Cảm ơn bạn đã quan tâm đến CLB!<br></br>
-                  Hiện tại, CLB chưa có đợt tuyển thành viên mới.<br></br>
-                  Bạn hãy theo dõi trang Facebook/Website chính thức của CLB để
-                  cập nhật thông tin về các đợt tuyển thành viên sắp tới nhé!
-                </p>
-                <a
-                  href="https://www.facebook.com/clbhtlt.ithusc"
-                  target="_blank"
-                >
-                  <Button className="facebook-button">
-                    <div className="svg-wrapper-1">
-                      <div className="svg-wrapper">
-                        <svg
-                          viewBox="0 0 320 512"
-                          height="1.2em"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
-                        </svg>
-                        <i className="fa-brands fa-facebook"></i>
-                      </div>
+          </div>
+          <div
+            className="position-absolute top-0 start-0 d-flex justify-content-start align-items-center"
+            style={{ width: "100%", height: "100%" }}
+          >
+            <div className="w-50 ms-5 mt-5">
+              <h1
+                className="text-white mb-3 title-banner"
+              >
+                CLB hiện chưa tuyển thành viên.
+              </h1>
+              <p className="text-white mb-3 title-date">
+                Cảm ơn bạn đã quan tâm đến CLB!<br></br>
+                Hiện tại, CLB chưa có đợt tuyển thành viên mới.<br></br>
+                Bạn hãy theo dõi trang Facebook/Website chính thức của CLB để
+                cập nhật thông tin về các đợt tuyển thành viên sắp tới nhé!
+              </p>
+              <a
+                href="https://www.facebook.com/clbhtlt.ithusc"
+                target="_blank"
+              >
+                <Button className="facebook-button">
+                  <div className="svg-wrapper-1">
+                    <div className="svg-wrapper">
+                      <svg
+                        viewBox="0 0 320 512"
+                        height="1.2em"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                      </svg>
+                      <i className="fa-brands fa-facebook"></i>
                     </div>
-                    <span>Fanpage của CLB</span>
-                  </Button>
-                </a>
-              </div>
+                  </div>
+                  <span>Fanpage của CLB</span>
+                </Button>
+              </a>
             </div>
           </div>
         </div>
+
       )}
     </>
   );

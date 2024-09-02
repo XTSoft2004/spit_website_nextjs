@@ -1,5 +1,6 @@
 #sec-2 {
-    background-color: #003B91;
+    /* background-color: #003B91; */
+    background-image: linear-gradient(#103994, #4B6FB7);
     color: #fff;
 }
 
@@ -140,7 +141,7 @@ button.facebook-button:hover svg {
     margin-top: 50px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1800px) {
     .title-banner {
         margin-top: 65px;
         font-size: 20px;
@@ -158,5 +159,20 @@ button.facebook-button:hover svg {
 @media (max-width: 450px) {
     .item-tuyenthanhvien {
         margin-left: 20px;
+    }
+
+    .title-banner {
+        margin-top: 65px;
+        font-size: 15px;
+    }
+
+    .title-date {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    .item-logo-banner {
+        display: none;
     }
 }
