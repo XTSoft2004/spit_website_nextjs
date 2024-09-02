@@ -167,7 +167,7 @@ export default function TuyenThanhVien() {
             </div>
           </div>
 
-          <div id="sec-2" className="py-4">
+          <div id="sec-2" className="py-5">
             <Container className="mb-2">
               <Row className="mb-2">
                 <Col>
@@ -347,7 +347,7 @@ export default function TuyenThanhVien() {
             </Container>
           </div>
           <div id="reg-form">
-            <Container className="px-2 mt-3 py-4">
+            <Container className="px-2 mt-3 py-5">
               <h2
                 className="mb-4 text-center"
                 style={{
