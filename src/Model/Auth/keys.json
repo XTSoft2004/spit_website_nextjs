@@ -1,0 +1,10 @@
+{
+    "accessToken": "ya29.a0AXooCgs05q-LHct-xXJvp8VsePqMWYhz-XCn8OaGRdrbaDVrQtIbvoHEtwJhak9mhIo5xrMGUbLxDQHWkzBvfgVV7pnpJzKzAOgv5Up-jv14BDNbYX-ZZxyBlK-CKaSBsLP1atMBw7Rk1iCzCkhNEAiDIMxMzjGlQGA4HAaCgYKAQoSAQ4SFQHGX2Mi4RU2mt9x2VrWkUqb6b63nw0173",
+    "idFolder": "1hjCSghCmjM7_cuqVKaPf9uFCMXYDQHRP",
+    "infoToken": {
+        "client_id": "875282628767-r6pqis0n0f38njoif7sk6lr7c702778q.apps.googleusercontent.com",
+        "client_secret": "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",
+        "refresh_token": "1//04VJcD4_jeNNACgYIARAAGAQSNwF-L9IrjeShSIWqu74AsNWIkZ-ljrhy4zhOdCpku90wk93xqxANVKMwYEx5pgJ6mv--oIy9_tE",
+        "grant_type": "refresh_token"
+    }
+}
