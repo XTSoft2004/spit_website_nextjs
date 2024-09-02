@@ -1,289 +1,148 @@
 // src/app/page.js
 "use client";
 
-import {
-  Container,
-  Carousel,
-  Row,
-  Col,
-  Accordion,
-  Card,
-} from "react-bootstrap";
+import { Container, Carousel, Row, Col, Accordion, Card } from "react-bootstrap";
+import CarouselItems from "../components/Carousel/carouselItems";
+import FlipCard from "../components/FlipCard/flipCard";
+import CarouselCard from "../components/CarouselCard/carouselCard";
 import Button from "react-bootstrap/Button";
-
-import { useState } from "react";
+import faqs from "../data/Home/dataFaqs.json";
+import dataFlipCards from '../data/Home/dataFlipCards.json';
+import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [faqs, setFaqs] = useState([
-    {
-      question: "Vì sao clb được thành lập?",
-      answer:
-        "<p>CLB Hỗ trợ Lập trình ra đời với mục đích tạo sân chơi học thuật, nghiên cứu, đam mê lập trình. Hỗ trợ hoạt động học tập của các bạn sinh viên, phát huy khả năng nhằm nâng cao chất lượng học tập, tạo môi trường trao đổi học tập và rèn luyện các kỹ năng ứng dụng trong ngành học.</p>",
-    },
-    {
-      question: "Nhận quyền lợi gì khi tham gia clb?",
-      answer: `<p>CLB Hỗ trợ Lập trình là nơi giúp bạn phát triển những điều trên và còn hơn thế nữa 😁, Khi trở thành thành viên của CLB bạn sẽ nhận được 5Đ:</p>
-              <ul>
-                <li>🔥 Được tham gia các hoạt động chung của CLB (ngoại khóa, trainning, các buổi seminar của khoa CNTT)</li>
-                <li>🔥 Được hỗ trợ trong khâu chuyên môn, học thuật bởi quý thầy cô dày dặn kinh nghiệm của khoa Công nghệ thông tin</li>
-                <li>🔥 Được hỗ trợ kinh phí theo tiết hỗ trợ thực hành tại phòng máy (Nói rõ khi phỏng vấn)</li>
-                <li>🔥 Được giao lưu gặp gỡ các anh chị có thành tích học tập khủng và đạt được các giải thưởng lập trình từ cấp trường cho đến cấp quốc gia và hơn thế nữa </li>
-                <li>🔥 Được đề nghị khen thưởng khi có thành tích xuất sắc.</li>
-              </ul>`,
-    },
-    {
-      question: "Hình thức tuyển thành viên?",
-      answer:
-        "<p>Khi tuyển thành viên thí sinh sẽ qua 2 vòng, vòng đầu là làm bài test và vòng thứ 2 là phỏng vấn</p>",
-    },
-    {
-      question: "Học nghành khác có thể vào clb không?",
-      answer: "<p>Được, nhưng mà phải đáng ứng đúng với yêu cầu của clb </p>",
-    },
-    {
-      question: "Vào câu lạp bộ có được tranning, hay dạy thêm gì không?",
-      answer: "<p>Khi vào clb sẽ được tranning và tham gia các kì thi</p>",
-    },
-    {
-      question: "Nếu chưa có kiến thức có thể tham gia clb không?",
-      answer:
-        "<p>Yêu cầu bạn phải có kiến thức căn bản vững vàng, còn kiến thức nâng cao có thể học sau</p>",
-    },
-    {
-      question: "Tham gia clb học thuật có hoạt động gì khác không?",
-      answer:
-        "<p>Khi tham gia clb còn nhiều hoạt động khác ngoài việc hỗ trợ lập trình như: vui chơi, tranning , kì thi,..</p>",
-    },
-    {
-      question: "Có được tham gia nhiều clb không?",
-      answer: "<p>Điều đó tuỳ vào các bạn</p>",
-    },
-  ]);
+  useEffect(() => {
+    document.title = "CLB Hỗ trợ Lập trình - SPIT";
+  }, []);
+
+  const srcImage = ["/images/background/backgroudSeminar.jpg", "/images/background/backgroud_member.png", "/images/background/tuyenthanhvien.png"];
 
   return (
     <>
       <div id="sec-1" className="w-100">
-        <h1
-          className="text-center"
-          style={{ fontSize: "40px", font: "montserrat" }}
-        >
-          SPIT
-        </h1>
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block"
-              style={{
-                width: "100%",
-                height: "600px",
-                objectFit: "cover",
-                boxShadow:
-                  "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
-              }}
-              src="\images\backgroud\seminar.jpg"
-              alt="seminar"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block"
-              style={{
-                width: "100%",
-                height: "600px",
-                objectFit: "cover",
-                boxShadow:
-                  "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
-              }}
-              src="\images\backgroud\member.png"
-              alt="member"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block"
-              style={{
-                width: "100%",
-                height: "600px",
-                objectFit: "cover",
-                boxShadow:
-                  "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px",
-              }}
-              src="\images\backgroud\tuyenthanhvien.png"
-              alt="tuyen thanh vien"
-            />
-          </Carousel.Item>
-        </Carousel>
+        <a className="text-center-image-1 carousel-caption z-2">SPIT</a>
+        <a className="text-center-image-2 carousel-caption z-2">here to FIX</a>
+        <CarouselItems srcImage={srcImage}></CarouselItems>
       </div>
-
-      <div id="sec-2">
+      <div id="sec-2" className="mt-4 mb-4">
         <Container>
-          <Row className="mb-3 mt-3">
-            <div className="list-logo justify-content-center d-flex flex-wrap">
-              <img
-                className="me-2"
-                src="\images\logo\logoHUSC.png"
-                style={{ width: "50px", height: "50px" }}
-                alt="logoHUSC"
-              />
-              <img
-                className="me-2 ms-1"
-                src="\images\logo\logoHoiSV.png"
-                style={{ width: "50px", height: "50px" }}
-                alt="logoHoiSV"
-              />
-              <img
-                className="me-1 ms-2"
-                src="\images\logo\logoKhoaCNTT.png"
-                style={{ width: "50px", height: "50px" }}
-                alt="logoKhoaCNTT"
-              />
-              <img
-                className="ms-2"
-                src="\images\logo\logoSPIT.png"
-                style={{ width: "50px", height: "50px" }}
-                alt="logoSPIT"
-              />
-            </div>
-          </Row>
-          <Row className="mt-4">
+          <Row>
             <Col xs={12} md={6}>
+              <h2 className="mb-4 mt-4 text-center" style={{ color: '#03045E', fontSize: '40px' }}><b>GIỚI THIỆU</b></h2>
               <div className="content w-75">
-                <h2
-                  className="mb-4 text-center"
-                  style={{ color: "#03045E", fontSize: "24px" }}
-                >
-                  <b>GIỚI THIỆU</b>
-                </h2>
-                <p className="mb-4">
-                  <b>CLB Hỗ trợ Lập trình</b> (Support Programming Information
-                  Technology, tên viết tắt là SPIT) Trường Đại học Khoa học Huế,
-                  được thành lập vào ngày 19/08/2023.{" "}
-                </p>
-                <p className="mb-4">
-                  CLB được thành lập với mục đích hỗ trợ sinh viên học lập
-                  trình, tạo môi trường giao lưu trao đổi kinh nghiệm học tập,
-                  nghiên cứu, tiếp cận các chủ đề công nghệ mới.
-                </p>
-                <p className="mb-4">
-                  <b>Slogan của CLB:</b> “SPIT here to fix”
-                </p>
-                <Button className="mt-4 button-34">Tìm hiểu thêm</Button>
+                <p className="mb-4"><b>CLB Hỗ trợ Lập trình</b> (Support
+                  Programming Information Technology, tên
+                  viết tắt là SPIT) Trường Đại học Khoa học
+                  Huế, được thành lập vào ngày 19/08/2023. </p>
+                <p className="mb-4">CLB được thành lập với mục đích hỗ trợ
+                  sinh viên học lập trình, tạo môi trường giao
+                  lưu trao đổi kinh nghiệm học tập, nghiên
+                  cứu, tiếp cận các chủ đề công nghệ mới.</p>
+                <p className="mb-4"><b>Slogan của CLB:</b> “SPIT here to fix”</p>
               </div>
+              <a href="/gioi-thieu">
+                <Button className="mt-4 mb-4 button-34 mx-auto d-block">Tìm hiểu thêm</Button>
+              </a>
             </Col>
             <Col xs={12} md={6}>
               <div className="pic">
-                <img
-                  className="d-block"
-                  style={{ width: "100%", height: "400px", objectFit: "cover" }}
-                  src="\images\backgroud\sec2.jpg"
-                  alt="sec2"
-                />
+                <img className="d-block" style={{ width: '100%', height: '400px', objectFit: 'cover' }} src="\images\background\sec2.jpg" alt="sec2" />
               </div>
             </Col>
           </Row>
         </Container>
       </div>
       <div id="sec-3">
-        <Container>
-          <h1>THÀNH TÍCH NỔI BẬT</h1>
-        </Container>
+        <h1 className="mt-4 mb-4 text-center" style={{ color: '#fff', fontSize: '40px', fontWeight: 'bold' }}>THÀNH TÍCH NỔI BẬT CỦA CLB</h1>
+        <CarouselCard></CarouselCard>
       </div>
       <div id="sec-4">
         <Container>
-          <h1>CÁC HOẠT ĐỘNG CHÍNH CỦA CLB</h1>
+          <h1 className="mb-4 text-center" style={{ color: '#03045E', fontSize: '40px', fontWeight: 'bold' }}>CÁC HOẠT ĐỘNG CHÍNH CỦA CLB</h1>
+          <div className="d-flex flex-wrap justify-content-center">
+            {dataFlipCards.map((flipCard, index) => (
+              <FlipCard key={index} title={flipCard.title} srcImage={flipCard.srcImage}></FlipCard>
+            ))}
+          </div>
+          <a href="/hoat-dong">
+            <Button className="mt-4 button-34 mx-auto d-block">Tìm hiểu thêm</Button>
+          </a>
+        </Container>
+      </div>
+      <div id="sec-5">
+        <h1 className="mt-4 mb-4 text-center" style={{ color: '#fff', fontSize: '40px', fontWeight: 'bold' }}>TIN TỨC & THÔNG BÁO</h1>
+        <Container>
           <Row>
-            <Col xs={12} sm={6} md={4}>
-              <div className="flip-card mt-4">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img
-                      src="\images\sec2.png"
-                      alt="sec2"
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                      }}
-                    />
-                  </div>
-                  <div className="flip-card-back">
-                    <h1>Some Text</h1>
-                    <p>Description or additional information</p>
-                  </div>
-                </div>
-              </div>
+            <Col md={6} className="d-flex flex-column">
+              <Card style={{ width: '100%', height: '100%', borderRadius: '10px', border: 'none' }}>
+                <Card.Img variant="top" src="\posts\gioi-thieu-clb-ho-tro-lap-trinh\images\1.jpg" style={{ width: '100%', height: '700px', objectFit: 'cover' }} />
+                <Card.Body>
+                  <Card.Title style={{ fontSize: '20px', fontWeight: 'bold' }}>CLB Hỗ trợ Lập trình - “SPIT here to fix”</Card.Title>
+                  <Card.Text className="desText">Ngày 23 tháng 8 năm 2024 - Nguyễn Văn A</Card.Text>
+                  <Card.Text>
+                    💫CLB Hỗ trợ Lập trình (Support Programming Information Technology - SPIT) được thành lập vào ngày
+                    19/08/2023,
+                    dưới sự chỉ đạo của Hội Sinh viên trường và ban cố vấn thuộc Khoa Công nghệ thông tin, Trường Đại học Khoa
+                    học, Đại học Huế.
+                  </Card.Text>
+                  <a href="/gioi-thieu-clb-ho-tro-lap-trinh">
+                    <Button variant="primary" className="mt-4">Xem chi tiết</Button>
+                  </a>
+                </Card.Body>
+              </Card>
             </Col>
-            <Col xs={12} md={4}>
-              <div className="flip-card mt-4">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img
-                      src="\images\sec2.png"
-                      alt="sec2"
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                      }}
-                    />
-                  </div>
-                  <div className="flip-card-back">
-                    <h1>Some Text</h1>
-                    <p>Description or additional information</p>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col xs={12} md={4}>
-              <div className="flip-card mt-4">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">
-                    <img
-                      src="\images\sec2.png"
-                      alt="sec2"
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                      }}
-                    />
-                  </div>
-                  <div className="flip-card-back">
-                    <h1>Some Text</h1>
-                    <p>Description or additional information</p>
-                  </div>
-                </div>
-              </div>
+            <Col md={6}>
+              <Row className="mb-3">
+                <Col>
+                  <Card style={{ width: '100%', borderRadius: '10px', border: 'none' }}>
+                    <Card.Img variant="top" src="\posts\da-nang-code-league-2024\images\1.jpg" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+                    <Card.Body>
+                      <Card.Title style={{ fontSize: '20px', fontWeight: 'bold' }}>Chúc mừng đội thi HUSC_Newbie đạt Huy chương Bạc (bảng Warrior) tại cuộc thi lập trình Da Nang Code League năm 2024</Card.Title>
+                      <Card.Text className="desText">Ngày 14 tháng 7 năm 2024 - Nguyễn Văn A</Card.Text>
+                      <Card.Text>
+                        Vượt qua hơn 1500 thí sinh và hơn 500 đội thi đấu tại vòng bảng cuộc thi Code League, đội HUSC_Newbie đã
+                        xuất sắc ghi tên mình vào danh sách 96 thí sinh xuất sắc nhất để thi đấu tại vòng Chung kết diễn ra tại FPT
+                        Software Đà Nẵng vào ngày 13/7/2024 vừa qua.
+                      </Card.Text>
+                      <a href="/tin-tuc/da-nang-code-league-2024">
+                        <Button variant="primary" className="mt-4">Xem chi tiết</Button>
+                      </a>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Card style={{ width: '100%', borderRadius: '10px', border: 'none' }}>
+                    <Card.Img variant="top" src="\posts\recap-picnic-haiduong-2024\images\1.jpg" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+                    <Card.Body>
+                      <Card.Title style={{ fontSize: '20px', fontWeight: 'bold' }}>Buổi ngoại khoá 26/03 của CLB Hỗ trợ Lập trình</Card.Title>
+                      <Card.Text className="desText">Ngày 14 tháng 4 năm 2024 - Nguyễn Văn A</Card.Text>
+                      <Card.Text>
+                        🌊 Ngày 24/03/2024 đã là một ngày picnic đầy ắp niềm vui tại biển Hải Dương, bởi buổi teambuilding do CLB Hỗ
+                        trợ Lập trình tổ chức.
+                        🌴 Trong buổi teambuilding này, các thành viên CLB đã có cơ hội gần gũi với nhau hơn, cùng chơi các trò chơi
+                        có tính đồng đội cao và cùng nhau tạo nên thật nhiều kỷ niệm đáng nhớ.
+                      </Card.Text>
+                      <a href="/tin-tuc/recap-picnic-haiduong-2024">
+                        <Button variant="primary" className="mt-4">Xem chi tiết</Button>
+                      </a>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>
       </div>
-      <div id="sec-5">
-        <Container>
-          <h1>TIN TỨC & THÔNG BÁO</h1>
-        </Container>
-      </div>
       <div id="sec-6" className="faq">
         <Container>
-          <h1
-            className="mt-4 mb-4 text-center"
-            style={{ fontWeight: "bold", fontSize: "24px", color: "#03045E" }}
-          >
-            Các câu hỏi thường gặp
-          </h1>
+          <h1 className="mb-4 text-center" style={{ fontWeight: 'bold', fontSize: '40px', color: '#03045E', textTransform: 'uppercase' }}>Các câu hỏi thường gặp</h1>
           <Accordion className="w-75 mx-auto">
             {faqs.map((faq, index) => (
-              <Accordion.Item
-                key={index}
-                eventKey={index.toString()}
-                style={{ borderRadius: "10px" }}
-              >
-                <Accordion.Header style={{ fontWeight: "bold" }}>
-                  {faq.question}
-                </Accordion.Header>
-                <Accordion.Body
-                  dangerouslySetInnerHTML={{ __html: faq.answer }}
-                ></Accordion.Body>
+              <Accordion.Item key={index} eventKey={index.toString()}>
+                <Accordion.Header style={{ fontWeight: 'bold' }}>{faq.question}</Accordion.Header>
+                <Accordion.Body className="mx-1" dangerouslySetInnerHTML={{ __html: faq.answer }}></Accordion.Body>
               </Accordion.Item>
             ))}
           </Accordion>
