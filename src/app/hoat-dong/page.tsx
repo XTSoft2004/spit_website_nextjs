@@ -1,10 +1,14 @@
 "use client";
 
 import { Row, Col, Container, Carousel } from "react-bootstrap";
+import { useEffect } from 'react';
 import ItemCarousel from "@/components/Carousel/ItemCarousel";
 import Image from 'next/image';
 import './app.css'
 const HoatDongPage = () => {
+    useEffect(() => {
+        document.title = "Hoạt động - SPIT";
+    }, []);
     const srcImage = ["/images/backgroud/picnic-2024.jpg", "/images/backgroud/member.png"];
     return (
         <>

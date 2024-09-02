@@ -1,5 +1,6 @@
 "use client";
 import { Card, Carousel, Col, Container, Row } from "react-bootstrap";
+import { useEffect } from 'react';
 import Image from "next/image";
 import InfoMember from "@/data/Members/dataMembers.json";
 import InfoBoards from "@/data/Members/dataBoards.json";
@@ -7,6 +8,9 @@ import CardMember from "@/components/Members/CardMember";
 import CardRole from "@/components/Members/CardRole";
 import "./app.css";
 const GioiThieuPage = () => {
+  useEffect(() => {
+    document.title = "Giới thiệu - SPIT";
+  }, []);
   return (
     <>
       <div id="thanh-vien">
@@ -43,19 +47,17 @@ const GioiThieuPage = () => {
                       <CardMember
                         first_name={member.first_name}
                         last_name={member.last_name}
-                        position={`${
-                          member.position.filter(
-                            (position) =>
-                              typeof position === "object" &&
-                              position.id === board.id
-                          )[0].year
-                        }: ${
-                          member.position.filter(
+                        position={`${member.position.filter(
+                          (position) =>
+                            typeof position === "object" &&
+                            position.id === board.id
+                        )[0].year
+                          }: ${member.position.filter(
                             (position) =>
                               typeof position === "object" &&
                               position.id === board.id
                           )[0].name
-                        }`}
+                          }`}
                         image={member.image}
                       />
                     </Col>
