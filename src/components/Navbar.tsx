@@ -55,7 +55,7 @@ const index = () => {
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
-            <Navbar.Brand className="d-none d-sm-block ms-2 mt-1 fw-bold">
+            <Navbar.Brand className="d-none d-sm-block ms-2 mt-1 fw-bold gradient-text">
               CLB Hỗ trợ Lập trình
             </Navbar.Brand>
           </Navbar.Brand>
@@ -70,25 +70,39 @@ const index = () => {
                   <i className="bi bi-house-door-fill"></i>
                 </Nav.Link>
                 {/* DropDown thông tin giới thiệu */}
-                <NavDropdown title="Giới thiệu" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/gioi-thieu/#tong-quan">
+                <NavDropdown className="gradient-text fw-bold" title="Giới thiệu" id="basic-nav-dropdown">
+                  <NavDropdown.Item className="gradient-text fw-bold" href="/gioi-thieu/#tong-quan">
                     Tổng quan
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/gioi-thieu.#muc-tieu">
+                  <NavDropdown.Item className="gradient-text fw-bold" href="/gioi-thieu/#muc-tieu">
                     Mục đích hoạt động
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/gioi-thieu/#thanh-vien">
+                  <NavDropdown.Item className="gradient-text fw-bold" href="/gioi-thieu/#thanh-vien">
                     Cơ cấu tổ chức
                   </NavDropdown.Item>
                 </NavDropdown>
 
-                <Nav.Link className="ms-3" href="/hoat-dong">
+                <Nav.Link className="ms-3 gradient-text fw-bold" href="/hoat-dong">
                   Hoạt động
                 </Nav.Link>
-                <Nav.Link className="ms-3" href="/tin-tuc">
+                {/* <Nav.Link className="ms-3" href="/tin-tuc">
                   Tin tức - Thông báo
-                </Nav.Link>
-                <Nav.Link className="ms-3" href="/tuyen-thanh-vien">
+                </Nav.Link> */}
+
+                <NavDropdown className="ms-3 gradient-text fw-bold" title="Tin tức - Thông báo" id="basic-nav-dropdown">
+                  <NavDropdown.Item className="gradient-text fw-bold" href="/tin-tuc/">
+                    Hoạt động
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className="gradient-text fw-bold" href="/tin-tuc/#giai-thuong">
+                    Giải thưởng
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className="gradient-text fw-bold" href="/tin-tuc/#noi-bo">
+                    Nội bộ
+                  </NavDropdown.Item>
+                </NavDropdown>
+
+
+                <Nav.Link className="ms-3 gradient-text fw-bold" href="/tuyen-thanh-vien">
                   Tuyển thành viên
                 </Nav.Link>
               </Nav>
@@ -108,31 +122,37 @@ const index = () => {
 
       <Offcanvas placement="end" show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Menu</Offcanvas.Title>
+          <Offcanvas.Title >
+            <img
+              src="\images\logo\logoSPIT.png"
+              width="50"
+              height="50"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
+          </Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body className="fw-bold text-center">
-          <Navbar expand="lg">
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
-                <Nav.Link href="/">Home</Nav.Link>
-
-                <NavDropdown title="Giới thiệu" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">
-                    Tổng quan
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Mục tiêu
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Thành viên
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
+        <Offcanvas.Body className="text-center fw-bold">
+          <Nav className="d-flex flex-column">
+            <Nav.Link className="mt-2 gradient-text fw-bold" href="/">
+              Trang chủ
+            </Nav.Link>
+            <Nav.Link className="mt-2 gradient-text fw-bold" href="/gioi-thieu">
+              Giới thiệu
+            </Nav.Link>
+            <Nav.Link className="mt-2 gradient-text fw-bold" href="/hoat-dong">
+              Hoạt động
+            </Nav.Link>
+            <Nav.Link className="mt-2 gradient-text fw-bold" href="/tin-tuc">
+              Tin tức - Thông báo
+            </Nav.Link>
+            <Nav.Link className="mt-2 gradient-text fw-bold" href="/tuyen-thanh-vien">
+              Tuyển thành viên
+            </Nav.Link>
+          </Nav>
         </Offcanvas.Body>
       </Offcanvas>
+
     </>
   );
 };

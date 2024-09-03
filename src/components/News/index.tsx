@@ -86,7 +86,7 @@ function News({ id, title, description, src, day, month, year }: NewsProps) {
           </Row>
 
           <Row className="mt-auto justify-content-end me-3 mb-3">
-            <button className="button-34 mx-auto btn-about btn-more">
+            <button style={{ width: "35%" }} className="boton-elegante mx-auto btn-about btn-more">
               Tìm hiểu thêm
             </button>
           </Row>

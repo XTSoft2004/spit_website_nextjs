@@ -10,7 +10,7 @@ import faqs from "../data/Home/dataFaqs.json";
 import dataFlipCards from '../data/Home/dataFlipCards.json';
 import { useState, useEffect } from "react";
 import { HiRefresh } from "react-icons/hi";
-
+import './globals.css';
 export default function Home() {
   useEffect(() => {
     document.title = "CLB Hỗ trợ Lập trình - SPIT";
@@ -87,7 +87,7 @@ export default function Home() {
                     🌟 CLB Hỗ trợ Lập trình - SPIT (Support Programming Information Technology) là một cộng đồng học thuật sôi nổi và nhiệt huyết tại Trường Đại học Khoa học, Đại học Huế, được thành lập vào ngày 19/08/2023. CLB là nơi dành cho những sinh viên yêu thích công nghệ và lập trình, mong muốn khám phá sâu hơn về thế giới coding, phát triển tư duy lập trình, kỹ năng giải quyết vấn đề, và trau dồi các kỹ năng mềm như làm việc nhóm, quản lý thời gian, và giao tiếp. Khi tham gia CLB, bạn sẽ có cơ hội tham gia các cuộc thi lập trình, các buổi seminar, training, và contest do CLB tổ chức 🌟
                   </Card.Text>
                   <a href="/gioi-thieu-clb-ho-tro-lap-trinh">
-                    <Button variant="primary" className="mt-4">Xem chi tiết</Button>
+                    <Button variant="primary" className="mt-4 button-xemthem">Xem chi tiết</Button>
                   </a>
                 </Card.Body>
               </Card>
@@ -106,7 +106,7 @@ export default function Home() {
                         Software Đà Nẵng vào ngày 13/7/2024 vừa qua.
                       </Card.Text>
                       <a href="/tin-tuc/da-nang-code-league-2024">
-                        <Button variant="primary" className="mt-4">Xem chi tiết</Button>
+                        <Button variant="primary" className="mt-4 button-xemthem">Xem chi tiết</Button>
                       </a>
                     </Card.Body>
                   </Card>
@@ -126,7 +126,7 @@ export default function Home() {
                         có tính đồng đội cao và cùng nhau tạo nên thật nhiều kỷ niệm đáng nhớ.
                       </Card.Text>
                       <a href="/tin-tuc/recap-picnic-haiduong-2024">
-                        <Button variant="primary" className="mt-4">Xem chi tiết</Button>
+                        <Button variant="primary" className="mt-4 button-xemthem">Xem chi tiết</Button>
                       </a>
                     </Card.Body>
                   </Card>

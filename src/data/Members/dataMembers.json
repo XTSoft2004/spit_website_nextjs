@@ -3,18 +3,20 @@
     "id": "nhha-1",
     "first_name": "TS. Nguyễn Hoàng",
     "last_name": "Hà",
-    "birth_date": "09/08/2003",
-    "phone_number": "0934094936",
-    "email_address": "21t1020088@husc.edu.vn",
+    "birth_date": "",
+    "phone_number": "0914426033",
+    "email_address": "nhha@husc.edu.vn",
     "gender": "Nam",
     "class": "Ban cố vấn",
     "position": [
       {
         "id": "bcv",
+        "description": "",
         "name": "Trưởng Khoa Công nghệ thông tin",
-        "year": "2023"
+        "year": "[Đang cập nhật]"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Nguyễn Hoàng Hà.webp"
   },
@@ -22,18 +24,20 @@
     "id": "nndbinh-1",
     "first_name": "TS. Nguyễn Đăng",
     "last_name": "Bình",
-    "birth_date": "09/08/2003",
-    "phone_number": "0934094936",
-    "email_address": "21t1020088@husc.edu.vn",
+    "birth_date": "",
+    "phone_number": "0912468119",
+    "email_address": "ndbinh@husc.edu.vn",
     "gender": "Nam",
     "class": "Ban cố vấn",
     "position": [
       {
         "id": "bcv",
+        "description": "",
         "name": "Trưởng Bộ môn Khoa học máy tính",
-        "year": "2023"
+        "year": "[Đang cập nhật]"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Nguyễn Đăng Bình.webp"
   },
@@ -41,18 +45,20 @@
     "id": "tvkhoa-1",
     "first_name": "ThS. Trần Việt",
     "last_name": "Khoa",
-    "birth_date": "09/08/2003",
-    "phone_number": "0934094936",
-    "email_address": "21t1020088@husc.edu.vn",
+    "birth_date": "",
+    "phone_number": "",
+    "email_address": "tvkhoa@husc.edu.vn",
     "gender": "Nam",
     "class": "Ban cố vấn",
     "position": [
       {
         "id": "bcv",
+        "description": "",
         "name": "Giảng viên Khoa Công nghệ thông tin",
-        "year": "2023"
+        "year": "[Đang cập nhật]"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Trần Việt Khoa.webp"
   },
@@ -60,18 +66,20 @@
     "id": "lntnhi-1",
     "first_name": "ThS. Lê Nguyễn Thủy",
     "last_name": "Nhi",
-    "birth_date": "09/08/2003",
-    "phone_number": "0934094936",
-    "email_address": "21t1020088@husc.edu.vn",
-    "gender": "Nam",
+    "birth_date": "",
+    "phone_number": "0766597016",
+    "email_address": "lntnhi@husc.edu.vn",
+    "gender": "Nữ",
     "class": "Ban cố vấn",
     "position": [
       {
         "id": "bcv",
+        "description": "",
         "name": "Bí thư Liên Chi Đoàn Khoa Công nghệ thông tin",
-        "year": "2023"
+        "year": "[Đang cập nhật]"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Lê Nguyễn Thùy Nhi.webp"
   },
@@ -79,21 +87,16 @@
     "id": "vvthanh-1",
     "first_name": "Võ Văn",
     "last_name": "Thành",
-    "birth_date": "09/08/2003",
+    "birth_date": "04/05/2000",
     "phone_number": "0934094936",
     "email_address": "21t1020088@husc.edu.vn",
     "gender": "Nam",
-    "class": "CNTT K45F",
+    "class": "CNTT K42F",
     "position": [
       {
         "id": "bcn",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Chủ nhiệm",
-        "year": "2023"
-      },
-      {
-        "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
-        "name": "Thành viên",
         "year": "2023"
       }
     ],
@@ -113,7 +116,7 @@
     "position": [
       {
         "id": "bcn",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Phó chủ nhiệm",
         "year": "2023"
       },
@@ -121,19 +124,16 @@
         "id": "bcm",
         "description": "chuyên môn",
         "name": "Trưởng ban",
-        "year": "2023"
-      },
-      {
-        "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
-        "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       }
     ],
     "achievements": [
       {
         "year": "2023",
-        "names": ["Giải ba ICPC Quốc gia", "Giải nhất ICPC miền Trung"]
+        "names": [
+          "Giải ba ICPC Quốc gia",
+          "Giải nhất ICPC miền Trung"
+        ]
       },
       {
         "year": "2022",
@@ -167,7 +167,7 @@
     "position": [
       {
         "id": "bcn",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Phó chủ nhiệm",
         "year": "2023"
       },
@@ -175,19 +175,15 @@
         "id": "bcm",
         "description": "chuyên môn",
         "name": "Phó ban",
-        "year": "2023"
-      },
-      {
-        "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
-        "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       }
     ],
     "achievements": [
       {
         "year": "2024",
-        "names": ["Huy chương Bạc - Da Nang Code League"]
+        "names": [
+          "Huy chương Bạc - Da Nang Code League"
+        ]
       },
       {
         "year": "2023",
@@ -228,13 +224,13 @@
     "position": [
       {
         "id": "bcn",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Phó chủ nhiệm",
         "year": "2023"
       },
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2023"
       }
@@ -255,7 +251,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2023"
       }
@@ -276,7 +272,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2024"
       }
@@ -299,13 +295,13 @@
         "id": "bcm",
         "description": "ban chuyên môn",
         "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       },
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
-        "year": "2024"
+        "year": "2023"
       }
     ],
     "achievements": [],
@@ -324,7 +320,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2024"
       }
@@ -345,7 +341,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2023"
       }
@@ -368,11 +364,11 @@
         "id": "bcm",
         "description": "ban chuyên môn",
         "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       },
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2023"
       }
@@ -380,7 +376,9 @@
     "achievements": [
       {
         "year": "2022",
-        "names": ["Giải khuyến kích OLP tin học khối chuyên tin"]
+        "names": [
+          "Giải khuyến kích OLP tin học khối chuyên tin"
+        ]
       },
       {
         "year": "2023",
@@ -405,9 +403,9 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       }
     ],
     "achievements": [],
@@ -428,11 +426,11 @@
         "id": "bcm",
         "description": "ban chuyên môn",
         "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       },
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2023"
       }
@@ -440,7 +438,10 @@
     "achievements": [
       {
         "year": "2024",
-        "names": ["Giải ba OLP chuyên tin", "Nhì ICPC miền Trung"]
+        "names": [
+          "Giải ba OLP chuyên tin",
+          "Nhì ICPC miền Trung"
+        ]
       }
     ],
     "generation": "1",
@@ -458,7 +459,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2023"
       },
@@ -491,9 +492,9 @@
       },
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       }
     ],
     "achievements": [],
@@ -512,7 +513,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2024"
       }
@@ -533,7 +534,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2024"
       }
@@ -554,9 +555,9 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
-        "year": "2024"
+        "year": "2023"
       }
     ],
     "achievements": [],
@@ -575,7 +576,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2024"
       }
@@ -596,7 +597,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2024"
       }
@@ -619,11 +620,11 @@
         "id": "bcm",
         "description": "ban chuyên môn",
         "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       },
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2023"
       }
@@ -631,7 +632,10 @@
     "achievements": [
       {
         "year": "2024",
-        "names": ["Nhì OLP chuyên tin", "Nhì ICPC miền trung"]
+        "names": [
+          "Nhì OLP chuyên tin",
+          "Nhì ICPC miền trung"
+        ]
       }
     ],
     "generation": "1",
@@ -649,7 +653,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2023"
       }
@@ -676,7 +680,7 @@
       },
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2024"
       }
@@ -697,7 +701,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2024"
       }
@@ -724,7 +728,7 @@
       },
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2024"
       }
@@ -745,7 +749,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2024"
       }
@@ -768,11 +772,11 @@
         "id": "bcm",
         "description": "ban chuyên môn",
         "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       },
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2023"
       }
@@ -795,11 +799,11 @@
         "id": "bcm",
         "description": "ban chuyên môn",
         "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       },
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2023"
       }
@@ -820,7 +824,7 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
         "year": "2023"
       }
@@ -841,9 +845,9 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       }
     ],
     "achievements": [],
@@ -862,9 +866,9 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       }
     ],
     "achievements": [],
@@ -883,9 +887,9 @@
     "position": [
       {
         "id": "btv",
-        "description": "CLB Hỗ trợ Lập Trình",
+        "description": "CLB Hỗ trợ Lập trình",
         "name": "Thành viên",
-        "year": "2023"
+        "year": "2024"
       }
     ],
     "achievements": [],

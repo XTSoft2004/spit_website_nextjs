@@ -47,7 +47,7 @@ const InfoMemberPage = ({ params }) => {
             </Col>
 
             <Col className="infoMember">
-              <Row>
+              <Row className="item-thongtin">
                 <Col lg={5}>
                   <Row
                     className="item-title py-2 px-2 rounded-lg fw-bold mb-3"
@@ -99,7 +99,7 @@ const InfoMemberPage = ({ params }) => {
                     </Row>
                   </Row>
                 </Col>
-                <Col lg={5}>
+                <Col lg={5} className="item-thanhtich">
                   <Row
                     className="item-title py-2 px-2 rounded-lg fw-bold mb-3"
                     style={{
@@ -116,28 +116,38 @@ const InfoMemberPage = ({ params }) => {
                     ).map((member, index) => {
                       return (
                         <>
-                          {member.achievements.map((achievement, index) => {
-                            return (
-                              <>
-                                <span className="fs-4 fw-bold my-1">
-                                  {achievement.year}:
-                                </span>
-                                <br />
-                                {achievement.names.map((name, index) => {
-                                  return (
-                                    <>
-                                      <div className="ms-4">
-                                        <p>
-                                          <i className="bi bi-dot"></i>
-                                          {name}
-                                        </p>
-                                      </div>
-                                    </>
-                                  );
-                                })}
-                              </>
-                            );
-                          })}
+                          {member.achievements.length === 0 ? (
+                            <>
+                              <p className="mx-auto font-bold">
+                                Chưa có thành tích
+                              </p>
+                            </>
+                          ) : (
+                            <>
+                              {member.achievements.map((achievement, index) => {
+                                return (
+                                  <>
+                                    <span className="fs-5 fw-bold my-1">
+                                      Năm {achievement.year}:
+                                    </span>
+                                    <br />
+                                    {achievement.names.map((name, index) => {
+                                      return (
+                                        <>
+                                          <div className="ms-4">
+                                            <p>
+                                              <i className="bi bi-dot"></i>
+                                              {name}
+                                            </p>
+                                          </div>
+                                        </>
+                                      );
+                                    })}
+                                  </>
+                                );
+                              })}
+                            </>
+                          )}
                         </>
                       );
                     })}
@@ -169,7 +179,7 @@ const MemberPositions = ({ positions = [] }) => {
     <div>
       {Object.keys(positionsByYear).map((year) => (
         <div key={year}>
-          <p className="fs-4 fw-bold my-1">{year}:</p>
+          <p className="fs-5 fw-bold my-1">Năm {year}:</p>
           <ul>
             {positionsByYear[year].map((positionName, index) => (
               <li className="ms-4" key={index}>

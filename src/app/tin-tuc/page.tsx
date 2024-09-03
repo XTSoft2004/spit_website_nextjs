@@ -26,7 +26,29 @@ const TinTucPage = () => {
       >
         <Row>
           <Col xs={12} lg={4}>
-            <Link href="#giaithuong">
+            <Link href="#hoat-dong">
+              <Card
+                style={{
+                  border: "none",
+                  boxShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px",
+                }}
+              >
+                <Card.Img
+                  className="px-4 pt-3"
+                  variant="top"
+                  src="/posts/recap-picnic-haiduong-2024/images/17.jpg"
+                />
+                <Card.Body>
+                  <Card.Title className="text-center fw-bold gradient-text">
+                    Hoạt động
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+            </Link>
+          </Col>
+
+          <Col xs={12} lg={4}>
+            <Link href="#giai-thuong">
               <Card
                 style={{
                   border: "none",
@@ -47,28 +69,7 @@ const TinTucPage = () => {
             </Link>
           </Col>
           <Col xs={12} lg={4}>
-            <Link href="#hoatdong">
-              <Card
-                style={{
-                  border: "none",
-                  boxShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px",
-                }}
-              >
-                <Card.Img
-                  className="px-4 pt-3"
-                  variant="top"
-                  src="/posts/recap-picnic-haiduong-2024/images/17.jpg"
-                />
-                <Card.Body>
-                  <Card.Title className="text-center fw-bold gradient-text">
-                    Hoạt động
-                  </Card.Title>
-                </Card.Body>
-              </Card>
-            </Link>
-          </Col>
-          <Col xs={12} lg={4}>
-            <Link href="#noibo">
+            <Link href="#noi-bo">
               <Card
                 style={{
                   border: "none",
@@ -96,7 +97,7 @@ const TinTucPage = () => {
         <Container>
           {/* Các hoạt động */}
           <div
-            id="hoatdong"
+            id="hoat-dong"
             className="name-posts mt-5 text-center pt-2 pb-2 imagePost-radius fw-bold"
             style={{ backgroundColor: "#003056", color: "white" }}
           >
@@ -120,7 +121,7 @@ const TinTucPage = () => {
           )}
           {/* Các giải thưởng */}
           <div
-            id="giaithuong"
+            id="giai-thuong"
             className="name-posts mt-5 text-center pt-2 pb-2 imagePost-radius fw-bold"
             style={{ backgroundColor: "#003056", color: "white" }}
           >
@@ -144,7 +145,7 @@ const TinTucPage = () => {
           )}
           {/* Các hoạt động nội bộ */}
           <div
-            id="noibo"
+            id="noi-bo"
             className="name-posts mt-5 text-center pt-2 pb-2 imagePost-radius fw-bold"
             style={{ backgroundColor: "#003056", color: "white" }}
           >

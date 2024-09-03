@@ -34,6 +34,12 @@
     .item-cocau {
         margin-bottom: 20px;
     }
+
+
+    .item-thanhtich,
+    .item-thongtin {
+        margin-top: 30px;
+    }
 }
 
 .item-cocau {
