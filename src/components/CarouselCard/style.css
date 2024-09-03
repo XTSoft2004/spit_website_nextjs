@@ -1,6 +1,6 @@
 .card-fixed-size {
     width: 400px;
-    height: 410px;
+    height: 430px;
 }
 
 .card-image {
@@ -13,7 +13,7 @@
 
 @media (max-width: 1100px) {
     .card-fixed-size {
-        height: 450px;
+        height: 470px;
     }
 }
 
