@@ -105,6 +105,12 @@ export default function TuyenThanhVien() {
         .getElementById("sec-reg-form")
         ?.scrollIntoView({ behavior: "smooth" });
   };
+  const handleSubmit = async () => {
+    if (Object.values(formData).some(value => value === null || value === ""))
+      alert("Vui lòng nhập đầy đủ thông tin trước khi gửi đơn đăng ký!!!");
+    else
+      alert("Đã gửi thông tin đăng ký");
+  }
 
   return (
     <>
@@ -375,7 +381,7 @@ export default function TuyenThanhVien() {
                           name="hoten"
                           onChange={handleChange}
                           type="text"
-                          placeholder="Vui lòng điền đầy đủ và họ và tên của bạn...."
+                          placeholder="Họ và tên của bạn...."
                         />
                       </Form.Group>
                     </Col>
@@ -445,7 +451,7 @@ export default function TuyenThanhVien() {
                           name="lop"
                           onChange={handleChange}
                           type="text"
-                          placeholder="VD: K47D CNTT..."
+                          placeholder="VD: CNTT K47D"
                         />
                       </Form.Group>
                     </Col>
@@ -519,7 +525,7 @@ export default function TuyenThanhVien() {
                     <Col xs={12} lg={6}>
                       <Form.Group className="mb-3">
                         <Form.Label>
-                          Nhập điểm hệ 10 môn Nhập môn lập trinh:
+                          Nhập điểm hệ 10 môn Nhập môn lập trình:
                         </Form.Label>
                         <Form.Control
                           value={formData.diemNMLT}
@@ -570,7 +576,7 @@ export default function TuyenThanhVien() {
                     <Col xs={12}>
                       <Form.Group className="mb-3">
                         <Form.Label>
-                          Bạn mong muốn điều gì khi vào clb hỗ trợ lập trình
+                          Bạn mong muốn điều gì khi vào CLB Hỗ trợ Lập trình
                         </Form.Label>
                         <Form.Control
                           value={formData.mongmuon}
@@ -628,7 +634,7 @@ export default function TuyenThanhVien() {
                         className="me-3"
                         style={{ width: "150px" }}
                         variant="primary"
-                        onClick={() => alert("Đã gửi thông tin đăng kí")}
+                        onClick={handleSubmit}
                       >
                         Gửi
                       </Button>

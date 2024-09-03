@@ -29,7 +29,7 @@ const HoatDongPage = () => {
                         <Col xs={12} lg={6}>
                             <Row className="mb-3 fw-bold fs-1 w-100">
                                 <p className="name-section">Trợ giảng</p>
-                                <div className="gradian-div"></div>
+                                <div className="gradian-div" style={{ width: '35%' }}></div>
                             </Row>
                             <div className="fs-4 mb-3">
                                 Các thành viên CLB sẽ tham gia hỗ trợ sinh viên trong các tiết học thực hành của học phần
@@ -47,9 +47,9 @@ const HoatDongPage = () => {
                             >
                             </Image>
                             <p className="mt-2 text-center">
-                                Trợ giảng môn nhập môn lập trình
+                                Trợ giảng môn Nhập môn lập trình
                                 <br />
-                                cho các em K47 mới vào năm học
+                                cho các sinh viên K47 mới vào năm học
                             </p>
                         </Col>
                     </Row>
@@ -99,7 +99,7 @@ const HoatDongPage = () => {
                         <Col xs={12} lg={5} className="mt-2 item-content-left">
                             <Row className="mb-3 fw-bold fs-1 w-100">
                                 <p className="name-section">Phòng tự học</p>
-                                <div className="gradian-div"></div>
+                                <div className="gradian-div" style={{ width: '60%' }}></div>
                             </Row>
                             <div className="fs-4 mb-3">
                                 Tại các buổi tự học, sẽ có các thành viên CLB trực tại phòng để hướng dẫn, giải đáp thắc mắc về lập trình cho các bạn sinh viên ngoài giờ lên lớp.
@@ -128,7 +128,7 @@ const HoatDongPage = () => {
                         <Col xs={12} lg={6}>
                             <Row className="mb-3 fw-bold fs-1 w-100">
                                 <p className="name-section">Seminar</p>
-                                <div className="gradian-div"></div>
+                                <div className="gradian-div" style={{ width: '30%' }}></div>
                             </Row>
                             <div className="fs-4 mb-3">
                                 CLB thường tổ chức các buổi seminar có diễn giả là quý thầy cô, các khách mời có nhiều kinh nghiệm trong ngành công nghệ thông tin. Qua đó giúp các thành viên tham gia được cùng thảo luận, từ đó thúc đẩy tinh thần học tập và nâng cao kỹ năng lập trình.</div>
@@ -207,7 +207,7 @@ const HoatDongPage = () => {
                         <Col xs={12} lg={5} className="item-content-left">
                             <Row className="mb-3 fw-bold fs-1 w-100">
                                 <p className="name-section">SPIT Contest</p>
-                                <div className="gradian-div"></div>
+                                <div className="gradian-div" style={{ width: '55%' }}></div>
                             </Row>
                             <div className="fs-4 mb-3">
                                 <span className="fw-bold">SPIT Contest</span> là chuỗi contest lập trình thi đấu do CLB tổ chức. Đội ngũ ra đề cho SPIT Contest là những thành viên thuộc Ban Chuyên môn của CLB đã đạt được nhiều giải thưởng tại các kỳ thi cấp khu vực, quốc gia và quốc tế. Đây là một sân chơi dành cho các bạn học sinh, sinh viên yêu thích thuật toán và coding.

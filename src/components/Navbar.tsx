@@ -75,10 +75,10 @@ const index = () => {
                     Tổng quan
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/gioi-thieu.#muc-tieu">
-                    Mục tiêu
+                    Mục đích hoạt động
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/gioi-thieu/#thanh-vien">
-                    Thành viên
+                    Cơ cấu tổ chức
                   </NavDropdown.Item>
                 </NavDropdown>
 

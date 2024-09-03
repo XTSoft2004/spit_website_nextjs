@@ -25,7 +25,7 @@
 
 .text-center-image-1 {
     font-size: 100px;
-    margin-bottom: 350px;
+    margin-bottom: 250px;
     font-weight: bold;
     text-transform: uppercase;
     z-index: 999;
@@ -33,23 +33,31 @@
 
 .text-center-image-2 {
     font-size: 100px;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
     z-index: 999;
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 2400) {
     .text-center-image-1 {
-        font-size: 70px;
+        font-size: 80px;
         margin-bottom: 350px;
-        font-weight: bold;
-        text-transform: uppercase;
-        z-index: 999;
+    }
+
+    .text-center-image-2 {
+        font-size: 80px;
+        margin-bottom: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-center-image-1 {
+        font-size: 50px;
+        margin-bottom: 300px;
     }
 
     .text-center-image-2 {
         font-size: 50px;
-        margin-bottom: 250px;
-        z-index: 999;
+        margin-bottom: 200px;
     }
 }
 
@@ -129,4 +137,7 @@
     /* Tạo hiệu ứng đổ bóng */
 }
 
-
+.btn-more:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
