@@ -1,6 +1,6 @@
 .card-fixed-size {
     width: 400px;
-    height: 500px;
+    height: 410px;
 }
 
 .card-image {
@@ -12,11 +12,15 @@
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
     border-radius: 50px;
+}
+
+.card-title {
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    font-size: 20px;
+    margin-top: -20px;
 }
 
 .slick-slide>div {

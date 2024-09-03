@@ -3,6 +3,8 @@ import { Col, Row } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
 
+import "./style.css";
+
 interface NewsProps {
   id: string;
   title: string;
@@ -84,11 +86,13 @@ function News({ id, title, description, src, day, month, year }: NewsProps) {
           </Row>
 
           <Row className="mt-auto justify-content-end me-3 mb-3">
-            <button className="button-34 mx-auto btn-about ">Xem thêm</button>
+            <button className="button-34 mx-auto btn-about btn-more">
+              Tìm hiểu thêm
+            </button>
           </Row>
         </Col>
-      </Row>
-    </Link>
+      </Row >
+    </Link >
   );
 }
 export default News;

@@ -9,6 +9,7 @@ import Button from "react-bootstrap/Button";
 import faqs from "../data/Home/dataFaqs.json";
 import dataFlipCards from '../data/Home/dataFlipCards.json';
 import { useState, useEffect } from "react";
+import { HiRefresh } from "react-icons/hi";
 
 export default function Home() {
   useEffect(() => {
@@ -29,19 +30,18 @@ export default function Home() {
           <Row>
             <Col xs={12} md={6}>
               <h2 className="mb-4 mt-4 text-center" style={{ color: '#03045E', fontSize: '40px' }}><b>GIỚI THIỆU</b></h2>
-              <div className="content w-75">
+              <div className="content">
                 <p className="mb-4"><b>CLB Hỗ trợ Lập trình</b> (Support
                   Programming Information Technology, tên
                   viết tắt là SPIT) Trường Đại học Khoa học
                   Huế, được thành lập vào ngày 19/08/2023. </p>
-                <p className="mb-4">CLB được thành lập với mục đích hỗ trợ
-                  sinh viên học lập trình, tạo môi trường giao
-                  lưu trao đổi kinh nghiệm học tập, nghiên
-                  cứu, tiếp cận các chủ đề công nghệ mới.</p>
+                <p className="mb-4">CLB được thành lập với mục đích hỗ trợ sinh viên học lập trình, tạo môi trường giao lưu trao đổi kinh nghiệm học tập, nghiên cứu, tiếp cận các chủ đề công nghệ mới. Trong tương lai sẽ hướng đến việc hợp tác chặt chẽ với các doanh nghiệp, là cầu nối giữa doanh nghiệp với khoa và với sinh viên..</p>
                 <p className="mb-4"><b>Slogan của CLB:</b> “SPIT here to fix”</p>
               </div>
               <a href="/gioi-thieu">
-                <Button className="mt-4 mb-4 button-34 mx-auto d-block">Tìm hiểu thêm</Button>
+                <Button className="btn-more mt-4 mb-4 button-34 mx-auto d-block">
+                  Tìm hiểu thêm
+                </Button>
               </a>
             </Col>
             <Col xs={12} md={6}>
@@ -54,18 +54,22 @@ export default function Home() {
       </div>
       <div id="sec-3">
         <h1 className="mt-4 mb-4 text-center" style={{ color: '#fff', fontSize: '40px', fontWeight: 'bold' }}>THÀNH TÍCH NỔI BẬT CỦA CLB</h1>
-        <CarouselCard></CarouselCard>
+        <Container>
+          <CarouselCard></CarouselCard>
+        </Container>
       </div>
       <div id="sec-4">
         <Container>
           <h1 className="mb-4 text-center" style={{ color: '#03045E', fontSize: '40px', fontWeight: 'bold' }}>CÁC HOẠT ĐỘNG CHÍNH CỦA CLB</h1>
           <div className="d-flex flex-wrap justify-content-center">
             {dataFlipCards.map((flipCard, index) => (
-              <FlipCard key={index} title={flipCard.title} srcImage={flipCard.srcImage}></FlipCard>
+              <FlipCard key={index} title={flipCard.title} srcImage={flipCard.srcImage} href={flipCard.href}></FlipCard>
             ))}
           </div>
           <a href="/hoat-dong/#sec-1">
-            <Button className="mt-4 button-34 mx-auto d-block">Tìm hiểu thêm</Button>
+            <Button className="btn-more mt-4 button-34 mx-auto d-block">
+              Tìm hiểu thêm
+            </Button>
           </a>
         </Container>
       </div>
@@ -77,8 +81,8 @@ export default function Home() {
               <Card style={{ width: '100%', height: '100%', borderRadius: '10px', border: 'none' }}>
                 <Card.Img variant="top" src="\posts\gioi-thieu-clb-ho-tro-lap-trinh\images\1.jpg" style={{ width: '100%', height: '700px', objectFit: 'cover' }} />
                 <Card.Body>
-                  <Card.Title style={{ fontSize: '20px', fontWeight: 'bold' }}>CLB Hỗ trợ Lập trình - “SPIT here to fix”</Card.Title>
-                  <Card.Text className="desText">Ngày 23 tháng 8 năm 2024 - Nguyễn Văn A</Card.Text>
+                  <Card.Title className="mt-2" style={{ fontSize: '20px', fontWeight: 'bold' }}>CLB Hỗ trợ Lập trình - “SPIT here to fix”</Card.Title>
+                  <Card.Text className="desText">Ngày 23 tháng 8 năm 2024 - Admin</Card.Text>
                   <Card.Text>
                     🌟 CLB Hỗ trợ Lập trình - SPIT (Support Programming Information Technology) là một cộng đồng học thuật sôi nổi và nhiệt huyết tại Trường Đại học Khoa học, Đại học Huế, được thành lập vào ngày 19/08/2023. CLB là nơi dành cho những sinh viên yêu thích công nghệ và lập trình, mong muốn khám phá sâu hơn về thế giới coding, phát triển tư duy lập trình, kỹ năng giải quyết vấn đề, và trau dồi các kỹ năng mềm như làm việc nhóm, quản lý thời gian, và giao tiếp. Khi tham gia CLB, bạn sẽ có cơ hội tham gia các cuộc thi lập trình, các buổi seminar, training, và contest do CLB tổ chức 🌟
                   </Card.Text>
@@ -94,8 +98,8 @@ export default function Home() {
                   <Card style={{ width: '100%', borderRadius: '10px', border: 'none' }}>
                     <Card.Img variant="top" src="\posts\da-nang-code-league-2024\images\1.jpg" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
                     <Card.Body>
-                      <Card.Title style={{ fontSize: '20px', fontWeight: 'bold' }}>Chúc mừng đội thi HUSC_Newbie đạt Huy chương Bạc (bảng Warrior) tại cuộc thi lập trình Da Nang Code League năm 2024</Card.Title>
-                      <Card.Text className="desText">Ngày 14 tháng 7 năm 2024 - Nguyễn Văn A</Card.Text>
+                      <Card.Title className="mt-2" style={{ fontSize: '20px', fontWeight: 'bold' }}>Chúc mừng đội thi HUSC_Newbie đạt Huy chương Bạc (bảng Warrior) tại cuộc thi lập trình Da Nang Code League năm 2024</Card.Title>
+                      <Card.Text className="desText">Ngày 14 tháng 7 năm 2024 - Admin</Card.Text>
                       <Card.Text>
                         Vượt qua hơn 1500 thí sinh và hơn 500 đội thi đấu tại vòng bảng cuộc thi Code League, đội HUSC_Newbie đã
                         xuất sắc ghi tên mình vào danh sách 96 thí sinh xuất sắc nhất để thi đấu tại vòng Chung kết diễn ra tại FPT
@@ -113,8 +117,8 @@ export default function Home() {
                   <Card style={{ width: '100%', borderRadius: '10px', border: 'none' }}>
                     <Card.Img variant="top" src="\posts\recap-picnic-haiduong-2024\images\1.jpg" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
                     <Card.Body>
-                      <Card.Title style={{ fontSize: '20px', fontWeight: 'bold' }}>Buổi ngoại khoá 26/03 của CLB Hỗ trợ Lập trình</Card.Title>
-                      <Card.Text className="desText">Ngày 14 tháng 4 năm 2024 - Nguyễn Văn A</Card.Text>
+                      <Card.Title className="mt-2" style={{ fontSize: '20px', fontWeight: 'bold' }}>Buổi ngoại khoá 26/03 của CLB Hỗ trợ Lập trình</Card.Title>
+                      <Card.Text className="desText">Ngày 14 tháng 4 năm 2024 - Admin</Card.Text>
                       <Card.Text>
                         🌊 Ngày 24/03/2024 đã là một ngày picnic đầy ắp niềm vui tại biển Hải Dương, bởi buổi teambuilding do CLB Hỗ
                         trợ Lập trình tổ chức.

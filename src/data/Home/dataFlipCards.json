@@ -1,14 +1,17 @@
 [
     {
         "title": "SEMINAR",
-        "srcImage": "/images/pages/hoat-dong/seminar.jpg"
+        "srcImage": "/images/pages/hoat-dong/seminar.jpg",
+        "href": "/hoat-dong#sec-3"
     },
     {
         "title": "HỖ TRỢ",
-        "srcImage": "/images/pages/hoat-dong/tro-giang.jpg"
+        "srcImage": "/images/pages/hoat-dong/tro-giang.jpg",
+        "href": "/hoat-dong#sec-1"
     },
     {
         "title": "PHÒNG TỰ HỌC",
-        "srcImage": "/images/pages/hoat-dong/tu-hoc-1.jpg"
+        "srcImage": "/images/pages/hoat-dong/tu-hoc-1.jpg",
+        "href": "/hoat-dong#sec-2"
     }
 ]

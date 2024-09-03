@@ -1,5 +1,6 @@
 "use client";
 import { Card, Carousel, Col, Container, Row } from "react-bootstrap";
+import { useEffect } from 'react';
 import Image from "next/image";
 import "./app.css";
 import News from "../../components/News";
@@ -7,6 +8,9 @@ import InfoNews from "../../data/News/dataNews.json";
 import Link from "next/link";
 import ItemCarousel from "@/components/Carousel/ItemCarousel";
 const TinTucPage = () => {
+  useEffect(() => {
+    document.title = "Tin tức - SPIT";
+  }, []);
   const srcImage = ["/images/backgroud/seminar.jpg", "/images/backgroud/hopdinhki.png", "/images/backgroud/picnic-2024.jpg", "/images/backgroud/member.png", "/images/backgroud/tuyenthanhvien.png"];
   return (
     <div>
