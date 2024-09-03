@@ -49,7 +49,7 @@ const TinTucPage = ({ params }) => {
                 <div dangerouslySetInnerHTML={{ __html: content }} />
               </>
             ) : (
-              <p>Post not found</p>
+              <p>Bài viết không tồn tại</p>
             )}
           </Col>
           <Col>

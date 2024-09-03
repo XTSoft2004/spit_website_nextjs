@@ -45,6 +45,7 @@ const GioiThieuPage = () => {
                   ).map((member, index) => (
                     <Col key={index} className="item-card">
                       <CardMember
+                        id={member.id}
                         first_name={member.first_name}
                         last_name={member.last_name}
                         position={`${member.position.filter(

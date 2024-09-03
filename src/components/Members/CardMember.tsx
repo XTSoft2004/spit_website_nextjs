@@ -16,12 +16,14 @@ interface MemberProps {
   image: string;
 }
 interface CardMemberProps {
+  id: string,
   last_name: string;
   first_name: string;
   position: string;
   image: string;
 }
 const CardMember = ({
+  id,
   last_name,
   first_name,
   position,
@@ -30,7 +32,7 @@ const CardMember = ({
   // const lastPosition = position.length > 0 ? position[position.length - 1] : "";
   return (
     <>
-      <Link href="/gioi-thieu/name">
+      <Link href={`/gioi-thieu/${id}`}>
         <div className="card-item mb-3" style={{ position: 'relative' }}>
           <Card className="card-item text-center"
             style={{ position: 'absolute' }}>

@@ -1,5 +1,6 @@
 [
   {
+    "id": "vvthanh-1",
     "first_name": "Võ Văn",
     "last_name": "Thành",
     "birth_date": "09/08/2003",
@@ -19,10 +20,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Võ Văn Thành Meme.webp"
   },
   {
+    "id": "lstoan-1",
     "first_name": "Lê Sỹ",
     "last_name": "Toàn",
     "birth_date": "09/08/2003",
@@ -47,10 +50,45 @@
         "year": "2023"
       }
     ],
+    "achievements": [
+      {
+        "year": "2023",
+        "name": "Giải ba ICPC Quốc gia"
+      },
+      {
+        "year": "2023",
+        "name": "Giải nhất ICPC miền Trung"
+      },
+      {
+        "year": "2022",
+        "name": "Huy chương Đồng ICPC khu vực Châu Á"
+      },
+      {
+        "year": "2022",
+        "name": "Giải ba Olympic Tin học khối Chuyên"
+      },
+      {
+        "year": "2022",
+        "name": "Giải khuyến khích ICPC Quốc gia"
+      },
+      {
+        "year": "2022",
+        "name": "Giải nhì ICPC khu vực miền Trung"
+      },
+      {
+        "year": "2021",
+        "name": "Giải ba ICPC khối Không chuyên khu vực Châu Á "
+      },
+      {
+        "year": "2021",
+        "name": "Giải nhì Olympic Tin học khối Không chuyên"
+      }
+    ],
     "generation": "1",
     "image": "/images/members/Lê Sỹ Toàn.webp"
   },
   {
+    "id": "nvhai-1",
     "first_name": "Ngô Văn",
     "last_name": "Hải",
     "birth_date": "09/09/2003",
@@ -75,10 +113,49 @@
         "year": "2023"
       }
     ],
+    "achievements": [
+      {
+        "year": "2024",
+        "name": "Huy chương Bạc - Da Nang Code League"
+      },
+      {
+        "year": "2023",
+        "name": "Giải Nhất - kỳ thi ICPC miền Trung"
+      },
+      {
+        "year": "2023",
+        "name": "Giải Ba - kỳ thi ICPC Quốc Gia"
+      },
+      {
+        "year": "2022",
+        "name": "Giải Nhất - kỳ thi ICPC miền Trung"
+      },
+      {
+        "year": "2022",
+        "name": "Giải Ba - kỳ thi ICPC Quốc Gia"
+      },
+      {
+        "year": "2022",
+        "name": "Giải Nhì - khối chuyên tin kỳ thi Olympic Tin học Sinh viên Việt Nam"
+      },
+      {
+        "year": "2022",
+        "name": "Huy chương Đồng - kỳ thi Lập trình sinh viên Quốc tế ICPC Asian Ho Chi Minh City"
+      },
+      {
+        "year": "2021",
+        "name": "Giải Nhất - khối Không chuyên tin kỳ thi Olympic Tin học Sinh viên Việt Nam "
+      },
+      {
+        "year": "2021",
+        "name": "Giải Ba - khối Không chuyên tin kỳ thi Lập trình sinh viên Quốc tế ICPC Asian Ha Noi"
+      }
+    ],
     "generation": "1",
     "image": "/images/members/Ngô Văn Hải.webp"
   },
   {
+    "id": "hbkhanh-1",
     "first_name": "Hoàng Bảo",
     "last_name": "Khánh",
     "birth_date": "15/11/2004",
@@ -98,10 +175,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Hoàng Bảo Khánh.webp"
   },
   {
+    "id": "hhdanh-1",
     "first_name": "Hoàng Hạnh Diệu",
     "last_name": "Anh",
     "birth_date": "21/12/2003",
@@ -116,10 +195,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Hoàng Hạnh Diệu Anh.webp"
   },
   {
+    "id": "dntchau-1",
     "first_name": "Đoàn Ngọc Trân",
     "last_name": "Châu",
     "birth_date": "17/11/2005",
@@ -134,10 +215,12 @@
         "year": "2024"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Đoàn Ngọc Trân Châu.webp"
   },
   {
+    "id": "lqdat-1",
     "first_name": "Lê Quang",
     "last_name": "Đạt",
     "birth_date": "01/11/2004",
@@ -157,10 +240,12 @@
         "year": "2024"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Lê Quang Đạt.webp"
   },
   {
+    "id": "nqdat-1",
     "first_name": "Nguyễn Quốc",
     "last_name": "Đạt",
     "birth_date": "11/01/2005",
@@ -175,10 +260,12 @@
         "year": "2024"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Nguyễn Quốc Đạt.webp"
   },
   {
+    "id": "lnde-1",
     "first_name": "Lý Ngọc",
     "last_name": "Đế",
     "birth_date": "06/08/2002",
@@ -193,10 +280,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Lý Ngọc Đế.webp"
   },
   {
+    "id": "tdoan-1",
     "first_name": "Trương",
     "last_name": "Đoàn",
     "birth_date": "20/12/2003",
@@ -216,10 +305,25 @@
         "year": "2023"
       }
     ],
+    "achievements": [
+      {
+        "year": "2022",
+        "name": "Giải khuyến kích OLP tin học khối chuyên tin"
+      },
+      {
+        "year": "2023",
+        "name": "Giải Nhì ICPC khu vực miền Trung"
+      },
+      {
+        "year": "2023",
+        "name": "Giải Ba OLP tin học khối chuyên tin"
+      }
+    ],
     "generation": "1",
     "image": "/images/members/Trương Đoàn.webp"
   },
   {
+    "id": "phhai-1",
     "first_name": "Phạm Hoàng",
     "last_name": "Hải",
     "birth_date": "18/11/2005",
@@ -234,10 +338,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Phạm Hoàng Hải.webp"
   },
   {
+    "id": "hhao-1",
     "first_name": "Hoàng",
     "last_name": "Hào",
     "birth_date": "01/06/2003",
@@ -257,10 +363,21 @@
         "year": "2023"
       }
     ],
+    "achievements": [
+      {
+        "year": "2024",
+        "name": "Giải ba OLP chuyên tin"
+      },
+      {
+        "year": "2024",
+        "name": "Nhì ICPC miền Trung"
+      }
+    ],
     "generation": "1",
     "image": "/images/members/Hoàng Hào.webp"
   },
   {
+    "id": "lnghan-1",
     "first_name": "Lê Nguyễn Gia",
     "last_name": "Hân",
     "birth_date": "06/01/2004",
@@ -280,10 +397,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Lê Nguyễn Gia Hân.webp"
   },
   {
+    "id": "nntlinh-1",
     "first_name": "Nguyễn Ngọc Tố",
     "last_name": "Linh",
     "birth_date": "16/11/2005",
@@ -303,10 +422,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Nguyễn Ngọc Tố Linh.webp"
   },
   {
+    "id": "tlklinh-1",
     "first_name": "Trần Thị Khánh",
     "last_name": "Linh",
     "birth_date": "17/09/2005",
@@ -321,10 +442,12 @@
         "year": "2024"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Trần Thị Khánh Linh.webp"
   },
   {
+    "id": "nklinh-1",
     "first_name": "Nguyễn Khánh",
     "last_name": "Linh",
     "birth_date": "12/02/2004",
@@ -339,10 +462,12 @@
         "year": "2024"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Nguyễn Khánh Linh.webp"
   },
   {
+    "id": "ldlong-1",
     "first_name": "Lê Đức",
     "last_name": "Long",
     "birth_date": "20/09/2004",
@@ -357,10 +482,12 @@
         "year": "2024"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Lê Đức Long.webp"
   },
   {
+    "id": "nthmy-1",
     "first_name": "Nguyễn Thị Hằng",
     "last_name": "My",
     "birth_date": "25/03/2004",
@@ -375,10 +502,12 @@
         "year": "2024"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Nguyễn Thị Hằng My.webp"
   },
   {
+    "id": "ndknguyen-1",
     "first_name": "Nguyễn Đình Khánh",
     "last_name": "Nguyên",
     "birth_date": "14/11/2005",
@@ -393,10 +522,12 @@
         "year": "2024"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Nguyễn Đình Khánh Nguyên.webp"
   },
   {
+    "id": "lpphat-1",
     "first_name": "Lê Phi",
     "last_name": "Phát",
     "birth_date": "24/02/2003",
@@ -416,10 +547,21 @@
         "year": "2023"
       }
     ],
+    "achievements": [
+      {
+        "year": "2024",
+        "name": "Nhì OLP chuyên tin"
+      },
+      {
+        "year": "2024",
+        "name": "Nhì ICPC miền trung"
+      }
+    ],
     "generation": "1",
     "image": "/images/members/Lê Phi Phát.webp"
   },
   {
+    "id": "ntphong-1",
     "first_name": "Nguyễn Thanh",
     "last_name": "Phong",
     "birth_date": "19/06/2004",
@@ -434,10 +576,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Nguyễn Thanh Phong.webp"
   },
   {
+    "id": "tdphuc-1",
     "first_name": "Trương Đình",
     "last_name": "Phúc",
     "birth_date": "24/04/2005",
@@ -457,10 +601,12 @@
         "year": "2024"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Trương Đình Phúc.webp"
   },
   {
+    "id": "nlnquyen-1",
     "first_name": "Ngô Lê Nam",
     "last_name": "Quyền",
     "birth_date": "18/12/2005",
@@ -475,10 +621,12 @@
         "year": "2024"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Ngô Lê Nam Quyền.webp"
   },
   {
+    "id": "bttthanh-1",
     "first_name": "Bạch Thị Thiện",
     "last_name": "Thanh",
     "birth_date": "12/10/2004",
@@ -498,10 +646,12 @@
         "year": "2024"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Bạch Thị Thiện Thanh.webp"
   },
   {
+    "id": "nhthien-1",
     "first_name": "Nguyễn Hiếu",
     "last_name": "Thiện",
     "birth_date": "08/01/2005",
@@ -516,10 +666,12 @@
         "year": "2024"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Nguyễn Hiếu Thiện.webp"
   },
   {
+    "id": "dqthuan-1",
     "first_name": "Đào Quang",
     "last_name": "Thuận",
     "birth_date": "26/04/2004",
@@ -539,10 +691,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Đào Quang Thuận.webp"
   },
   {
+    "id": "httthuy-1",
     "first_name": "Huỳnh Thị Thanh",
     "last_name": "Thúy",
     "birth_date": "12/08/2004",
@@ -562,10 +716,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Huỳnh Thị Thanh Thúy.webp"
   },
   {
+    "id": "txtruong-1",
     "first_name": "Trần Xuân",
     "last_name": "Trường",
     "birth_date": "22/12/2004",
@@ -580,10 +736,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "1",
     "image": "/images/members/Trần Xuân Trường.webp"
   },
   {
+    "id": "nqtruong-1",
     "first_name": "Ngô Quang",
     "last_name": "Trường",
     "birth_date": "14/04/2005",
@@ -598,10 +756,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Ngô Quang Trường.webp"
   },
   {
+    "id": "tnntung-1",
     "first_name": "Trương Ngọc Nhật",
     "last_name": "Tùng",
     "birth_date": "15/05/2004",
@@ -616,10 +776,12 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Trương Ngọc Nhật Tùng.webp"
   },
   {
+    "id": "lqtuyen-1",
     "first_name": "Lê Quang",
     "last_name": "Tuyến",
     "birth_date": "06/08/2002",
@@ -634,6 +796,7 @@
         "year": "2023"
       }
     ],
+    "achievements": [],
     "generation": "2",
     "image": "/images/members/Lê Quang Tuyến.webp"
   }
