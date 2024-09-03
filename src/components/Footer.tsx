@@ -1,5 +1,7 @@
 import { Row, Col, Container } from "react-bootstrap";
 
+import './app.css';
+
 const Footer = () => (
   <footer
     className="p-2"
@@ -8,7 +10,9 @@ const Footer = () => (
     <Container className="p-4">
       <Row>
         <Col xs={12} sm={6} lg={3} className="p-2 px-3">
+        <a href="/">
           <img className="w-100" src="/images/logo/bannerCLB.png"></img>
+        </a>
         </Col>
         <Col xs={12} sm={6} lg={3} className="p-2">
           <div>
@@ -52,19 +56,19 @@ const Footer = () => (
           <div>
             <h4>CÁC LIÊN KẾT HỮU ÍCH</h4>
             <div className="mt-3">
-              <div>
+              <div className="mb-2 connect-text">
                 <a href="/tuyen-thanh-vien">
                   <i className="bi bi-chevron-right"></i>
                   Tuyển thành viên CLB
                 </a>
               </div>
-              <div>
-                <a href="/">
+              <div className="mb-2 connect-text">
+                <a href="/gioi-thieu">
                   <i className="bi bi-chevron-right"></i>
                   Giới thiệu thành viên
                 </a>
               </div>
-              <div>
+              <div className="connect-text">
                 <a href="/tai-lieu">
                   <i className="bi bi-chevron-right"></i>
                   Tài liệu học tập
@@ -79,24 +83,32 @@ const Footer = () => (
             <div>
               <div className="d-flex mt-4">
                 <div>
-                  <img
-                    style={{ width: 70, height: 70 }}
-                    src="/images/logo/logoKhoaCNTT.png"
-                  ></img>
+                  <a href="https://it.husc.edu.vn/" target="_blank">
+                    <img
+                      style={{ width: 70, height: 70 }}
+                      src="/images/logo/logoKhoaCNTT.png"
+                    ></img>
+                  </a>
                 </div>
-                <div className="text-center mx-auto">
-                  <span className="fw-bold">Khoa Công Nghệ Thông Tin</span>
-                  <p>Faculty of Information Technology</p>
+                <div className="text-center mx-auto connect-text">
+                  <a href="https://it.husc.edu.vn/" target="_blank">
+                    <span className="fw-bold">Khoa Công Nghệ Thông Tin</span>
+                    <p>Faculty of Information Technology</p>
+                  </a>
                 </div>
               </div>
               <div className="d-flex mt-3">
-                <img
-                  style={{ width: 70, height: 70 }}
-                  src="/images/logo/logoHUSC.png"
-                ></img>
-                <div className="text-center mx-auto mt-1">
-                  <span className="fw-bold">Trường Đại học Khoa Học</span>
-                  <p>Hue University of Sciences</p>
+                <a href="https://husc.edu.vn/" target="_blank">
+                  <img
+                    style={{ width: 70, height: 70 }}
+                    src="/images/logo/logoHUSC.png"
+                  ></img>
+                </a>
+                <div className="text-center mx-auto mt-1 connect-text">
+                  <a href="https://husc.edu.vn/" target="_blank">
+                    <span className="fw-bold">Trường Đại học Khoa Học</span>
+                    <p>Hue University of Sciences</p>
+                  </a>
                 </div>
               </div>
             </div>

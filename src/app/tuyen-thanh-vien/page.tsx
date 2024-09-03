@@ -201,9 +201,7 @@ export default function TuyenThanhVien() {
                 </Col>
                 <Col sm={8}>
                   <p>
-                    Sinh viên năm 1, 2, 3 đang học ngành Công nghệ thông tin, Kỹ
-                    thuật phần mềm hoặc các ngành khác có liên quan tại trường
-                    Đại học Khoa học, Đại học Huế.
+                    Sinh viên năm 1, 2, 3 đang học ngành Công nghệ thông tin, Kỹ thuật phần mềm hoặc các ngành khác có liên quan tại trường Đại học Khoa học, Đại học Huế; học sinh chuyên Tin trường THPT Chuyên Khoa học Huế.
                   </p>
                   <p className="mb-3">
                     - Đối với sinh viên năm 1: Đạt điểm A học phần Nhập môn lập
@@ -262,38 +260,28 @@ export default function TuyenThanhVien() {
                 </Col>
               </Row>
             </Container>
-            <Container className="mt-4">
+            <Container className="mt-4" style={{ fontFamily: 'Montserrat' }}>
               <Timeline position="alternate">
                 <TimelineItem>
-                  <TimelineOppositeContent
-                    sx={{ m: "auto 0" }}
-                    align="right"
-                    variant="body2"
-                    color="white"
-                  >
-                    <a className="dynamic-text-shadow">01.01.2024</a>
-                  </TimelineOppositeContent>
                   <TimelineSeparator>
                     <TimelineConnector />
-                    <TimelineDot>
+                    <TimelineDot color="primary">
                       <PlayArrowIcon />
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "22px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                      Mở đơn đăng ký
+                      <p>
+                        Mở đơn đăng ký
+                      </p>
+                      <p className="ms-3">
+                        01.01.2024
+                      </p>
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
-                  <TimelineOppositeContent
-                    sx={{ m: "auto 0" }}
-                    variant="body2"
-                    color="white"
-                  >
-                    <a className="dynamic-text-shadow">01.01.2024</a>
-                  </TimelineOppositeContent>
                   <TimelineSeparator>
                     <TimelineConnector />
                     <TimelineDot color="primary">
@@ -303,49 +291,50 @@ export default function TuyenThanhVien() {
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "22px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                      Duyệt đơn
+                      <p>
+                        Duyệt đơn
+                      </p>
+                      <p className="ms-3">
+                        01.01.2024
+                      </p>
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
-                  <TimelineOppositeContent
-                    sx={{ m: "auto 0" }}
-                    variant="body2"
-                    color="white"
-                  >
-                    <a className="dynamic-text-shadow">01.01.2024</a>
-                  </TimelineOppositeContent>
                   <TimelineSeparator>
                     <TimelineConnector />
-                    <TimelineDot color="error">
+                    <TimelineDot color="primary">
                       <RoomIcon />
                     </TimelineDot>
-                    <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+                    <TimelineConnector />
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "22px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                      Phỏng vấn
+                      <p>
+                        Phỏng vấn
+                      </p>
+                      <p>
+                        01.01.2024
+                      </p>
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
-                  <TimelineOppositeContent
-                    sx={{ m: "auto 0" }}
-                    variant="body2"
-                    color="white"
-                  >
-                    <a className="dynamic-text-shadow">01.01.2024</a>
-                  </TimelineOppositeContent>
                   <TimelineSeparator>
-                    <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-                    <TimelineDot color="secondary">
+                    <TimelineConnector />
+                    <TimelineDot color="primary">
                       <HowToRegIcon />
                     </TimelineDot>
                     <TimelineConnector />
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "22px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                      Kết quả
+                      <p>
+                        Kết quả
+                      </p>
+                      <p className="ms-3">
+                        01.01.2024
+                      </p>
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>

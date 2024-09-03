@@ -3,10 +3,6 @@
 
 import { useState, useEffect } from "react";
 
-// Import api
-import * as googleAPI from '../../Model/Api/GoogleDriveAPI';
-import * as config from '../../Model/Auth/ConfigData';
-
 import Document from '../../components/Document/document';
 
 import './style.css';
