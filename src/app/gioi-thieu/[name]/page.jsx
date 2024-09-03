@@ -22,10 +22,14 @@ const InfoMemberPage = ({ params }) => {
     <>
       {member ? (
         <Container className="py-5">
+          <h1 className="text-center fs-3 mb-2 text-2xl font-bold text-uppercase">
+            Thông tin thành viên
+          </h1>
+          <div
+            style={{ borderBottom: "3px solid #000", width: "15%" }}
+            className="mx-auto mb-5"
+          ></div>
           <Row>
-            <h1 className="text-center mb-4 text-4xl font-bold">
-              {member.first_name} {member.last_name}
-            </h1>
             <Col lg={3} className="mx-auto">
               <img
                 className="rounded"
@@ -37,9 +41,12 @@ const InfoMemberPage = ({ params }) => {
                   objectFit: "cover",
                 }}
               ></img>
+              <h1 className="text-center mb-2 mt-3 text-2xl font-bold">
+                {member.first_name} {member.last_name}
+              </h1>
             </Col>
 
-            <Col className="infoMember ms-2">
+            <Col className="infoMember">
               <Row>
                 <Col lg={5}>
                   <Row
@@ -51,22 +58,45 @@ const InfoMemberPage = ({ params }) => {
                   >
                     <p className="text-center">Thông tin</p>
                   </Row>
-                  <Row>
-                    <div className="fs-5 item-info">
-                      <span className="fw-bold">Họ và tên: </span>
-                      {member.first_name} {member.last_name}
-                      <br />
-                      <span className="fw-bold">Giới tính: </span>{" "}
-                      {member.gender}
-                      <br />
-                      <span className="fw-bold">Ngày sinh: </span>
-                      {member.birth_date}
-                      <br />
-                      <span className="fw-bold">Lớp: </span> {member.class}
-                      <br />
-                      <span className="fw-bold">Thế hệ: </span>
-                      {member.generation}
-                    </div>
+
+                  <div className="fs-5 item-info">
+                    <span className="fw-bold">Họ và tên: </span>
+                    {member.first_name} {member.last_name}
+                    <br />
+                    <span className="fw-bold">Giới tính: </span> {member.gender}
+                    <br />
+                    <span className="fw-bold">Ngày sinh: </span>
+                    {member.birth_date}
+                    <br />
+                    <span className="fw-bold">Lớp: </span> {member.class}
+                    <br />
+                    <span className="fw-bold">Thế hệ: </span>
+                    {member.generation}
+                  </div>
+
+                  <Row className="ms-2 mt-5">
+                    <Row
+                      className="item-title py-2 px-2 rounded-lg fw-bold mb-3"
+                      style={{
+                        backgroundColor: "#003056",
+                        color: "white",
+                      }}
+                    >
+                      <p className="text-center">Quá trình hoạt động</p>
+                    </Row>
+                    <Row>
+                      {InfoMembers.filter((member) =>
+                        member.id === params.name ? member : null
+                      ).map((member, index) => {
+                        return (
+                          <>
+                            <MemberPositions
+                              positions={member.position}
+                            ></MemberPositions>
+                          </>
+                        );
+                      })}
+                    </Row>
                   </Row>
                 </Col>
                 <Col lg={5}>
@@ -113,31 +143,6 @@ const InfoMemberPage = ({ params }) => {
                     })}
                   </Row>
                 </Col>
-              </Row>
-
-              <Row className="mt-5">
-                <Row
-                  className="item-title py-2 px-2 rounded-lg fw-bold mb-3"
-                  style={{
-                    backgroundColor: "#003056",
-                    color: "white",
-                  }}
-                >
-                  <p className="text-center">Quá trình hoạt động</p>
-                </Row>
-                <Row>
-                  {InfoMembers.filter((member) =>
-                    member.id === params.name ? member : null
-                  ).map((member, index) => {
-                    return (
-                      <>
-                        <MemberPositions
-                          positions={member.position}
-                        ></MemberPositions>
-                      </>
-                    );
-                  })}
-                </Row>
               </Row>
             </Col>
           </Row>
