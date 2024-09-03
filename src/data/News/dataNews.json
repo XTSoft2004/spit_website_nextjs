@@ -1,7 +1,7 @@
 [
   {
     "id": "gioi-thieu-clb-ho-tro-lap-trinh",
-    "name": "Giới thiệu CLB Hỗ trợ Lập Trình - \"SPIT here to fix\"",
+    "name": "Giới thiệu CLB Hỗ trợ Lập trình - \"SPIT here to fix\"",
     "tag": "#noibo",
     "image": "/posts/gioi-thieu-clb-ho-tro-lap-trinh/images/1.jpg",
     "description": "🌟 CLB Hỗ trợ Lập trình - SPIT (Support Programming Information Technology) là một cộng đồng học thuật sôi nổi và nhiệt huyết tại Trường Đại học Khoa học, Đại học Huế, được thành lập vào ngày 19/08/2023. CLB là nơi dành cho những sinh viên yêu thích công nghệ và lập trình, mong muốn khám phá sâu hơn về thế giới coding, phát triển tư duy lập trình, kỹ năng giải quyết vấn đề, và trau dồi các kỹ năng mềm như làm việc nhóm, quản lý thời gian, và giao tiếp. Khi tham gia CLB, bạn sẽ có cơ hội tham gia các cuộc thi lập trình, các buổi seminar, training, và contest do CLB tổ chức, cũng như hỗ trợ giảng viên và sinh viên khác trong các tiết thực hành lập trình. CLB Hỗ trợ Lập trình không chỉ là nơi bạn nâng cao kỹ năng chuyên môn mà còn là môi trường để gặp gỡ, giao lưu với những người bạn cùng sở thích và những anh chị có thành tích xuất sắc trong lĩnh vực lập trình. Với yêu cầu về thành tích học tập và tinh thần cầu tiến, CLB hứa hẹn sẽ là nơi nuôi dưỡng và phát triển những tài năng lập trình trẻ của trường. Hãy theo dõi fanpage của CLB để không bỏ lỡ cơ hội tham gia và trở thành thành viên chính thức của SPIT trong đợt tuyển sinh sắp tới! 🌟",
@@ -10,7 +10,7 @@
   },
   {
     "id": "da-nang-code-league-2024",
-    "name": "Cuộc thi lập trình Đà Nẵng Code League 2024",
+    "name": "Cuộc thi lập trình Da Nang Code League 2024",
     "tag": "#giaithuong",
     "image": "/posts/da-nang-code-league-2024/images/3.jpg",
     "description": "🎉 Chúc mừng đội HUSC_Newbie đã xuất sắc giành huy chương Bạc tại cuộc thi Da Nang Code League 2024! 🌟 Vượt qua hơn 1500 thí sinh và 500 đội thi đấu, đội đã lọt vào top 4 tại bảng Warrior sau 4 giờ thi đấu căng thẳng. 🏅👏 Thành tích này là kết quả của sự nỗ lực và đam mê của các thành viên: Anh Lê Ngọc Hoàng, Anh Lê Sỹ Toàn (Phó Chủ nhiệm CLB Hỗ trợ Lập trình), và Anh Ngô Văn Hải (Phó Chủ nhiệm CLB Hỗ trợ Lập trình). Chúc mừng các bạn và hy vọng sẽ tiếp tục đạt nhiều thành tích ấn tượng trong tương lai! 🚀✨",
@@ -36,8 +36,8 @@
     "html": "/posts/spit-front-end-2024/index.html"
   },
   {
-    "id": "flex-ngo-van-hai",
-    "name": "Flex Ngô Văn Hải",
+    "id": "flex-pho-chu-nhiem",
+    "name": "Flex Phó chủ nhiệm CLB Hỗ trợ Lập trình",
     "tag": "#noibo",
     "image": "/posts/flex_NgoVanHai/images/1.jpg",
     "description": "Gia nhập CLB Hỗ trợ Lập trình (SPIT) - nơi bạn có thể rèn luyện kỹ năng lập trình, tham gia các cuộc thi, seminar, training, hỗ trợ giảng viên và sinh viên, cùng giao lưu với những cá nhân đam mê công nghệ trong một môi trường học thuật sôi động!",

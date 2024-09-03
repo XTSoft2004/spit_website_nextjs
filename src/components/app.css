@@ -48,3 +48,8 @@
         margin-left: auto !important;
     }
 }
+
+/* Footer */
+.connect-text:hover{
+    color: #ccc;
+}
