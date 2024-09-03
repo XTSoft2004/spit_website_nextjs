@@ -13,6 +13,7 @@
     transform: translate(-50%, -50%);
 }
 
+
 @media (max-width: 768px) {
     .name-posts {
         width: 100%;
@@ -28,4 +29,25 @@
     .item-card {
         margin-left: 85px;
     }
+
+    .logo-tongquan {
+        margin-top: 30px;
+    }
+
+    .item-mucdich {
+        margin-bottom: 20px;
+    }
+
+    .item-cocau {
+        margin-bottom: 20px;
+    }
+}
+
+.item-cocau {
+    border-left: 10px solid #103994;
+    height: 100%;
+}
+
+.item-textColor {
+    color: #103994;
 }

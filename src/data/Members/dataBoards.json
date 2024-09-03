@@ -7,7 +7,7 @@
     {
         "id": "bcm",
         "name": "Ban Chuyên môn",
-        "description": ""
+        "description": "Là đội ngũ thành viên đảm nhận vai trò ra đề cho SPIT Contest, hỗ trợ các thành viên khác nâng cao kiến thức lập trình, nhằm phát triển năng lực chuyên môn của cả CLB."
     },
     {
         "id": "btt",
@@ -17,6 +17,6 @@
     {
         "id": "btv",
         "name": "Thành viên",
-        "description": ""
+        "description": "Là những người đam mê học hỏi và khám phá thế giới lập trình, tích cực tham gia vào các hoạt động do CLB tổ chức, với tinh thần cầu tiến, sẵn sàng chia sẻ, sẵn sàng đóng góp vào sự phát triển của CLB."
     }
 ]

@@ -11,7 +11,7 @@ const CardRole = ({ namerole, description, number }: CardRoleProps) => {
     <Card
       className="mb-3 item-broad"
       style={{
-        width: "18rem",
+        width: "20rem",
         height: "25rem",
         background: "#103994",
         color: "#fff",

@@ -50,7 +50,7 @@ const CardMember = ({
               >
                 {first_name} {last_name}
               </Card.Title>
-              <Card.Text className="truncate-line-1" style={{ fontSize: "12px" }}>
+              <Card.Text className="truncate-line-2" style={{ fontSize: "12px" }}>
                 {position == "" ? "Không có chức vụ" : position}
               </Card.Text>
 

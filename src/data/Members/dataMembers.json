@@ -1,5 +1,77 @@
 [
   {
+    "first_name": "TS. Nguyễn Hoàng",
+    "last_name": "Hà",
+    "birth_date": "09/08/2003",
+    "phone_number": "0934094936",
+    "email_address": "21t1020088@husc.edu.vn",
+    "gender": "Nam",
+    "class": "Ban cố vấn",
+    "position": [
+      {
+        "id": "bcv",
+        "name": "Trưởng Khoa Công nghệ thông tin",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Nguyễn Hoàng Hà.webp"
+  },
+  {
+    "first_name": "TS. Nguyễn Đăng",
+    "last_name": "Bình",
+    "birth_date": "09/08/2003",
+    "phone_number": "0934094936",
+    "email_address": "21t1020088@husc.edu.vn",
+    "gender": "Nam",
+    "class": "Ban cố vấn",
+    "position": [
+      {
+        "id": "bcv",
+        "name": "Trưởng Bộ môn Khoa học máy tính",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Nguyễn Đăng Bình.webp"
+  },
+  {
+    "first_name": "ThS. Trần Việt",
+    "last_name": "Khoa",
+    "birth_date": "09/08/2003",
+    "phone_number": "0934094936",
+    "email_address": "21t1020088@husc.edu.vn",
+    "gender": "Nam",
+    "class": "Ban cố vấn",
+    "position": [
+      {
+        "id": "bcv",
+        "name": "Giảng viên Khoa Công nghệ thông tin",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Trần Việt Khoa.webp"
+  },
+  {
+    "first_name": "ThS. Lê Nguyễn Thủy",
+    "last_name": "Nhi",
+    "birth_date": "09/08/2003",
+    "phone_number": "0934094936",
+    "email_address": "21t1020088@husc.edu.vn",
+    "gender": "Nam",
+    "class": "Ban cố vấn",
+    "position": [
+      {
+        "id": "bcv",
+        "name": "Bí thư Liên Chi Đoàn Khoa Công nghệ thông tin",
+        "year": "2023"
+      }
+    ],
+    "generation": "1",
+    "image": "/images/members/Lê Nguyễn Thùy Nhi.webp"
+  },
+  {
     "first_name": "Võ Văn",
     "last_name": "Thành",
     "birth_date": "09/08/2003",

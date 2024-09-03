@@ -71,7 +71,7 @@ const index = () => {
                 </Nav.Link>
                 {/* DropDown thông tin giới thiệu */}
                 <NavDropdown title="Giới thiệu" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/gioi-thieu/#tong-quang">
+                  <NavDropdown.Item href="/gioi-thieu/#tong-quan">
                     Tổng quan
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/gioi-thieu.#muc-tieu">
