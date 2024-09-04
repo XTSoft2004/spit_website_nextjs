@@ -12,15 +12,22 @@ import {
 } from "react-bootstrap";
 
 import { useEffect, useState } from "react";
+import { usePathname } from 'next/navigation'
 
 import "./app.css";
 const index = () => {
   const [show, setShow] = useState(false);
-
+  const [url, setUrl] = useState("");
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [nav, setnav] = useState(false);
+
+  const pathname = usePathname(); // Call usePathname at the top level
+
   useEffect(() => {
+    setUrl(pathname);
+    console.log(pathname); // Log the current pathname
+
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setnav(true);
@@ -28,11 +35,13 @@ const index = () => {
         setnav(false);
       }
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [pathname]);
+
 
   return (
     <>
@@ -67,58 +76,55 @@ const index = () => {
             <Nav className="d-none d-lg-flex justify-content-between w-100 align-items-center">
               <Nav className="mx-auto">
                 <Nav.Link className="ms-3 me-2" href="/">
-                  <i className="bi bi-house-door-fill"></i>
+                  <i className="bi bi-house-door-fill gradient-text"></i>
                 </Nav.Link>
                 {/* DropDown thông tin giới thiệu */}
-                <NavDropdown className="gradient-text fw-bold" title="Giới thiệu" id="basic-nav-dropdown">
-                  <NavDropdown.Item className="gradient-text fw-bold" href="/gioi-thieu/#tong-quan">
+                <NavDropdown className={`gradient-text fw-bold navbar-item ${url.includes("/gioi-thieu") ? "active" : null}`} title="Giới thiệu" id="basic-nav-dropdown">
+                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/gioi-thieu/#tong-quan" ? "active" : null}`} href="/gioi-thieu/#tong-quan">
                     Tổng quan
                   </NavDropdown.Item>
-                  <NavDropdown.Item className="gradient-text fw-bold" href="/gioi-thieu/#muc-tieu">
+                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/gioi-thieu/#muc-tieu" ? "active" : null}`} href="/gioi-thieu/#muc-tieu">
                     Mục đích hoạt động
                   </NavDropdown.Item>
-                  <NavDropdown.Item className="gradient-text fw-bold" href="/gioi-thieu/#thanh-vien">
+                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/gioi-thieu/#thanh-vien" ? "active" : null}`} href="/gioi-thieu/#thanh-vien">
                     Cơ cấu tổ chức
                   </NavDropdown.Item>
                 </NavDropdown>
 
-                <Nav.Link className="ms-3 gradient-text fw-bold" href="/hoat-dong">
+                <Nav.Link className={`gradient-text fw-bold navbar-item ${url == "/hoat-dong" ? "active" : null}`} href="/hoat-dong">
                   Hoạt động
                 </Nav.Link>
-                {/* <Nav.Link className="ms-3" href="/tin-tuc">
-                  Tin tức - Thông báo
-                </Nav.Link> */}
 
-                <NavDropdown className="ms-3 gradient-text fw-bold" title="Tin tức - Thông báo" id="basic-nav-dropdown">
-                  <NavDropdown.Item className="gradient-text fw-bold" href="/tin-tuc/">
+                <NavDropdown className={`ps-3 gradient-text fw-bold navbar-item ${url.includes("/tin-tuc") ? "active" : null}`} title="Tin tức - Thông báo" id="basic-nav-dropdown">
+                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/tin-tuc" ? "active" : null}`} href="/tin-tuc">
                     Hoạt động
                   </NavDropdown.Item>
-                  <NavDropdown.Item className="gradient-text fw-bold" href="/tin-tuc/#giai-thuong">
+                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/tin-tuc/#giai-thuong" ? "active" : null}`} href="/tin-tuc/#giai-thuong">
                     Giải thưởng
                   </NavDropdown.Item>
-                  <NavDropdown.Item className="gradient-text fw-bold" href="/tin-tuc/#noi-bo">
+                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/tin-tuc/#noi-bo" ? "active" : null}`} href="/tin-tuc/#noi-bo">
                     Nội bộ
                   </NavDropdown.Item>
                 </NavDropdown>
 
 
-                <Nav.Link className="ms-3 gradient-text fw-bold" href="/tuyen-thanh-vien">
+                <Nav.Link className={`gradient-text fw-bold navbar-item ${url == "/tuyen-thanh-vien" ? "active" : null}`} href="/tuyen-thanh-vien">
                   Tuyển thành viên
                 </Nav.Link>
-              </Nav>
+              </Nav >
               {/* <Button className="button-34">Tham gia ngay</Button> */}
-              <a href='/tuyen-thanh-vien#reg-form'>
+              < a href='/tuyen-thanh-vien#reg-form' >
                 <button className="button">
                   Tham gia ngay
                   <div className="hoverEffect">
                     <div></div>
                   </div>
                 </button>
-              </a>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+              </ a>
+            </Nav >
+          </Navbar.Collapse >
+        </Container >
+      </Navbar >
 
       <Offcanvas placement="end" show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>

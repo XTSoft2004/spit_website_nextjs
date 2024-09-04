@@ -4,9 +4,10 @@
     animation: down 0.7s forwards ease-in;
 }
 
+
 .navbar-item {
-    margin: 0 15px;
-    padding: 10px 0;
+    /* margin: 0 15px;
+    padding: 10px 0; */
     position: relative;
 }
 
@@ -21,12 +22,12 @@
             rgba(180, 115, 248, 1), rgba(254, 180, 123, 0));
     /* Gradient màu với hai đầu mờ dần */
     transition: all 0.3s ease;
-    transform: translateX(-70%);
+    transform: translateX(-50%);
 }
 
 .navbar-item:hover::after,
 .navbar-item.active::after {
-    width: 100%;
+    width: 75%;
 }
 
 @keyframes down {
@@ -50,6 +51,6 @@
 }
 
 /* Footer */
-.connect-text:hover{
+.connect-text:hover {
     color: #ccc;
 }
