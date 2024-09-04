@@ -83,6 +83,7 @@ const Index = () => {
                 <NavDropdown className={`gradient-text fw-bold navbar-item ${url.includes("/gioi-thieu/") ? "active" : null}`} title="Giới thiệu" id="basic-nav-dropdown">
                   <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/gioi-thieu/#tong-quan" ? "active" : null}`} >
                     <Link href="/gioi-thieu/#tong-quan">Tổng quan</Link>
+                    {/* TODO: Thêm nhiều thằng link cho tao */}
                   </NavDropdown.Item>
                   <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/gioi-thieu/#muc-tieu" ? "active" : null}`} href="/gioi-thieu/#muc-tieu">
                     Mục đích hoạt động
