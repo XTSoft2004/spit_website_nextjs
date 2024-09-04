@@ -163,7 +163,7 @@ const Index = () => {
               </Nav>
               {/* <Button className="button-34">Tham gia ngay</Button> */}
               <Link href="/tuyen-thanh-vien#reg-form">
-                <button className="button">
+                <button className="btn">
                   Tham gia ngay
                   <div className="hoverEffect">
                     <div></div>

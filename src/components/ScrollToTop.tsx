@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 
-import "./app.css";
+import "./ScrollToTop.css";
 
 const ScrollToTop: React.FC = () => {
   const [showButton, setShowButton] = useState(false);
