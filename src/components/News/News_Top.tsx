@@ -12,6 +12,7 @@ const PageNewsTop = () => {
         {limitedInfoNews.map((info, index) => {
           return (
             <Link
+              key={index}
               href={`/tin-tuc/${info.id}`}
               style={{ textDecoration: "none", color: "black" }}
             >

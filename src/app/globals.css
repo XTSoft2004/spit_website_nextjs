@@ -9,14 +9,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none !important;
     /* font-family: 'Montserrat'; */
 }
 
 .gradient-text {
-    background: linear-gradient(2007deg, rgba(69, 156, 255, 1) 35%, rgba(180, 115, 248, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, rgba(69, 156, 255, 1), rgba(180, 115, 248, 1)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    color: linear-gradient(to right, rgba(69, 156, 255, 1), rgba(180, 115, 248, 1));
 }
 
 #sec-3,

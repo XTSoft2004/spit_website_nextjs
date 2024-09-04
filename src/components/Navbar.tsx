@@ -15,7 +15,8 @@ import { useEffect, useState } from "react";
 import { usePathname } from 'next/navigation'
 
 import "./app.css";
-const index = () => {
+import Link from "next/link";
+const Index = () => {
   const [show, setShow] = useState(false);
   const [url, setUrl] = useState("");
   const handleClose = () => setShow(false);
@@ -26,7 +27,7 @@ const index = () => {
 
   useEffect(() => {
     setUrl(pathname);
-    console.log(pathname); // Log the current pathname
+    // console.log(pathname); // Log the current pathname
 
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -75,13 +76,13 @@ const index = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="d-none d-lg-flex justify-content-between w-100 align-items-center">
               <Nav className="mx-auto">
-                <Nav.Link className="ms-3 me-2" href="/">
+                <Nav.Link className="ms-3 me-2 navbar-item" href="/">
                   <i className="bi bi-house-door-fill gradient-text"></i>
                 </Nav.Link>
                 {/* DropDown thông tin giới thiệu */}
-                <NavDropdown className={`gradient-text fw-bold navbar-item ${url.includes("/gioi-thieu") ? "active" : null}`} title="Giới thiệu" id="basic-nav-dropdown">
-                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/gioi-thieu/#tong-quan" ? "active" : null}`} href="/gioi-thieu/#tong-quan">
-                    Tổng quan
+                <NavDropdown className={`gradient-text fw-bold navbar-item ${url.includes("/gioi-thieu/") ? "active" : null}`} title="Giới thiệu" id="basic-nav-dropdown">
+                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/gioi-thieu/#tong-quan" ? "active" : null}`} >
+                    <Link href="/gioi-thieu/#tong-quan">Tổng quan</Link>
                   </NavDropdown.Item>
                   <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/gioi-thieu/#muc-tieu" ? "active" : null}`} href="/gioi-thieu/#muc-tieu">
                     Mục đích hoạt động
@@ -91,11 +92,12 @@ const index = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
 
-                <Nav.Link className={`gradient-text fw-bold navbar-item ${url == "/hoat-dong" ? "active" : null}`} href="/hoat-dong">
+
+                <Nav.Link title="Hoạt động" className={`ps-3 gradient-text fw-bold navbar-item ${url == "/hoat-dong" ? "active" : null}`} href="/hoat-dong">
                   Hoạt động
                 </Nav.Link>
 
-                <NavDropdown className={`ps-3 gradient-text fw-bold navbar-item ${url.includes("/tin-tuc") ? "active" : null}`} title="Tin tức - Thông báo" id="basic-nav-dropdown">
+                <NavDropdown className={`ps-3 gradient-text fw-bold navbar-item ${url.includes("/tin-tuc/") ? "active" : null}`} title="Tin tức - Thông báo" id="basic-nav-dropdown">
                   <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/tin-tuc" ? "active" : null}`} href="/tin-tuc">
                     Hoạt động
                   </NavDropdown.Item>
@@ -108,7 +110,7 @@ const index = () => {
                 </NavDropdown>
 
 
-                <Nav.Link className={`gradient-text fw-bold navbar-item ${url == "/tuyen-thanh-vien" ? "active" : null}`} href="/tuyen-thanh-vien">
+                <Nav.Link className={`ps-3 gradient-text fw-bold navbar-item ${url == "/tuyen-thanh-vien" ? "active" : null}`} href="/tuyen-thanh-vien">
                   Tuyển thành viên
                 </Nav.Link>
               </Nav >
@@ -163,4 +165,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

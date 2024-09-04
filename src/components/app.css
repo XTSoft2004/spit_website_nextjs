@@ -51,6 +51,10 @@
 }
 
 /* Footer */
+.connect-text {
+    color: #fff !important;
+}
+
 .connect-text:hover {
-    color: #ccc;
+    color: #ccc !important;
 }

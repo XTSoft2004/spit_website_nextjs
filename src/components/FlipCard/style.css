@@ -40,7 +40,7 @@
 }
 
 .flip-card-back {
-    background-color: #103994;
+    background-color: #103994 !important;
     color: #8eb8e5;
     transform: rotateY(180deg);
     display: flex;

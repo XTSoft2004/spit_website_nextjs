@@ -57,7 +57,7 @@ const GioiThieuPage = () => {
               phương pháp lập trình cụ thể, các thành viên của CLB là những sinh
               viên có thành tích tốt, được tuyển chọn để hướng dẫn sinh viên năm
               nhất bước đầu làm quen với lập trình. Hiện tại CLB đang hỗ trợ các
-              lớp học phần "Nhập môn lập trình" và "Kỹ thuật lập trình" của khoa
+              lớp học phần Nhập môn lập trình và Kỹ thuật lập trình của khoa
               Công nghệ thông tin.
               <br />
               <br />
@@ -205,12 +205,11 @@ const GioiThieuPage = () => {
                   id={member.id}
                   first_name={member.first_name}
                   last_name={member.last_name}
-                  position={`${
-                    member.position.filter(
-                      (position) =>
-                        typeof position === "object" && position.id === "bcv"
-                    )[0].name
-                  }`}
+                  position={`${member.position.filter(
+                    (position) =>
+                      typeof position === "object" && position.id === "bcv"
+                  )[0].name
+                    }`}
                   image={member.image}
                 />
               </Col>
@@ -233,9 +232,9 @@ const GioiThieuPage = () => {
             ).length;
 
             return (
-              <div>
+              <div
+                key={index}>
                 <div
-                  key={index}
                   className="d-flex flex-column flex-lg-row py-5"
                 >
                   <Col xs={12} lg={4}>
@@ -261,19 +260,17 @@ const GioiThieuPage = () => {
                           id={member.id}
                           first_name={member.first_name}
                           last_name={member.last_name}
-                          position={`${
-                            member.position.filter(
-                              (position) =>
-                                typeof position === "object" &&
-                                position.id === board.id
-                            )[0].year
-                          }: ${
-                            member.position.filter(
+                          position={`${member.position.filter(
+                            (position) =>
+                              typeof position === "object" &&
+                              position.id === board.id
+                          )[0].year
+                            }: ${member.position.filter(
                               (position) =>
                                 typeof position === "object" &&
                                 position.id === board.id
                             )[0].name
-                          }`}
+                            }`}
                           image={member.image}
                         />
                       </Col>

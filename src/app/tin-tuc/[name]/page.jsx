@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import InfoNews from "../../../data/News/dataNews.json";
 import { useEffect, useState } from "react";
 import PageNewsTop from "../../../components/News/News_Top";
+import parse from "html-react-parser";
 function readTextFile(file, callback) {
   var rawFile = new XMLHttpRequest();
   rawFile.open("GET", file, true); // Sử dụng async call
@@ -46,6 +47,7 @@ const TinTucPage = ({ params }) => {
               <>
                 <h2>{post.title}</h2>
                 {/* Render nội dung HTML */}
+                {/* <div>{parse(content)}</div> */}
                 <div dangerouslySetInnerHTML={{ __html: content }} />
               </>
             ) : (
