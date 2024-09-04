@@ -466,7 +466,8 @@ export default function TuyenThanhVien() {
                     <Col xs={12} className="d-flex justify-content-center">
                       <Button
                         style={{
-                          width: "150px",
+                          minWidth: "150px",
+                          minHeight: "52px",
                           color: "#0d6efd",
                           backgroundColor: "white",
                         }}
@@ -477,7 +478,7 @@ export default function TuyenThanhVien() {
                       </Button>
                       <Button
                         className="ms-3"
-                        style={{ width: "150px" }}
+                        style={{ minWidth: "150px", minHeight: "44px" }}
                         variant="primary"
                         onClick={handleNext}
                       >
@@ -593,7 +594,8 @@ export default function TuyenThanhVien() {
                       <Button
                         className="me-3"
                         style={{
-                          width: "150px",
+                          minWidth: "150px",
+                          minHeight: "52px",
                           color: "#0d6efd",
                           backgroundColor: "white",
                         }}
@@ -602,7 +604,7 @@ export default function TuyenThanhVien() {
                       >
                         Trang trước
                       </Button>
-                      <Submit 
+                      <Submit
                         hoten={formData.hoten}
                         msv={formData.msv}
                         ngaysinh={formData.ngaysinh}
@@ -619,7 +621,8 @@ export default function TuyenThanhVien() {
                       />
                       <Button
                         style={{
-                          width: "150px",
+                          minWidth: "150px",
+                          minHeight: "52px",
                           color: "#0d6efd",
                           backgroundColor: "white",
                         }}

@@ -17,13 +17,11 @@
   height: 3px;
   left: 50%;
   bottom: 0;
-  background: linear-gradient(
-    to right,
-    rgba(255, 126, 95, 0),
-    rgba(69, 156, 255, 1) 35%,
-    rgba(180, 115, 248, 1),
-    rgba(254, 180, 123, 0)
-  );
+  background: linear-gradient(to right,
+      rgba(255, 126, 95, 0),
+      rgba(69, 156, 255, 1) 35%,
+      rgba(180, 115, 248, 1),
+      rgba(254, 180, 123, 0));
   /* Gradient màu với hai đầu mờ dần */
   transition: all 0.3s ease;
   transform: translateX(-50%);
@@ -54,7 +52,7 @@
   }
 }
 
-.btn {
+.btn-thamgiangay {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -72,14 +70,14 @@
   width: 190px;
 }
 
-.btn:hover {
+.btn-thamgiangay:hover {
   background: rgb(193, 228, 248);
   color: rgb(33, 0, 85);
   transform: scale(1.1);
   transition: all 0.2s;
 }
 
-.btn:active {
+.btn-thamgiangay:active {
   transform: scale(0.97);
 }
 
@@ -97,12 +95,10 @@
 
 .hoverEffect div {
   background: rgb(222, 0, 75);
-  background: linear-gradient(
-    90deg,
-    rgba(222, 0, 75, 1) 0%,
-    rgba(191, 70, 255, 1) 49%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(222, 0, 75, 1) 0%,
+      rgba(191, 70, 255, 1) 49%,
+      rgba(0, 212, 255, 1) 100%);
   border-radius: 40rem;
   width: 10rem;
   height: 10rem;
@@ -112,7 +108,7 @@
   opacity: 0.5;
 }
 
-.btn:hover .hoverEffect div {
+.btn-thamgiangay:hover .hoverEffect div {
   width: 8rem;
   height: 8rem;
 }

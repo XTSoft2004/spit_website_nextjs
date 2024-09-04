@@ -19,6 +19,8 @@ import { useState, useEffect } from "react";
 import { HiRefresh } from "react-icons/hi";
 import "./globals.css";
 
+import Link from "next/link";
+
 import ButtonMore from "../components/Button/ButtonMore";
 
 export default function Home() {
@@ -30,6 +32,9 @@ export default function Home() {
     "/images/background/backgroudSeminar.jpg",
     "/images/background/backgroud_member.png",
     "/images/background/tuyenthanhvien.png",
+    "/images/background/bienHaiDuong.jpg",
+    "/images/background/seminar2023.jpg",
+    "/images/background/hopdinhki.png",
   ];
 
   return (
@@ -66,9 +71,11 @@ export default function Home() {
                   <b>Slogan của CLB:</b> “SPIT here to fix”
                 </p>
               </div>
-              <a href="/gioi-thieu">
-                <ButtonMore />
-              </a>
+              <div>
+                <Link href="/gioi-thieu" style={{ width: '10px' }}>
+                  <ButtonMore />
+                </Link>
+              </div>
             </Col>
             <Col xs={12} md={6}>
               <div className="pic">
@@ -126,7 +133,7 @@ export default function Home() {
         </h1>
         <Container>
           <Row>
-            <Col md={6} className="d-flex flex-column">
+            <Col md={6} className="d-flex flex-column item-posts-home">
               <Card
                 style={{
                   width: "100%",

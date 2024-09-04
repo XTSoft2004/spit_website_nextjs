@@ -2,6 +2,7 @@ import { Row, Col } from "react-bootstrap";
 import InfoNews from "../../data/News/dataNews.json";
 import Image from "next/image";
 import Link from "next/link";
+import './style.css';
 const PageNewsTop = () => {
   // Chỉ lấy 5 mục từ InfoNews
   const limitedInfoNews = InfoNews.slice(0, 5);
@@ -18,7 +19,7 @@ const PageNewsTop = () => {
             >
               <Row
                 key={index}
-                className="align-items-center shadow-sm p-3 bg-white rounded mt-3"
+                className="shadow-sm p-3 bg-white rounded mt-3"
                 style={{ cursor: "pointer" }} // Thay đổi con trỏ khi hover
               >
                 <Col>

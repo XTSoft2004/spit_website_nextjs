@@ -9,7 +9,7 @@ const HoatDongPage = () => {
     useEffect(() => {
         document.title = "Hoạt động - SPIT";
     }, []);
-    const srcImage = ["/images/backgroud/picnic-2024.jpg", "/images/backgroud/member.png"];
+    const srcImage = ["/images/background/picnic-2024.jpg", "/images/background/member.png", "/images/background/tuyen-duong.jpg", "/images/background/tuyenthanhvien-2.png", "/images/background/seminar2023.jpg"];
     return (
         <>
             <ItemCarousel name="Hoạt động" srcImage={srcImage}></ItemCarousel>

@@ -8,3 +8,13 @@
         margin: 0 auto;
     }
 } */
+
+.news-item {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.news-item:hover {
+    color: #103994;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Tạo hiệu ứng đổ bóng */
+}

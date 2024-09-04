@@ -78,7 +78,7 @@
     background-color: #005bb5;
 }
 
-button.facebook-button {
+.facebook-button {
     font-family: inherit;
     font-size: 18px;
     background: linear-gradient(to bottom, #0d36b3 0%, #0063ad 100%);
@@ -95,30 +95,30 @@ button.facebook-button {
     height: 2.5em;
 }
 
-button.facebook-button:hover {
+.facebook-button:hover {
     transform: translateY(-3px);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-button.facebook-button:active {
+.facebook-button:active {
     transform: scale(0.95);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-button.facebook-button span {
+.facebook-button span {
     display: block;
     margin-left: 0.4em;
     transition: all 0.3s;
 }
 
-button.facebook-button svg {
+.facebook-button svg {
     width: 18px;
     height: 18px;
     fill: white;
     transition: all 0.3s;
 }
 
-button.facebook-button .svg-wrapper {
+.facebook-button .svg-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,7 +130,7 @@ button.facebook-button .svg-wrapper {
     transition: all 0.3s;
 }
 
-button.facebook-button:hover svg {
+.facebook-button:hover svg {
     transform: rotate(90deg);
 }
 

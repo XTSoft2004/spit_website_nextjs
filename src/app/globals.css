@@ -69,6 +69,10 @@
         font-size: 50px;
         margin-bottom: 200px;
     }
+
+    .item-posts-home {
+        margin-bottom: 20px;
+    }
 }
 
 .overlay {
@@ -136,16 +140,6 @@
     border-radius: 15px 50px;
 }
 
-
-.news-item {
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.news-item:hover {
-    color: #103994;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    /* Tạo hiệu ứng đổ bóng */
-}
 
 .btn-more:hover {
     transform: scale(1.2);

@@ -18,7 +18,7 @@ const CardRole = ({ namerole, description, number }: CardRoleProps) => {
       }}
     >
       <Card.Body>
-        <Card.Title className="fs-1 fw-bold">{namerole}</Card.Title>
+        <Card.Title className="fs-1 mb-3 fw-bold">{namerole}</Card.Title>
         <Card.Title className="mb-2 opacity-75">{description}</Card.Title>
       </Card.Body>
       <p
