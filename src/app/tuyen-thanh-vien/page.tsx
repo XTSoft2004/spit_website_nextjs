@@ -21,6 +21,8 @@ import { Typography } from "@mui/material";
 
 import "./style.css";
 
+import Submit from "../../components/Submit/Submit";
+
 export default function TuyenThanhVien() {
   useEffect(() => {
     document.title = "Tuyển Thành Viên - SPIT";
@@ -105,12 +107,6 @@ export default function TuyenThanhVien() {
         .getElementById("sec-reg-form")
         ?.scrollIntoView({ behavior: "smooth" });
   };
-  const handleSubmit = async () => {
-    if (Object.values(formData).some(value => value === null || value === ""))
-      alert("Vui lòng nhập đầy đủ thông tin trước khi gửi đơn đăng ký!!!");
-    else
-      alert("Đã gửi thông tin đăng ký");
-  }
 
   return (
     <>
@@ -201,7 +197,10 @@ export default function TuyenThanhVien() {
                 </Col>
                 <Col sm={8}>
                   <p>
-                    Sinh viên năm 1, 2, 3 đang học ngành Công nghệ thông tin, Kỹ thuật phần mềm hoặc các ngành khác có liên quan tại trường Đại học Khoa học, Đại học Huế; học sinh chuyên Tin trường THPT Chuyên Khoa học Huế.
+                    Sinh viên năm 1, 2, 3 đang học ngành Công nghệ thông tin, Kỹ
+                    thuật phần mềm hoặc các ngành khác có liên quan tại trường
+                    Đại học Khoa học, Đại học Huế; học sinh chuyên Tin trường
+                    THPT Chuyên Khoa học Huế.
                   </p>
                   <p className="mb-3">
                     - Đối với sinh viên năm 1: Đạt điểm A học phần Nhập môn lập
@@ -260,7 +259,7 @@ export default function TuyenThanhVien() {
                 </Col>
               </Row>
             </Container>
-            <Container className="mt-4" style={{ fontFamily: 'Montserrat' }}>
+            <Container className="mt-4" style={{ fontFamily: "Montserrat" }}>
               <Timeline position="alternate">
                 <TimelineItem>
                   <TimelineSeparator>
@@ -272,12 +271,8 @@ export default function TuyenThanhVien() {
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "22px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                      <p>
-                        Mở đơn đăng ký
-                      </p>
-                      <p className="ms-3">
-                        01.01.2024
-                      </p>
+                      <p>Mở đơn đăng ký</p>
+                      <p className="ms-3">01.01.2024</p>
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>
@@ -291,12 +286,8 @@ export default function TuyenThanhVien() {
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "22px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                      <p>
-                        Duyệt đơn
-                      </p>
-                      <p className="ms-3">
-                        01.01.2024
-                      </p>
+                      <p>Duyệt đơn</p>
+                      <p className="ms-3">01.01.2024</p>
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>
@@ -310,12 +301,8 @@ export default function TuyenThanhVien() {
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "22px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                      <p>
-                        Phỏng vấn
-                      </p>
-                      <p>
-                        01.01.2024
-                      </p>
+                      <p>Phỏng vấn</p>
+                      <p>01.01.2024</p>
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>
@@ -329,12 +316,8 @@ export default function TuyenThanhVien() {
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "22px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                      <p>
-                        Kết quả
-                      </p>
-                      <p className="ms-3">
-                        01.01.2024
-                      </p>
+                      <p>Kết quả</p>
+                      <p className="ms-3">01.01.2024</p>
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>
@@ -619,14 +602,21 @@ export default function TuyenThanhVien() {
                       >
                         Trang trước
                       </Button>
-                      <Button
-                        className="me-3"
-                        style={{ width: "150px" }}
-                        variant="primary"
-                        onClick={handleSubmit}
-                      >
-                        Gửi
-                      </Button>
+                      <Submit 
+                        hoten={formData.hoten}
+                        msv={formData.msv}
+                        ngaysinh={formData.ngaysinh}
+                        gioitinh={formData.gioitinh}
+                        email={formData.email}
+                        sodienthoai={formData.sodienthoai}
+                        diachifb={formData.diachifb}
+                        lop={formData.lop}
+                        diemNMLT={formData.diemNMLT}
+                        diemKTLT={formData.diemKTLT}
+                        gioithieu={formData.gioithieu}
+                        mongmuon={formData.mongmuon}
+                        hotro={formData.hotro}
+                      />
                       <Button
                         style={{
                           width: "150px",
@@ -646,13 +636,22 @@ export default function TuyenThanhVien() {
           </div>
         </>
       ) : (
-        <div id="sec-1" className="position-relative"
-          style={{ height: "calc(100vh - 75px)" }}>
+        <div
+          id="sec-1"
+          className="position-relative"
+          style={{ height: "calc(100vh - 75px)" }}
+        >
           <img
             className="w-100 h-100 object-cover"
             src="/images/background/backgroundTuyenThanhVienCloseReg.png"
             alt="background"
-            style={{ position: "absolute", top: 0, left: 0, zIndex: -1, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.7)" }}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              zIndex: -1,
+              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.7)",
+            }}
           ></img>
           <div
             className="position-absolute top-0 end-0 d-flex justify-content-end align-items-center"
@@ -671,9 +670,7 @@ export default function TuyenThanhVien() {
             style={{ width: "100%", height: "100%" }}
           >
             <div className="w-50 ms-5 mt-5">
-              <h1
-                className="text-white mb-3 title-banner"
-              >
+              <h1 className="text-white mb-3 title-banner">
                 CLB hiện chưa tuyển thành viên.
               </h1>
               <p className="text-white mb-3 title-date">
@@ -682,10 +679,7 @@ export default function TuyenThanhVien() {
                 Bạn hãy theo dõi trang Facebook/Website chính thức của CLB để
                 cập nhật thông tin về các đợt tuyển thành viên sắp tới nhé!
               </p>
-              <a
-                href="https://www.facebook.com/clbhtlt.ithusc"
-                target="_blank"
-              >
+              <a href="https://www.facebook.com/clbhtlt.ithusc" target="_blank">
                 <Button className="facebook-button">
                   <div className="svg-wrapper-1">
                     <div className="svg-wrapper">
@@ -706,7 +700,6 @@ export default function TuyenThanhVien() {
             </div>
           </div>
         </div>
-
       )}
     </>
   );

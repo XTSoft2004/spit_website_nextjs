@@ -1,6 +1,4 @@
-"use client";
-
-import * as config from '../Auth/ConfigData';
+import * as config from '../Auth/ConfigDrive';
 import axios from 'axios';
 
 // Define the FileData type

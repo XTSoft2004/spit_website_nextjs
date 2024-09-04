@@ -20,7 +20,7 @@ import TableRow from '@mui/material/TableRow';
 
 // Import api
 import * as googleAPI from '../../Model/Api/GoogleDriveAPI';
-import * as config from '../../Model/Auth/ConfigData';
+import * as config from '../../Model/Auth/ConfigDrive';
 
 interface Column {
     id: 'mimeType' | 'name';
