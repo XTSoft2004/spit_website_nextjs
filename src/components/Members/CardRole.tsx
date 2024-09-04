@@ -18,8 +18,8 @@ const CardRole = ({ namerole, description, number }: CardRoleProps) => {
       }}
     >
       <Card.Body>
-        <Card.Title className="fs-1 mb-3 fw-bold">{namerole}</Card.Title>
-        <Card.Title className="mb-2 opacity-75">{description}</Card.Title>
+        <Card.Title style={{ margin: 0, textAlign: 'start', width: '100%' }} className="fs-1 mb-3 fw-bold">{namerole}</Card.Title>
+        <Card.Title style={{ margin: 0, textAlign: 'start', width: '100%' }} className="mb-2 opacity-75">{description}</Card.Title>
       </Card.Body>
       <p
         className="fw-bold opacity-75"

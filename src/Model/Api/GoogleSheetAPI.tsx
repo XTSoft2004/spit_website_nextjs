@@ -50,8 +50,6 @@ const getData = async () => {
       }
     );
 
-    const data = await response.data;
-    console.log(data);
     return response.status;
   } catch (error: any) {
     if (error.status === 401) {

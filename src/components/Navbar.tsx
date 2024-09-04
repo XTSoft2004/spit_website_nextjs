@@ -26,7 +26,7 @@ const Index = () => {
   const pathname = usePathname(); // Call usePathname at the top level
 
   useEffect(() => {
-    
+
     window.scrollTo(0, 0);
     setUrl(pathname);
     // console.log(pathname); // Log the current pathname

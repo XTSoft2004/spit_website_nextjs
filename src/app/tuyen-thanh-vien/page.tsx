@@ -169,7 +169,7 @@ export default function TuyenThanhVien() {
             </div>
           </div>
 
-          <div id="sec-2" className="py-5">
+          <div id="sec-2-tuyenthanhvien" className="py-5">
             <Container className="mb-2">
               <Row className="mb-2">
                 <Col>
