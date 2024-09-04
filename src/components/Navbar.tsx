@@ -12,7 +12,7 @@ import {
 } from "react-bootstrap";
 
 import { useEffect, useState } from "react";
-import { usePathname } from 'next/navigation'
+import { usePathname } from "next/navigation";
 
 import "./app.css";
 import Link from "next/link";
@@ -43,7 +43,6 @@ const Index = () => {
     };
   }, [pathname]);
 
-
   return (
     <>
       <Navbar
@@ -57,18 +56,20 @@ const Index = () => {
         }}
       >
         <Container>
-          <Navbar.Brand href="/" className="d-flex justify-content-center">
-            <img
-              src="\images\logo\logoSPIT.png"
-              width="50"
-              height="50"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
-            <Navbar.Brand className="d-none d-sm-block ms-2 mt-1 fw-bold gradient-text">
-              CLB Hỗ trợ Lập trình
+          <Link href="/">
+            <Navbar.Brand className="d-flex justify-content-center">
+              <img
+                src="\images\logo\logoSPIT.png"
+                width="50"
+                height="50"
+                className="d-inline-block align-top"
+                alt="React Bootstrap logo"
+              />
+              <Navbar.Brand className="d-none d-sm-block ms-2 mt-1 fw-bold gradient-text">
+                CLB Hỗ trợ Lập trình
+              </Navbar.Brand>
             </Navbar.Brand>
-          </Navbar.Brand>
+          </Link>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             onClick={handleShow}
@@ -76,62 +77,107 @@ const Index = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="d-none d-lg-flex justify-content-between w-100 align-items-center">
               <Nav className="mx-auto">
-                <Nav.Link className="ms-3 me-2 navbar-item" href="/">
+                <Link className="nav-link ms-3 me-2 navbar-item" href="/">
                   <i className="bi bi-house-door-fill gradient-text"></i>
-                </Nav.Link>
+                </Link>
                 {/* DropDown thông tin giới thiệu */}
-                <NavDropdown className={`gradient-text fw-bold navbar-item ${url.includes("/gioi-thieu/") ? "active" : null}`} title="Giới thiệu" id="basic-nav-dropdown">
-                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/gioi-thieu/#tong-quan" ? "active" : null}`} >
-                    <Link href="/gioi-thieu/#tong-quan">Tổng quan</Link>
-                    {/* TODO: Thêm nhiều thằng link cho tao */}
+                <NavDropdown
+                  className={`gradient-text fw-bold navbar-item ${
+                    url.includes("/gioi-thieu/") ? "active" : null
+                  }`}
+                  title="Giới thiệu"
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item
+                    className={`gradient-text fw-bold navbar-item ${
+                      url == "/gioi-thieu" ? "active" : null
+                    }`}
+                  >
+                    <Link href="/gioi-thieu">Tổng quan</Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/gioi-thieu/#muc-tieu" ? "active" : null}`} href="/gioi-thieu/#muc-tieu">
-                    Mục đích hoạt động
+                  <NavDropdown.Item
+                    className={`gradient-text fw-bold navbar-item ${
+                      url == "/gioi-thieu/#muc-dich" ? "active" : null
+                    }`}
+                  >
+                    <Link href="/gioi-thieu/#muc-dich">Mục đích hoạt động</Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/gioi-thieu/#thanh-vien" ? "active" : null}`} href="/gioi-thieu/#thanh-vien">
-                    Cơ cấu tổ chức
+                  <NavDropdown.Item
+                    className={`gradient-text fw-bold navbar-item ${
+                      url == "/gioi-thieu/#thanh-vien" ? "active" : null
+                    }`}
+                  >
+                    <Link href="/gioi-thieu/#thanh-vien">Cơ cấu tổ chức</Link>
                   </NavDropdown.Item>
                 </NavDropdown>
 
-
-                <Nav.Link title="Hoạt động" className={`ps-3 gradient-text fw-bold navbar-item ${url == "/hoat-dong" ? "active" : null}`} href="/hoat-dong">
+                <Link
+                  title="Hoạt động"
+                  className={`ps-3 gradient-text fw-bold navbar-item nav-link ${
+                    url == "/hoat-dong" ? "active" : null
+                  }`}
+                  href="/hoat-dong"
+                >
                   Hoạt động
-                </Nav.Link>
+                </Link>
 
-                <NavDropdown className={`ps-3 gradient-text fw-bold navbar-item ${url.includes("/tin-tuc/") ? "active" : null}`} title="Tin tức - Thông báo" id="basic-nav-dropdown">
-                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/tin-tuc" ? "active" : null}`} href="/tin-tuc">
-                    Hoạt động
+                <NavDropdown
+                  className={`ps-3 gradient-text fw-bold navbar-item ${
+                    url.includes("/tin-tuc/") ? "active" : null
+                  }`}
+                  title="Tin tức - Thông báo"
+                  id="basic-nav-dropdown"
+                >
+                  <NavDropdown.Item
+                    className={`gradient-text fw-bold navbar-item ${
+                      url == "/tin-tuc#hoat-dong" ? "active" : null
+                    }`}
+                  >
+                    <Link href="/tin-tuc#hoat-dong">Hoạt động</Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/tin-tuc/#giai-thuong" ? "active" : null}`} href="/tin-tuc/#giai-thuong">
-                    Giải thưởng
+                  <NavDropdown.Item
+                    className={`gradient-text fw-bold navbar-item ${
+                      url == "/tin-tuc#giai-thuong" ? "active" : null
+                    }`}
+                  >
+                    <Link href="/tin-tuc#giai-thuong">Giải thưởng</Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item className={`gradient-text fw-bold navbar-item ${url == "/tin-tuc/#noi-bo" ? "active" : null}`} href="/tin-tuc/#noi-bo">
-                    Nội bộ
+                  <NavDropdown.Item
+                    className={`gradient-text fw-bold navbar-item ${
+                      url == "/tin-tuc#noi-bo" ? "active" : null
+                    }`}
+                  >
+                    <Link href="/tin-tuc#noi-bo">Nội bộ</Link>
                   </NavDropdown.Item>
                 </NavDropdown>
 
-
-                <Nav.Link className={`ps-3 gradient-text fw-bold navbar-item ${url == "/tuyen-thanh-vien" ? "active" : null}`} href="/tuyen-thanh-vien">
+                <Link
+                  className={`ps-3 gradient-text fw-bold navbar-item nav-link ${
+                    url == "/tuyen-thanh-vien" ? "active" : null
+                  }`}
+                  href="/tuyen-thanh-vien"
+                >
+                  {" "}
                   Tuyển thành viên
-                </Nav.Link>
-              </Nav >
+                </Link>
+              </Nav>
               {/* <Button className="button-34">Tham gia ngay</Button> */}
-              < a href='/tuyen-thanh-vien#reg-form' >
+              <Link href="/tuyen-thanh-vien#reg-form">
                 <button className="button">
                   Tham gia ngay
                   <div className="hoverEffect">
                     <div></div>
                   </div>
                 </button>
-              </ a>
-            </Nav >
-          </Navbar.Collapse >
-        </Container >
-      </Navbar >
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
       <Offcanvas placement="end" show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title >
+          <Offcanvas.Title>
             <img
               src="\images\logo\logoSPIT.png"
               width="50"
@@ -143,25 +189,36 @@ const Index = () => {
         </Offcanvas.Header>
         <Offcanvas.Body className="text-center fw-bold">
           <Nav className="d-flex flex-column">
-            <Nav.Link className="mt-2 gradient-text fw-bold" href="/">
+            <Link className="mt-2 gradient-text fw-bold nav-link" href="/">
               Trang chủ
-            </Nav.Link>
-            <Nav.Link className="mt-2 gradient-text fw-bold" href="/gioi-thieu">
+            </Link>
+            <Link
+              className="mt-2 gradient-text fw-bold nav-link"
+              href="/gioi-thieu"
+            >
               Giới thiệu
-            </Nav.Link>
-            <Nav.Link className="mt-2 gradient-text fw-bold" href="/hoat-dong">
+            </Link>
+            <Link
+              className="mt-2 gradient-text fw-bold nav-link"
+              href="/hoat-dong"
+            >
               Hoạt động
-            </Nav.Link>
-            <Nav.Link className="mt-2 gradient-text fw-bold" href="/tin-tuc">
+            </Link>
+            <Link
+              className="mt-2 gradient-text fw-bold nav-link"
+              href="/tin-tuc"
+            >
               Tin tức - Thông báo
-            </Nav.Link>
-            <Nav.Link className="mt-2 gradient-text fw-bold" href="/tuyen-thanh-vien">
+            </Link>
+            <Link
+              className="mt-2 gradient-text fw-bold nav-link"
+              href="/tuyen-thanh-vien"
+            >
               Tuyển thành viên
-            </Nav.Link>
+            </Link>
           </Nav>
         </Offcanvas.Body>
       </Offcanvas>
-
     </>
   );
 };

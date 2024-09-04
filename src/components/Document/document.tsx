@@ -90,7 +90,7 @@ const Document = () => {
 
                 <h1 className="text-center">Coming Soon</h1>
 
-                <Paper sx={{ width: '100%', overflow: 'hidden' }}>
+                {/* <Paper sx={{ width: '100%', overflow: 'hidden' }}>
                     <TableContainer sx={{ maxHeight: 440 }}>
                         <Table stickyHeader aria-label="sticky table">
                             <TableHead>
@@ -139,7 +139,7 @@ const Document = () => {
                         onPageChange={handleChangePage}
                         onRowsPerPageChange={handleChangeRowsPerPage}
                     />
-                </Paper>
+                </Paper> */}
             </Container>
         </>
     );

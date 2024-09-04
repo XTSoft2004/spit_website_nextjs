@@ -16,6 +16,8 @@ export const metadata: Metadata = {
   description: "Website do team bốn cục tạ làm ra",
 };
 
+import ScrollToTop from "../components/ScrollToTop";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,6 +28,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
+        <ScrollToTop />
         <Footer />
       </body>
     </html>
