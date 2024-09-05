@@ -58,13 +58,11 @@ const Submit = ({
     hotro,
   };
 
-  GoogleSheetAPI.getData();
-
   const handleSubmit = async () => {
     if (Object.values(formData).some((value) => value === null || value === ""))
       alert("Vui lòng nhập đầy đủ thông tin trước khi gửi đơn đăng ký!!!");
     else {
-      if ((await GoogleSheetAPI.pushData(formData)) === 200)
+      if ((await GoogleSheetAPI.pushData(formData, "DanhSachDonTuyenThanhVien")) === 200)
         alert("Đã gửi thông tin đăng ký");
       else alert("Đã xảy ra lỗi khi gửi thông tin đăng ký");
     }

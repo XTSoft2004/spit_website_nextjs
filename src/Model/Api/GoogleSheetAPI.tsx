@@ -37,12 +37,12 @@ const getAccessToken = async () => {
 };
 
 // Get data from Google Sheet
-const getData = async () => {
+const getData = async (sheetName: string) => {
   try {
     const response = await axios.get(
       `https://sheets.googleapis.com/v4/spreadsheets/${
         config.getConfig().spreadsheetId
-      }/values/${config.getConfig().sheetName}`,
+      }/values/${sheetName}`,
       {
         headers: {
           Authorization: `Bearer ${config.getConfig().accessToken}`,
@@ -54,20 +54,20 @@ const getData = async () => {
   } catch (error: any) {
     if (error.status === 401) {
       await getAccessToken();
-      await getData();
+      await getData(sheetName);
     } else return null;
   }
 };
 
 // Push data to Google Sheet
-const pushData = async (formData: FormData) => {
+const pushData = async (formData: FormData, sheetName: string) => {
   const birthday = new Date(formData.ngaysinh);
   const date = new Date();
   try {
     const response = await axios.post(
       `https://sheets.googleapis.com/v4/spreadsheets/${
         config.getConfig().spreadsheetId
-      }/values/${config.getConfig().sheetName}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`,
+      }/values/${sheetName}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`,
       {
         values: [
           [
@@ -99,7 +99,7 @@ const pushData = async (formData: FormData) => {
   } catch (error: any) {
     if (error.status === 401) {
       await getAccessToken();
-      await pushData(formData);
+      await pushData(formData, sheetName);
     } else return null;
   }
 };
