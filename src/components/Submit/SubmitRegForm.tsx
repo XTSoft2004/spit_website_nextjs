@@ -58,7 +58,6 @@ const SubmitRegForm = ({
     else {
       if ((await GoogleSheetAPI.pushDataReg(formData, "DanhSachDonTuyenThanhVien")) === 200)
         alert("Đã gửi thông tin đăng ký");
-      else alert("Đã xảy ra lỗi khi gửi thông tin đăng ký");
     }
   };
 
