@@ -61,9 +61,13 @@ const Footer = () => (
                 <i className="bi bi-chevron-right"></i>
                 <Link href="/gioi-thieu">Giới thiệu thành viên</Link>
               </div>
-              <div className="connect-text">
+              <div className="mb-2 connect-text">
                 <i className="bi bi-chevron-right"></i>
                 <Link href="/tai-lieu">Tài liệu học tập</Link>
+              </div>
+              <div className="connect-text">
+                <i className="bi bi-chevron-right"></i>
+                <Link href="/phan-hoi">Phản hồi</Link>
               </div>
             </div>
           </div>

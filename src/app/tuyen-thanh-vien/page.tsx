@@ -21,7 +21,7 @@ import { Typography } from "@mui/material";
 
 import "./style.css";
 
-import Submit from "../../components/Submit/Submit";
+import SubmitRegForm from "../../components/Submit/SubmitRegForm";
 
 export default function TuyenThanhVien() {
   useEffect(() => {
@@ -604,7 +604,7 @@ export default function TuyenThanhVien() {
                       >
                         Trang trước
                       </Button>
-                      <Submit
+                      <SubmitRegForm
                         hoten={formData.hoten}
                         msv={formData.msv}
                         ngaysinh={formData.ngaysinh}

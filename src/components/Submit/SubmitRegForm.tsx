@@ -21,7 +21,7 @@ interface FormData {
   hotro: string;
 }
 
-const Submit = ({
+const SubmitRegForm = ({
   hoten,
   msv,
   ngaysinh,
@@ -36,12 +36,6 @@ const Submit = ({
   mongmuon,
   hotro,
 }: FormData) => {
-  // const submit = async () => {
-  //     await GoogleSheetAPI.getAccessToken();
-  //     const response = await GoogleSheetAPI.getSheet();
-  //     console.log(response);
-  // }
-
   const formData = {
     hoten,
     msv,
@@ -62,7 +56,7 @@ const Submit = ({
     if (Object.values(formData).some((value) => value === null || value === ""))
       alert("Vui lòng nhập đầy đủ thông tin trước khi gửi đơn đăng ký!!!");
     else {
-      if ((await GoogleSheetAPI.pushData(formData, "DanhSachDonTuyenThanhVien")) === 200)
+      if ((await GoogleSheetAPI.pushDataReg(formData, "DanhSachDonTuyenThanhVien")) === 200)
         alert("Đã gửi thông tin đăng ký");
       else alert("Đã xảy ra lỗi khi gửi thông tin đăng ký");
     }
@@ -75,4 +69,4 @@ const Submit = ({
   );
 };
 
-export default Submit;
+export default SubmitRegForm;
