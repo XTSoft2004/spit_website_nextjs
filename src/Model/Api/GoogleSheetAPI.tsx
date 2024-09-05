@@ -1,7 +1,7 @@
 import * as config from "../Auth/ConfigSheet";
 import axios from "axios";
 
-interface FormData {
+interface FormDataReg {
   hoten: string;
   msv: string;
   ngaysinh: string;
@@ -15,6 +15,16 @@ interface FormData {
   gioithieu: string;
   mongmuon: string;
   hotro: string;
+}
+
+interface FormDataFeedbackCLB {
+  noiDung: string;
+}
+
+interface FormDataFeedbackTroGiang {
+  monPhanHoi: string;
+  nhomPhanHoi: string;
+  noiDung: string;
 }
 
 // Get new access token
@@ -60,9 +70,11 @@ const getData = async (sheetName: string) => {
 };
 
 // Push data to Google Sheet
-const pushData = async (formData: FormData, sheetName: string) => {
+const pushDataReg = async (formData: FormDataReg, sheetName: string) => {
   const birthday = new Date(formData.ngaysinh);
-  const date = new Date();
+  const date = new Date().toLocaleDateString("en-GB");
+  const time = new Date().toLocaleTimeString("en-GB");
+
   try {
     const response = await axios.post(
       `https://sheets.googleapis.com/v4/spreadsheets/${
@@ -84,7 +96,7 @@ const pushData = async (formData: FormData, sheetName: string) => {
             formData.gioithieu,
             formData.mongmuon,
             formData.hotro,
-            date,
+            `${date} ${time}`,
           ],
         ],
       },
@@ -99,9 +111,84 @@ const pushData = async (formData: FormData, sheetName: string) => {
   } catch (error: any) {
     if (error.status === 401) {
       await getAccessToken();
-      await pushData(formData, sheetName);
+      await pushDataReg(formData, sheetName);
     } else return null;
   }
 };
 
-export { getAccessToken, getData, pushData };
+const pushDataFeedbackCLB = async (
+  formData: FormDataFeedbackCLB,
+  sheetName: string
+) => {
+  const date = new Date().toLocaleDateString("en-GB");
+  const time = new Date().toLocaleTimeString("en-GB");
+
+  try {
+    const response = await axios.post(
+      `https://sheets.googleapis.com/v4/spreadsheets/${
+        config.getConfig().spreadsheetId
+      }/values/${sheetName}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`,
+      {
+        values: [[formData.noiDung, `${date} ${time}`]],
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${config.getConfig().accessToken}`,
+        },
+      }
+    );
+
+    return response.status;
+  } catch (error: any) {
+    if (error.status === 401) {
+      await getAccessToken();
+      await pushDataFeedbackCLB(formData, sheetName);
+    } else return null;
+  }
+};
+
+const pushDataFeedbackTroGiang = async (
+  formData: FormDataFeedbackTroGiang,
+  sheetName: string
+) => {
+  const date = new Date().toLocaleDateString("en-GB");
+  const time = new Date().toLocaleTimeString("en-GB");
+
+  try {
+    const response = await axios.post(
+      `https://sheets.googleapis.com/v4/spreadsheets/${
+        config.getConfig().spreadsheetId
+      }/values/${sheetName}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`,
+      {
+        values: [
+          [
+            formData.monPhanHoi,
+            formData.nhomPhanHoi,
+            formData.noiDung,
+            `${date} ${time}`,
+          ],
+        ],
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${config.getConfig().accessToken}`,
+        },
+      }
+    );
+
+    return response.status;
+  } catch (error: any) {
+    if (error.status === 401) {
+      await getAccessToken();
+      await pushDataFeedbackTroGiang(formData, sheetName);
+    } else return null;
+  }
+};
+
+export {
+  getAccessToken,
+  getData,
+  pushDataReg,
+  pushDataFeedbackCLB,
+  pushDataFeedbackTroGiang,
+};
