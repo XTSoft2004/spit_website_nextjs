@@ -22,6 +22,7 @@ import "./globals.css";
 import Link from "next/link";
 
 import ButtonMore from "../components/Button/ButtonMore";
+import Introduce from "../components/IntroduceLayout/Intro";
 
 export default function Home() {
   useEffect(() => {
@@ -39,10 +40,13 @@ export default function Home() {
 
   return (
     <>
-      <div id="sec-1" className="w-100">
+      {/* <div id="sec-1" className="w-100">
         <a className="text-center-image-1 carousel-caption z-2">SPIT</a>
         <a className="text-center-image-2 carousel-caption z-2">here to FIX</a>
         <CarouselItems srcImage={srcImage}></CarouselItems>
+      </div> */}
+      <div id="sec-1" className="w-100">
+        <Introduce />
       </div>
       <div id="sec-2" className="mt-4 mb-4">
         <Container>
@@ -72,7 +76,7 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <Link href="/gioi-thieu" style={{ width: '10px' }}>
+                <Link href="/gioi-thieu" style={{ width: "10px" }}>
                   <ButtonMore />
                 </Link>
               </div>

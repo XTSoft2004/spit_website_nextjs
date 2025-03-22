@@ -1,0 +1,247 @@
+.home1 {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--home1);
+}
+
+.imgovl img {
+  border-radius: 20px;
+}
+
+.imgovl::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.612);
+  opacity: 0.5;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+.imgovl:hover::before {
+  opacity: 1;
+}
+
+.imgovl a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 45px;
+  border-radius: 50px;
+  padding: 8px 0 0 13px;
+  background: linear-gradient(45deg, var(--ovl3), var(--ovl1));
+  z-index: 3;
+  font-weight: 450;
+  font-size: 19px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imgovl:hover a {
+  opacity: 1;
+}
+
+.imgovl a:hover {
+  background: linear-gradient(185deg, var(--ovl3), var(--ovl1));
+}
+
+.ovl1,
+.ovl2,
+.ovl3 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  animation: fadein 2s forwards, 2s aniiil infinite;
+  z-index: 0;
+}
+
+.ovl1 {
+  background-color: var(--ovl1);
+  top: -300px;
+  left: -250px;
+}
+
+.ovl2 {
+  width: 800px;
+  height: 800px;
+  background-color: var(--ovl2);
+  right: -400px;
+  top: -400px;
+  animation: fadein 2s forwards, 2s aniiir infinite;
+}
+
+.ovl3 {
+  width: 500px;
+  height: 500px;
+  background-color: var(--ovl3);
+  right: -200px;
+  bottom: -200px;
+}
+
+.mattroi {
+  position: absolute;
+  border-radius: 20px;
+  width: 1px;
+  height: 1px;
+  left: 340px;
+  z-index: 0;
+  background-color: var(--home1);
+  box-shadow: 0 0 700px 170px var(--mt) !important;
+  animation: mtani 5s infinite;
+}
+
+.btnxt {
+  background: linear-gradient(45deg, var(--wave2), #ff7b89);
+  color: var(--theme-text-color);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  font-weight: 500;
+  border: 0;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+
+.btnxt:hover {
+  opacity: 0.8;
+  background: linear-gradient(190deg, var(--wave2), #ff7b89);
+  letter-spacing: 3px;
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.8) !important;
+}
+
+.btnxt:active {
+  letter-spacing: 3px;
+  background-color: var(--theme);
+  color: var(--theme-text-color);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.carousel {
+  border: 8px solid var(--wave);
+  position: relative;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: var(--main-bg);
+}
+
+.carousel::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--home3);
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.imghome h3 {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: var(--theme-text-color);
+  font-size: 100px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 1;
+  opacity: 0.8;
+  animation: texth3 1.5s ease-in-out forwards;
+}
+
+.imghome::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--theme);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.cbtn {
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 20px !important;
+  border: 1px solid rgba(153, 153, 153, 0.263) !important;
+}
+
+.cbtnGooey {
+  color: var(--main-text);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid var(--main-text);
+  border-radius: 0;
+  position: relative;
+  transition: all 700ms ease;
+}
+
+.cbtnGooey .cbtnBlobs div {
+  background-color: var(--wave);
+}
+
+.h5h6:hover h5,
+.h5h6:hover h6 {
+  color: var(--wave2);
+}
+
+.imghv:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+@keyframes aniiil {
+  0% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes aniiir {
+  0% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+}
