@@ -32,7 +32,6 @@ Dự án này là website chính thức của Câu lạc bộ SPIT, được thi
 | [React.js](https://reactjs.org/) | Thư viện xây dựng UI hiện đại |
 | [TypeScript](https://www.typescriptlang.org/) | Ngôn ngữ mở rộng của JavaScript |
 | [Bootstrap 5](https://getbootstrap.com/) | Framework giao diện phổ biến |
-| [SASS/SCSS](https://sass-lang.com/) | Tiền xử lý CSS *(nếu dùng)* |
 | [FontAwesome](https://fontawesome.com/) | Bộ icon đa dạng |
 
 ---
