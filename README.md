@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🖥️ SPIT Website - Next.js
 
-## Getting Started
+**Website chính thức của CLB SPIT (Support Programming Information Technology)**  
+Được phát triển bởi các thành viên CLB SPIT - Khoa CNTT, Đại học Khoa học Huế.  
+> "Cùng nhau học hỏi, chia sẻ và phát triển kỹ năng lập trình."
 
-First, run the development server:
+---
+
+## 📌 Giới thiệu
+
+Dự án này là website chính thức của Câu lạc bộ SPIT, được thiết kế để giới thiệu về CLB, thành viên, các hoạt động học thuật và sự kiện công nghệ. Trang web còn là nơi cập nhật tin tức, chia sẻ kiến thức và tạo môi trường học tập lập trình tích cực cho sinh viên.
+
+---
+
+## 🌟 Tính năng nổi bật
+
+- Trang chủ giới thiệu CLB chuyên nghiệp  
+- Danh sách thành viên và ban chủ nhiệm  
+- Trang tin tức/blog để cập nhật các hoạt động, bài viết lập trình  
+- Trang sự kiện để quản lý và hiển thị sự kiện  
+- Hỗ trợ responsive trên mọi thiết bị  
+- Hệ thống quản lý bài viết có thể mở rộng trong tương lai  
+- Tích hợp FontAwesome và Bootstrap cho giao diện hiện đại  
+
+---
+
+## 🛠️ Công nghệ sử dụng
+
+| Công nghệ | Mô tả |
+|----------|------|
+| [Next.js 14](https://nextjs.org/) | Framework React mạnh mẽ, hỗ trợ SSR/SSG |
+| [React.js](https://reactjs.org/) | Thư viện xây dựng UI hiện đại |
+| [TypeScript](https://www.typescriptlang.org/) | Ngôn ngữ mở rộng của JavaScript |
+| [Bootstrap 5](https://getbootstrap.com/) | Framework giao diện phổ biến |
+| [SASS/SCSS](https://sass-lang.com/) | Tiền xử lý CSS *(nếu dùng)* |
+| [FontAwesome](https://fontawesome.com/) | Bộ icon đa dạng |
+
+---
+
+## 🚀 Hướng dẫn cài đặt & chạy dự án
+
+### 1. Clone repository
+
+```bash
+git clone https://github.com/XTSoft2004/spit_website_nextjs.git
+cd spit_website_nextjs
+```
+
+---
+### 2. Cài đặt dependencies
+
+```bash
+npm install
+# hoặc
+yarn install
+```
+
+---
+### 3. Chạy ở chế độ development
 
 ```bash
 npm run dev
-# or
+# hoặc
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Truy cập tại: http://localhost:3000
+
+---
+## 📦 Build production
+
+```bash
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
+## 🌐 Link demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📍 **Truy cập tại:**  
+👉 [https://spit-website-nextjs.vercel.app/](https://spit-website-nextjs.vercel.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🤝 Đóng góp
 
-## Learn More
+Chúng tôi luôn chào đón những đóng góp từ cộng đồng! 💪  
+Hãy làm theo các bước sau để đóng góp vào dự án:
 
-To learn more about Next.js, take a look at the following resources:
+1. 🍴 **Fork** dự án về tài khoản của bạn  
+2. 🌱 **Tạo branch mới** để phát triển tính năng:
+   ```bash
+   git checkout -b feature/ten-tinh-nang
+   ```
+3. 💾 **Commit thay đổi của bạn:**
+    ```bash
+    git commit -m "Thêm tính năng mới"
+    ```
+4. 🚀 **Push lên GitHub:**
+    ```bash
+    git push origin feature/ten-tinh-nang
+    ```
+5. 📥 **Tạo một Pull Request để được review và merge**
+🙌 Đừng quên mô tả rõ ràng thay đổi của bạn trong phần mô tả PR để giúp việc review dễ dàng hơn nhé!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👥 Thành viên phát triển
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| Tên                    | Vai trò                                  |
+|------------------------|-------------------------------------------|
+| **Trần Xuân Trường**         | Phát triển fontend, nội dung       |
+| **Trương Đình Phúc** | Phát triển fontend, nội dung        |
+| **Lê Nguyễn Gia Hân** | Thiết kế, nội dung, kiểm thử         |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Giấy phép
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Dự án được phát hành theo giấy phép [MIT License](LICENSE).
+
+---
+
+## 📬 Liên hệ
+
+- 💻 **Facebook**: [Trần Xuân Trường](https://www.facebook.com/xuantruong.war.clone.code)  
+- ✉️ **Email**: tranxuantruong420@gmail.com
+
+---
+
+> 🧠 *"Copyright © 2024, Trần Xuân Trường, Trương Đình Phúc, Lê Nguyễn Gia Hân"* — SPIT Team 💙
