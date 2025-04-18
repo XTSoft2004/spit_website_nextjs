@@ -103,8 +103,8 @@ Hãy làm theo các bước sau để đóng góp vào dự án:
 
 | Tên                    | Vai trò                                  |
 |------------------------|-------------------------------------------|
-| **Trần Xuân Trường**         | Phát triển fontend, nội dung       |
-| **Trương Đình Phúc** | Phát triển fontend, nội dung        |
+| **Trần Xuân Trường**         | Phát triển Frontend, nội dung       |
+| **Trương Đình Phúc** | Phát triển Frontend, nội dung        |
 | **Lê Nguyễn Gia Hân** | Thiết kế, nội dung, kiểm thử         |
 
 ---
