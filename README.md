@@ -1,52 +1,77 @@
-# 🖥️ SPIT Website - Next.js
+# SPIT EduCheck - Attendance System for Class Support
 
-**Website chính thức của CLB SPIT (Support Programming Information Technology)**  
-Được phát triển bởi các thành viên CLB SPIT - Khoa CNTT, Đại học Khoa học Huế.  
-> "Cùng nhau học hỏi, chia sẻ và phát triển kỹ năng lập trình."
+## 📌 Introduction
+**SPIT EduCheck** is a simple attendance management system designed for students who assist with classroom support. The system allows participants to record their attendance by uploading proof images after each support session.
 
----
+## ✨ Key Features
 
-## 📌 Giới thiệu
+### For Supporting Students
+- 📸 Upload proof images after completing class support
+- 📋 View history of participated sessions
+- 🕒 Track support time
 
-Dự án này là website chính thức của Câu lạc bộ SPIT, được thiết kế để giới thiệu về CLB, thành viên, các hoạt động học thuật và sự kiện công nghệ. Trang web còn là nơi cập nhật tin tức, chia sẻ kiến thức và tạo môi trường học tập lập trình tích cực cho sinh viên.
+### For Administrators
+- 👥 Manage student list
+- 👥 Manage class list
+- ✅ Verify support sessions
+- 📊 Export statistical reports
+- 🗓️ Manage support schedules
 
----
+## 🌟 Main Functionalities
 
-## 🌟 Tính năng nổi bật
-
-- Trang chủ giới thiệu CLB chuyên nghiệp  
-- Danh sách thành viên và ban chủ nhiệm  
-- Trang tin tức/blog để cập nhật các hoạt động, bài viết lập trình  
-- Trang sự kiện để quản lý và hiển thị sự kiện  
-- Hỗ trợ responsive trên mọi thiết bị  
-- Hệ thống quản lý bài viết có thể mở rộng trong tương lai  
-- Tích hợp FontAwesome và Bootstrap cho giao diện hiện đại  
-
----
-
-## 🛠️ Công nghệ sử dụng
-
-| Công nghệ | Mô tả |
-|----------|------|
-| [Next.js 14](https://nextjs.org/) | Framework React mạnh mẽ, hỗ trợ SSR/SSG |
-| [React.js](https://reactjs.org/) | Thư viện xây dựng UI hiện đại |
-| [TypeScript](https://www.typescriptlang.org/) | Ngôn ngữ mở rộng của JavaScript |
-| [Bootstrap 5](https://getbootstrap.com/) | Framework giao diện phổ biến |
-| [FontAwesome](https://fontawesome.com/) | Bộ icon đa dạng |
+- 📸 **Upload images after class support**: Volunteers can upload their photos after completing a support session.
+- 📅 **Manage support history by date**: Admins can track each support activity of volunteers.
+- 👥 **User role management**: Includes admin and volunteer access rights.
+- 📊 **Support statistics**: Display the number of times each volunteer has participated.
+- 🔍 **Search and verify support info**: Admins can search and verify the recorded support data.
 
 ---
 
-## 🚀 Hướng dẫn cài đặt & chạy dự án
+## 🛠️ Installation
 
-### 1. Clone repository
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/XTSoft2004/spit_website_nextjs.git
-cd spit_website_nextjs
+git clone https://github.com/XTSoft2004/SPIT-EduCheck.git
+cd SPIT-EduCheck
 ```
 
+
+### 2. Configure `appsettings.json` in Server_Manager
+To configure database connection, logging, JWT settings, and other configurations for your app, you can use the `appsettings.json` file. Here is a sample configuration:
+
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source={DOMAIN};Initial Catalog={DATABASE_NAME};User ID={Username};Password={Password};TrustServerCertificate=True;MultipleActiveResultSets=True"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "JwtSettings": {
+    "Secret": "{Secret}",
+    "Issuer": "{Issuer}",
+    "Audience": "{Audience}",
+    "ExpireToken": 1,
+    "ExpireRefreshToken": 5
+  },
+  "AllowedHosts": "*",
+  "Kestrel": {
+    "Endpoints": {
+      "Http": {
+        "Url": "http://0.0.0.0:5000"
+      }
+    }
+  }
+}
+```
+
+
 ---
-### 2. Cài đặt dependencies
+### 3. Install ChamCongCLB
 
 ```bash
 npm install
@@ -55,14 +80,13 @@ yarn install
 ```
 
 ---
-### 3. Chạy ở chế độ development
-
+### 4. Run in development mode
 ```bash
 npm run dev
 # hoặc
 yarn dev
 ```
-Truy cập tại: http://localhost:3000
+Visit: http://localhost:3000
 
 ---
 ## 📦 Build production
@@ -72,54 +96,66 @@ npm run build
 npm start
 ```
 
----
-## 🌐 Link demo
+
+## 📝 User Guide
+- Log in with your provided account.
+- Choose "Attendance Check" after completing a support session.
+- Upload a proof image.
+- Confirm the attendance information.
+- Admins can review attendance records in the management section.
+
+### 🛠️ Technology Stack
+
+- **Frontend**: NextJS, Tailwind
+- **Backend**: ASP.NET Core API
+- **Database**: SQL Server
+
+## 🌐 Demo Website Link
 
 📍 **Truy cập tại:**  
-👉 [https://spit-website-nextjs.vercel.app/](https://spit-website-nextjs.vercel.app/)
+👉 [http://chamcong.spit-husc.io.vn/](http://chamcong.spit-husc.io.vn/)
 
-## 🤝 Đóng góp
+## 🤝 Contributing
 
-Chúng tôi luôn chào đón những đóng góp từ cộng đồng! 💪  
-Hãy làm theo các bước sau để đóng góp vào dự án:
+We always welcome contributions from the community! 💪
+Follow these steps to contribute to the project:
 
-1. 🍴 **Fork** dự án về tài khoản của bạn  
-2. 🌱 **Tạo branch mới** để phát triển tính năng:
+1. 🍴 **Fork** the project to your GitHub account
+2. 🌱 **Create a new branch** for your feature:
    ```bash
-   git checkout -b feature/ten-tinh-nang
+   git checkout -b feature/feature-name
    ```
-3. 💾 **Commit thay đổi của bạn:**
+3. 💾 **Commit your changes:**
     ```bash
     git commit -m "Thêm tính năng mới"
     ```
-4. 🚀 **Push lên GitHub:**
+4. 🚀 **Push to GitHub:**
     ```bash
-    git push origin feature/ten-tinh-nang
+    git push origin feature/feature-name
     ```
-5. 📥 **Tạo một Pull Request để được review và merge**
-🙌 Đừng quên mô tả rõ ràng thay đổi của bạn trong phần mô tả PR để giúp việc review dễ dàng hơn nhé!
+5. 📥 **Create a Pull Request for review and merge**
+🙌 Don’t forget to clearly describe your changes in the PR to make reviewing easier!
 
-## 👥 Thành viên phát triển
+## 👥 Development Team
 
-| Tên                    | Vai trò                                  |
+| Name                    | Role                                  |
 |------------------------|-------------------------------------------|
-| **Trần Xuân Trường**         | Phát triển Frontend, nội dung       |
-| **Trương Đình Phúc** | Phát triển Frontend, nội dung        |
-| **Lê Nguyễn Gia Hân** | Thiết kế, nội dung, kiểm thử         |
+| **Trần Xuân Trường**         | 	Frontend & Backend Developer, Content      |
+| **Trương Đình Phúc** | Frontend Developer, Content        |
 
 ---
 
-## 📄 Giấy phép
+## 📄 License
 
-Dự án được phát hành theo giấy phép [MIT License](LICENSE).
+This project is released under the [MIT License](LICENSE).
 
 ---
 
-## 📬 Liên hệ
+## 📬 Contact
 
 - 💻 **Facebook**: [Trần Xuân Trường](https://www.facebook.com/xuantruong.war.clone.code)  
 - ✉️ **Email**: tranxuantruong420@gmail.com
 
 ---
 
-> 🧠 *"Copyright © 2024, Trần Xuân Trường, Trương Đình Phúc, Lê Nguyễn Gia Hân"* — SPIT Team 💙
+> 🧠 *"Copyright © 2024, Trần Xuân Trường, Trương Đình Phúc"* — SPIT Team 💙
